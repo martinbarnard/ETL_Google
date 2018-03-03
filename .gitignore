@@ -1,5 +1,8 @@
 # Private data
 private/*
+bin/
+dump/
+cloud_sql_proxy
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

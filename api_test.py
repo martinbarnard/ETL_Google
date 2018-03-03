@@ -2,55 +2,121 @@
 
 # From the API ref docs: https://cloud.google.com/bigquery/docs/reference/libraries#client-libraries-install-python
 from google.cloud import bigquery
-import sql
 
-def create_dataset(ds_id=None):
+import json,sys
+import logging as log
+import mysql.connector
+import configparser
+
+# Our local sql strings 
+import sql, bgqry
+
+# Our config parser object
+cfgparser = configparser.ConfigParser()
+
+configs = {
+    'bigquery'  : {
+        'dump_file' : 'dump/output.json',
+    },
+    'cloudsql'  : {
+        'db_name'   : 'noaa_agg',
+        'username'  : 'root',
+        'password'  : '',
+        'proxy_port':'3306',
+    },
+    'logging'   : {
+        'logfile'   : 'log/ELT.log',
+        'loglevel'  : '10',
+    },
+}
+
+def write_configs(cfgfile='private/config.ini'):
+    global cfgparser
+    f = open(cfgfile,'w')
+    cfgparser.write(f)
+    f.close()
+    return True
+
+    
+def get_configs(cfgparser, configs, cfgfile='private/config.ini'):
+
+    print(cfgparser)
+    print(configs)
+    print(cfgfile)
+
+    try:
+        cfgparser.read(cfgfile)
+    except Exception as e:
+        print('Unable to parse config')
+        print(e)
+        sys.exit(1)
+
+    print('reading', cfgfile)
+
+    # Iterate through our sections and populate our configs dict
+    for s in cfgparser.sections():
+        if s in configs:
+            configs[s] = conf_sec_map(cfgparser, s, configs[s])
+        else:
+            configs[s] = conf_sec_map(cfgparser, s)
+
+    return configs
+            
+            
+def conf_sec_map(cfg,section, rv = {}):
     '''
-    Will create a shiny new dataset & return a dataset object
-    TODO: If we were concerned with stupidity (i.e. non savvy users), we would be validating
+    Just pulls all the config items from a section
+    as described in the tutorial
     '''
-    bigquery_client = bigquery.Client()
-
-    dataset_ref = bigquery_client.dataset(ds_id)
-    dataset = bigquery.Dataset(dataset_ref)
-    dataset = bigquery_client.create_dataset(dataset)
-
-    # This will be logging shortly
-    print('Dataset {} created.'.format(dataset.dataset_id))
-
-    return dataset
+    options = cfg.options(section)
+    for option in options:
+        rv[option] = cfg.get(section, option)
+    return rv
 
 
-def run_qry(query, params):
-    '''
-    Wrapper around our query runner: Will allow us to validate inputs. We can also limit the queries to pre-created & 
-    validated ones
-    '''
-
-    return dict()
 
 
 def main():
     '''
     Assumes our creds are somewhere!!!
     '''
-    print('pulling in most snow query')
-    # Most snow query is pulling days / name / country
-    qry = sql.qry_most_snow()
-    cl = bigquery.Client()
-    job=cl.query(qry)
-    print('Query running')
-    rows = job.result()
-    for row in rows:
-        print("{} - {} ({})".format(row.days, row.name, row.country))
+    global configs
 
-    print('all done')
+    configs = get_configs(cfgparser, configs, 'private/config.ini')
+
+    # Set up our logging
+    logcfg = configs['logging']
+    log.basicConfig(
+        filename    = logcfg['logfile'], 
+        level       = int(logcfg['loglevel']),
+        format      = '%(asctime)s;%(levelname)s;%(message)s',
+    )
+
+    log.info('Started')
+
+    # Just to test our cursor for now
+    cursor = sql.mysql_connect(configs['cloudsql'])
+    # TODO: Test for tables & create if not exists
+    #sql.create_tables()
+
+    bgqry_params = configs['bigquery']
+    # This is the output from our bigquery 
+    rv = bgqry.get_data(bgqry_params, 'etl')
+    # Print out our configs
+    output_file = bgqry_params['dump_file']
+    f = open(output_file, 'w')
+    f.write(json.dumps(rv))
+    f.close()
+
+    # Note: To read the json: 
+    # json_data = json.loads(open('output.json','r').read())
+
+    log.info('Finished')
         
 
 
 
 if __name__=='__main__':
     main()
-
 
 
