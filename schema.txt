@@ -1,0 +1,32 @@
+stn	                    STRING	NULLABLE
+wban	                STRING	NULLABLE
+year	                STRING	NULLABLE
+mo	                    STRING	NULLABLE
+da	                    STRING	NULLABLE
+temp	                FLOAT	NULLABLE
+count_temp	            INTEGER	NULLABLE
+dewp	                FLOAT	NULLABLE
+count_dewp	            INTEGER	NULLABLE
+slp	                    FLOAT	NULLABLE
+count_slp	            INTEGER	NULLABLE
+stp	                    FLOAT	NULLABLE
+count_stp	            INTEGER	NULLABLE
+visib	                FLOAT   NULLABLE
+count_visib	            INTEGER	NULLABLE
+wdsp	                STRING	NULLABLE
+count_wdsp	            STRING	NULLABLE
+mxpsd	                STRING	NULLABLE
+gust	                FLOAT	NULLABLE
+max	                    FLOAT	NULLABLE
+flag_max	            STRING	NULLABLE
+flag_min	            STRING	NULLABLE	
+prcp	                FLOAT	NULLABLE
+flag_prcp	            STRING	NULLABLE
+sndp	                FLOAT	NULLABLE
+fog	                    STRING	NULLABLE
+rain_drizzle	        STRING	NULLABLE
+snow_ice_pellets	    STRING	NULLABLE
+hail                    STRING	NULLABLE
+thund            er     STRING	NULLABLE
+tornado_funnel_cloud	STRING	NULLABLE
+
