@@ -4,7 +4,7 @@ import logging
 # BigQuery codes
 from google.cloud import bigquery
 
-logger  = logging.getLogger(__name__)
+logger = logging.getLogger(__name__)
 SQL = {}
 
 
@@ -24,12 +24,12 @@ def get_data(configs, qry_name):
         logger.info('starting bigquery')
         logger.debug(qry)
 
-        rows    = cl.query(qry)
+        rows = cl.query(qry)
 
         # Iterate
         for row in rows:
             rdate = "{}-{}-{}".format(row.year, row.mo, row.da)
-            r = {k:v for k,v in row.items()}
+            r = {k: v for k, v in row.items()}
             r['date'] = rdate
             rv.append(r)
     except Exception as e:
@@ -37,8 +37,8 @@ def get_data(configs, qry_name):
         logger.error(e)
         return None
 
-
     return rv
+
 
 SQL['etl'] = '''
     SELECT
@@ -60,8 +60,8 @@ SQL['etl'] = '''
         WHERE
             state IS NOT NULL
             AND max<1000
-            AND country='US' 
-        ) 
+            AND country='US'
+        )
     WHERE rn=1
     ORDER BY max DESC
     '''
@@ -87,8 +87,8 @@ SQL['stn_names'] = '''
         WHERE
             state IS NOT NULL
         AND max<1000
-        AND country='US' 
-    ) 
+        AND country='US'
+    )
     WHERE
         rn=1
     ORDER BY
@@ -123,7 +123,7 @@ SQL['warmest_day'] = '''
         WHERE
             state IS NOT NULL
         AND max<1000
-        AND country='US' 
+        AND country='US'
     )
     WHERE
         rn=1
@@ -132,7 +132,7 @@ SQL['warmest_day'] = '''
 '''
 
 # Most snow query
-SQL['most_snow'] ='''
+SQL['most_snow'] = '''
     SELECT
         c as days, name, country
     FROM (
@@ -141,7 +141,7 @@ SQL['most_snow'] ='''
         WHERE snow_ice_pellets='1'
         GROUP BY 1, 2
         ORDER BY c DESC
-        LIMIT 20 
+        LIMIT 20
     ) a
     LEFT JOIN
         `bigquery-public-data.noaa_gsod.stations` b
@@ -152,5 +152,5 @@ SQL['most_snow'] ='''
         name IS NOT NULL
     '''
 
-if __name__=='__main__':
+if __name__ == '__main__':
     print("Should be used as a module")
