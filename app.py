@@ -9,8 +9,8 @@ import logging as log
 import configparser
 
 # Our local sql strings
-import sql
-import bgqry
+from . import sql
+from . import bgqry
 
 # Our config parser object
 cfgparser = configparser.ConfigParser()
@@ -41,33 +41,34 @@ def write_configs(cfgfile='private/config.ini'):
 
 
 def get_configs(cfgparser, configs, cfgfile='private/config.ini'):
-    print(cfgparser)
-    print(configs)
-    print(cfgfile)
+    '''
+    Returns a dict of config sections: items
+    '''
+    log.info('trying to open {}'.format(cfgfile))
 
     try:
         cfgparser.read(cfgfile)
     except Exception as e:
+        log.error('error parsing {}'.format(cfgfile))
+        log.error(e)
         print('Unable to parse config')
-        print(e)
-        sys.exit(1)
+        raise e
 
-    print('reading', cfgfile)
+    log.info('reading', cfgfile)
 
     # Iterate through our sections and populate our configs dict
     for s in cfgparser.sections():
         if s in configs:
-            configs[s] = conf_sec_map(cfgparser, s, configs[s])
+            configs[s] = _conf_sec_map(cfgparser, s, configs[s])
         else:
-            configs[s] = conf_sec_map(cfgparser, s)
+            configs[s] = _conf_sec_map(cfgparser, s)
 
     return configs
 
 
-def conf_sec_map(cfg, section, rv={}):
+def _conf_sec_map(cfg, section, rv={}):
     '''
-    Just pulls all the config items from a section
-    as described in the tutorial
+    Just pulls all the config items from a section as described in the tutorial
     '''
     options = cfg.options(section)
     for option in options:
@@ -81,6 +82,7 @@ def main():
     '''
     global configs
 
+    # TODO: cmdline options
     configs = get_configs(cfgparser, configs, 'private/config.ini')
 
     # Set up our logging
@@ -93,8 +95,10 @@ def main():
 
     log.info('Started')
 
-    # Just to test our cursor for now
     cursor = sql.mysql_connect(configs['cloudsql'])
+    if not cursor:
+        log.error('Unable to connect to CloudSQL')
+        sys.exit(1)
 
     # TODO: Test for tables & create if not exists
     bgqry_params = configs['bigquery']

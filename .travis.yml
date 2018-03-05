@@ -9,7 +9,8 @@ install:
   - pip install -r requirements.txt
 
 before_script:
- - pyflakes -x W *.py
+ - pycodestyle --ignore=E501 *.py
+ - pyflakes *.py
 # command to run tests
 script:
   - pytest # or py.test for Python versions 3.5 and below

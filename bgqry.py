@@ -1,4 +1,3 @@
-from sys import exit
 import logging
 
 # BigQuery codes
@@ -12,6 +11,7 @@ def get_data(configs, qry_name):
     '''
     Will do our connection and then run our query
     '''
+    logger.info('starting bigquery')
     rv = []
     if qry_name in SQL:
         qry = SQL[qry_name]
@@ -21,9 +21,7 @@ def get_data(configs, qry_name):
 
     try:
         cl = bigquery.Client()
-        logger.info('starting bigquery')
         logger.debug(qry)
-
         rows = cl.query(qry)
 
         # Iterate
@@ -32,6 +30,7 @@ def get_data(configs, qry_name):
             r = {k: v for k, v in row.items()}
             r['date'] = rdate
             rv.append(r)
+
     except Exception as e:
         print(e)
         logger.error(e)
@@ -153,4 +152,5 @@ SQL['most_snow'] = '''
     '''
 
 if __name__ == '__main__':
+    logger.error('module called as application')
     print("Should be used as a module")
