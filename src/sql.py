@@ -4,7 +4,6 @@ import logging
 import json
 from datetime import datetime
 
-# 
 # MySQL code
 # Used for connecting to Google cloud SQL (i.e. google hosted MySQL instance)
 
@@ -33,13 +32,13 @@ def upload_data(connection, json_data):
     rollback = 'ROLLBACK'
 
     sql = '''
-    INSERT INTO etl_agg 
-        (max_celsius, min_celsius, date, state, stn, stn_name) 
-    VALUES 
+    INSERT INTO etl_agg
+        (max_celsius, min_celsius, date, state, stn, stn_name)
+    VALUES
         (%s, %s, %s, %s, %s, %s)
     '''
     cursor = connection.cursor()
-    jd = json.loads(open(json_data,'r').read())
+    jd = json.loads(open(json_data, 'r').read())
 
     if cursor:
         logger.info('starting sql insertion')
@@ -55,12 +54,11 @@ def upload_data(connection, json_data):
                     data['stn'],
                     data['name']
                 )
-                cursor.execute(sql,our_list)
+                cursor.execute(sql, our_list)
             cursor.execute(commit)
         except Exception as e:
             cursor.execute(rollback)
             raise(e)
-    
     return None
 
 
@@ -71,18 +69,18 @@ def mysql_connect(cfg=None):
     '''
     dbname = 'noaa_agg'
 
-    if cfg == None:
+    if cfg is None:
         return None
 
     try:
         logger.info('Connecting to MySQL db')
         port = int(cfg['proxy_port'])
         connection = mysql.connector.connect(
-            user=cfg['username'], 
-            password=cfg['password'], 
-            port=port, 
+            user=cfg['username'],
+            password=cfg['password'],
+            port=port,
             database=dbname
-            )
+        )
     except Exception as e:
         logger.error(e)
         return None
@@ -105,6 +103,7 @@ def create_db(connection, DB_NAME):
         return False
     return True
 
+
 def drop_tables(connection):
     '''
     Assumes we don't care about our data & will just drop the tables
@@ -119,6 +118,7 @@ def drop_tables(connection):
             raise(e)
 
     return True
+
 
 def create_tables(connection, DB_NAME):
     '''

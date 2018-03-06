@@ -30,6 +30,7 @@ cfg_filename = 'private/config.ini'
 # Our config parser object
 cfgparser = configparser.ConfigParser()
 
+
 def parse_cmdline():
     '''
     Will parse our commandline flags and set up our dictionary
@@ -143,7 +144,6 @@ def _conf_sec_map(cfg, section, rv={}):
     return rv
 
 
-
 def main():
     '''
     Assumes our creds are stored somewhere in ENV variable, as mentioned in Google Docs!!!
@@ -188,7 +188,7 @@ def main():
 
     # Print out our configs
     # TODO: cmd-line args to pass filename
-    output_file = os.path.join(os.path.abspath('.'),bgqry_params['dump_file'])
+    output_file = os.path.join(os.path.abspath('.'), bgqry_params['dump_file'])
     try:
         print('dumping json')
         f = open(output_file, 'w')

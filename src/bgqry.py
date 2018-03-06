@@ -36,32 +36,31 @@ def get_data(configs, qry_name):
         r['date'] = rdate
         rv.append(r)
 
-
     return rv
 
 
 SQL = {
     'etl': '''
         SELECT
-            max, 
-            (max-32)*5/9 max_celsius, 
+            max,
+            (max-32)*5/9 max_celsius,
             min,
             (min-32)*5/9 min_celsius,
-            year, 
-            mo, 
+            year,
+            mo,
             da,
-            state, 
-            stn, 
+            state,
+            stn,
             name
         FROM (
             SELECT
                 max,
                 min,
-                year, 
-                mo, 
+                year,
+                mo,
                 da,
-                state, 
-                stn, 
+                state,
+                stn,
                 name,
                 ROW_NUMBER() OVER(PARTITION BY state ORDER BY max DESC) rn
             FROM
@@ -78,7 +77,7 @@ SQL = {
             )
         ''',
     'etl_ex': '''
-    SELECT DISTINCT 
+    SELECT DISTINCT
     max, min, year, mo, da, state, stn
     FROM (
       SELECT
@@ -107,7 +106,7 @@ SQL = {
       LIMIT
         1000 )
     '''
-    }
+}
 
 if __name__ == '__main__':
     logger.error('module called as application')
