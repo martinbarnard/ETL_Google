@@ -1,55 +1,100 @@
 import mysql.connector
 from mysql.connector import errorcode
 import logging
+import json
+from datetime import datetime
 
+# 
 # MySQL code
+# Used for connecting to Google cloud SQL (i.e. google hosted MySQL instance)
 
 TABLES = {}
 logger = logging.getLogger(__name__)
 
 TABLES['etl_agg'] = '''
         CREATE TABLE etl_agg (
-            max_temp DECIMAL NOT NULL,
-            celsius DOUBLE,
+            max_celsius DOUBLE,
+            min_celsius DOUBLE,
             date DATE,
-            year INT NOT NULL,
-            month INT NOT NULL,
-            day INT NOT NULL,
-            state INT NOT NULL,
+            state VARCHAR(10),
             stn VARCHAR(255),
             stn_name VARCHAR(255)
         ) ENGINE=InnoDB ;
     '''
 
 
-def upload_data(json_data):
+def upload_data(connection, json_data):
     '''
     Will take the json_data and upload it to the table
+    json_data being path to json file for now
     '''
+    starttran = 'START TRANSACTION'
+    commit = 'COMMIT'
+    rollback = 'ROLLBACK'
+
+    sql = '''
+    INSERT INTO etl_agg 
+        (max_celsius, min_celsius, date, state, stn, stn_name) 
+    VALUES 
+        (%s, %s, %s, %s, %s, %s)
+    '''
+    cursor = connection.cursor()
+    jd = json.loads(open(json_data,'r').read())
+
+    if cursor:
+        logger.info('starting sql insertion')
+        print('we are inserting our data')
+        try:
+            cursor.execute(starttran)
+            for data in jd:
+                our_list = (
+                    data['max_celsius'],
+                    data['min_celsius'],
+                    datetime.strptime(data['date'], '%Y-%M-%d'),
+                    data['state'],
+                    data['stn'],
+                    data['name']
+                )
+                cursor.execute(sql,our_list)
+            cursor.execute(commit)
+        except Exception as e:
+            cursor.execute(rollback)
+            raise(e)
+    
     return None
 
 
-def mysql_connect(cfg):
+def mysql_connect(cfg=None):
     '''
     Take the mysql connection info and attempt to return a cursor object
     Assumes that configs is set
     '''
+    dbname = 'noaa_agg'
+
+    if cfg == None:
+        return None
+
     try:
         logger.info('Connecting to MySQL db')
         port = int(cfg['proxy_port'])
-        connection = mysql.connector.connect(user=cfg['username'], password=cfg['password'], port=port)
-        cursor = connection.cursor()
+        connection = mysql.connector.connect(
+            user=cfg['username'], 
+            password=cfg['password'], 
+            port=port, 
+            database=dbname
+            )
     except Exception as e:
         logger.error(e)
         return None
 
-    return cursor
+    return connection
 
 
-def create_db(cursor, DB_NAME):
+def create_db(connection, DB_NAME):
     '''
     MySQL
     '''
+    cursor = connection.cursor()
     try:
         logger.info('Attempting to create database: {}'.format(DB_NAME))
         cursor.execute(
@@ -60,13 +105,27 @@ def create_db(cursor, DB_NAME):
         return False
     return True
 
+def drop_tables(connection):
+    '''
+    Assumes we don't care about our data & will just drop the tables
+    '''
+    cursor = connection.cursor()
+    for t in TABLES:
+        st = '''DROP TABLE IF EXISTS {}'''.format(t)
+        try:
+            cursor.execute(st)
+        except ReferenceError as e:
+            logger.debug(e)
+            raise(e)
 
-def create_tables(cursor, DB_NAME):
+    return True
+
+def create_tables(connection, DB_NAME):
     '''
     MYSQL. TODO: move out to MySQL only module
     Create our table - single table at the moment
     '''
-    # cursor = sql.mysql_connect(configs['cloudsql'])
+    cursor = connection.cursor()
     logger.info('connecting to {}'.format(DB_NAME))
     try:
         cursor.database = DB_NAME
@@ -80,7 +139,7 @@ def create_tables(cursor, DB_NAME):
             logger.error(err.msg)
             return False
 
-    for k, v in TABLES.iteritems():
+    for k, v in TABLES.items():
         try:
             logger.info('Creating table {}'.format(k))
             cursor.execute(v)

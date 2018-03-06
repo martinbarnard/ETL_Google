@@ -39,16 +39,30 @@ def get_data(configs, qry_name):
 
     return rv
 
+
 SQL = {
     'etl': '''
         SELECT
-            max, (max-32)*5/9 celsius, year, mo, da,
-            state, stn, name
+            max, 
+            (max-32)*5/9 max_celsius, 
+            min,
+            (min-32)*5/9 min_celsius,
+            year, 
+            mo, 
+            da,
+            state, 
+            stn, 
+            name
         FROM (
             SELECT
                 max,
-                year, mo, da,
-                state, stn, name,
+                min,
+                year, 
+                mo, 
+                da,
+                state, 
+                stn, 
+                name,
                 ROW_NUMBER() OVER(PARTITION BY state ORDER BY max DESC) rn
             FROM
                 `bigquery-public-data.noaa_gsod.gsod199*` a
@@ -57,14 +71,42 @@ SQL = {
             ON
                 a.stn=b.usaf
             AND a.wban=b.wban
-            WHERE
+            HAVING
                 state IS NOT NULL
                 AND max<1000
                 AND country='US'
             )
-        WHERE rn=1
-        ORDER BY max DESC
         ''',
+    'etl_ex': '''
+    SELECT DISTINCT 
+    max, min, year, mo, da, state, stn
+    FROM (
+      SELECT
+        max, min, year, mo, da, state, stn,
+        ROW_NUMBER() OVER(PARTITION BY year ORDER BY year, mo, da DESC) rn
+      FROM
+        `bigquery-public-data.noaa_gsod.gsod199*` a
+      JOIN
+        `bigquery-public-data.noaa_gsod.stations` b
+      ON
+        a.stn = b.usaf
+        AND a.wban = b.wban
+      GROUP BY
+        year,
+        da,
+        mo,
+        max,
+        min,
+        state,
+        stn,
+        country
+      HAVING
+        state IS NOT NULL
+        AND max < 1000
+        AND country='US'
+      LIMIT
+        1000 )
+    '''
     }
 
 if __name__ == '__main__':
