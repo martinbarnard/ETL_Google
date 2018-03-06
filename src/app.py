@@ -8,9 +8,12 @@ import sys
 import logging as log
 import configparser
 
-# Our local sql strings
-from . import sql
-from . import bgqry
+try:
+    import sql
+    import bgqry
+except ImportError as e:
+    from ETL_Google.src import sql
+    from ETL_Google.src import bgqry
 
 # Our config parser object
 cfgparser = configparser.ConfigParser()
@@ -30,14 +33,6 @@ configs = {
         'loglevel': '10',
     },
 }
-
-
-def write_configs(cfgfile='private/config.ini'):
-    global cfgparser
-    f = open(cfgfile, 'w')
-    cfgparser.write(f)
-    f.close()
-    return True
 
 
 def get_configs(cfgparser, configs, cfgfile='private/config.ini'):
@@ -86,6 +81,7 @@ def main():
     configs = get_configs(cfgparser, configs, 'private/config.ini')
 
     # Set up our logging
+    # Note - loglevel 10 is DEBUG
     logcfg = configs['logging']
     log.basicConfig(
         filename=logcfg['logfile'],
@@ -107,10 +103,15 @@ def main():
     rv = bgqry.get_data(bgqry_params, 'etl')
 
     # Print out our configs
-    output_file = bgqry_params['dump_file']
-    f = open(output_file, 'w')
-    f.write(json.dumps(rv))
-    f.close()
+    # TODO: cmd-line args to pass filename
+    try:
+        output_file = bgqry_params['dump_file']
+        f = open(output_file, 'w')
+        f.write(json.dumps(rv))
+        f.close()
+    except Exception as e:
+        log.error('unable to dump data')
+        log.debug(e)
 
     # Note: To read the json:
     # json_data = json.loads(open('output.json','r').read())
@@ -118,5 +119,6 @@ def main():
     log.info('Finished')
 
 
-if __name__ == '__main__':
+if __name__ == '__main__' and __package__ is None:
+    __package__ = 'ETL_Google'
     main()
