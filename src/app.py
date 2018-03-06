@@ -105,6 +105,8 @@ def parse_cmdline():
 def get_configs(cfgparser):
     '''
     Returns a dict of config sections: items
+    :param:  config parser object
+    :return: dict of config items
     '''
 
     # Parse our arguments and populate our dictionary
