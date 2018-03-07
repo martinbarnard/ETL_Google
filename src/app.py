@@ -186,23 +186,10 @@ def main():
     log.info('recreating new tables')
     sql.create_tables(connection, configs['cloudsql']['db_name'])
 
-    # TODO: Test for tables & create if not exists
-    bgqry_params = configs['bigquery']
     # This is the output from our bigquery
     puts(colored.blue('starting our bigquery'))
-    rv = bgqry.get_data(bgqry_params, 'etl_ex')
-    puts(colored.green('query over. iterate'))
-    # we can here just do our insert
-    cursor = connection.cursor()
-    cursor.execute('START TRANSACTION')
-    iterval = 0
-    for row in rv:
-        if iterval % 100 == 0:
-            puts(colored.green('still inserting ({})'.format(iterval)))
-
-        sql.insert_row(cursor, row)
-        iterval += 1
-    cursor.execute('COMMIT')
+    rv = bgqry.get_data(configs, 'etl_ex', do_insert=True, connection = connection)
+    puts(colored.green('query over. Insertion status: {}'.format(rv)))
         
     log.info('Finished')
 

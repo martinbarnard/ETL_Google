@@ -1,19 +1,24 @@
 import logging
+import os
+import sys
 
 # BigQuery codes
 from google.cloud import bigquery
 from clint.textui import puts, colored
 
+from ETL_Google.src import sql
+
+sys.path.insert(0, os.path.abspath('..'))
+
 logger = logging.getLogger(__name__)
 SQL = {}
 
 
-def get_data(configs, qry_name):
+def get_data(configs, qry_name, do_insert = False, connection=None):
     '''
     Will do our connection and then run our query
     '''
     puts(colored.green('getting data'))
-    rv = []
     if qry_name in SQL:
         qry = SQL[qry_name]
     else:
@@ -34,18 +39,33 @@ def get_data(configs, qry_name):
         raise e
 
 
+    if do_insert:
+        # create our cursor
+        cursor = connection.cursor()
+        cursor.execute('START TRANSACTION')
     # Iterate
     iterator = 0
     for row in rows:
-        if iterator % 100 == 0:
-            puts(colored.green('iterating {}'.format(iterator)))
         rdate = "{}-{}-{}".format(row.year, row.mo, row.da)
         r = {k: v for k, v in row.items()}
         r['date'] = rdate
-        rv.append(r)
+
+        # we need to insert our row anyhow
+        if do_insert:
+            sql.insert_row(cursor, r)
+            if iterator % 10000 == 0:
+                puts(colored.green('iterating {} with commit'.format(iterator)))
+                cursor.execute('COMMIT')
+                cursor.execute('START TRANSACTION')
+        else:
+            if iterator % 10000 == 0:
+                puts(colored.green('iterating {} without insertion'.format(iterator)))
         iterator += 1
 
-    return rv
+    if do_insert:
+        cursor.execute('COMMIT')
+
+    return True
 
 
 SQL = {

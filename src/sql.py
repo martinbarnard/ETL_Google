@@ -1,9 +1,13 @@
-import mysql.connector
-from mysql.connector import errorcode
 import logging
 import json
+import sys
+import os
+import mysql.connector
+from mysql.connector import errorcode
 from datetime import datetime
 from clint.textui import puts, colored
+
+sys.path.insert(0, os.path.abspath('..'))
 
 # MySQL code
 # Used for connecting to Google cloud SQL (i.e. google hosted MySQL instance)
@@ -30,16 +34,15 @@ def insert_row(cursor, row):
     '''
     sql = '''
     INSERT INTO etl_agg
-        (max_celsius, min_celsius, date, state, stn)
+        (max_celsius, min_celsius, date, state )
     VALUES
-        (%s, %s, %s, %s, %s)
+        (%s, %s, %s, %s)
     '''
     our_list = (
         row['max_celsius'],
         row['min_celsius'],
         datetime.strptime(row['date'], '%Y-%M-%d'),
         row['state'],
-        row['stn'],
     )
     cursor.execute(sql, our_list)
 
@@ -96,7 +99,7 @@ def mysql_connect(cfg=None):
 
     try:
         logger.info('Connecting to MySQL db')
-        puts(colored.blue('{}@{}:{}'.format(cfg['username'],cfg['host'],cfg['port'])))
+        puts(colored.blue('{}@{}:{}'.format(cfg['username'],cfg['host'],cfg['proxy_port'])))
         port = int(cfg['proxy_port'])
         connection = mysql.connector.connect(
             host=cfg['host'],
