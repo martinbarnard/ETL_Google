@@ -3,6 +3,7 @@ from mysql.connector import errorcode
 import logging
 import json
 from datetime import datetime
+from clint.textui import puts, colored
 
 # MySQL code
 # Used for connecting to Google cloud SQL (i.e. google hosted MySQL instance)
@@ -20,6 +21,27 @@ TABLES['etl_agg'] = '''
             stn_name VARCHAR(255)
         ) ENGINE=InnoDB ;
     '''
+def insert_row(cursor, row):
+    '''
+    Assumes we're in a transaction. 
+    :param: connection object, 
+            row dictionary
+    :return: 
+    '''
+    sql = '''
+    INSERT INTO etl_agg
+        (max_celsius, min_celsius, date, state, stn)
+    VALUES
+        (%s, %s, %s, %s, %s)
+    '''
+    our_list = (
+        row['max_celsius'],
+        row['min_celsius'],
+        datetime.strptime(row['date'], '%Y-%M-%d'),
+        row['state'],
+        row['stn'],
+    )
+    cursor.execute(sql, our_list)
 
 
 def upload_data(connection, json_data):
@@ -74,8 +96,10 @@ def mysql_connect(cfg=None):
 
     try:
         logger.info('Connecting to MySQL db')
+        puts(colored.blue('{}@{}:{}'.format(cfg['username'],cfg['host'],cfg['port'])))
         port = int(cfg['proxy_port'])
         connection = mysql.connector.connect(
+            host=cfg['host'],
             user=cfg['username'],
             password=cfg['password'],
             port=port,
@@ -84,6 +108,7 @@ def mysql_connect(cfg=None):
     except Exception as e:
         logger.error(e)
         return None
+
 
     return connection
 
@@ -96,7 +121,7 @@ def create_db(connection, DB_NAME):
     try:
         logger.info('Attempting to create database: {}'.format(DB_NAME))
         cursor.execute(
-            "CREATE DATABASE {} DEFAULT CHARACTER SET 'utf8'".format(DB_NAME))
+            "CREATE DATABASE IF NOT EXISTS {} DEFAULT CHARACTER SET 'utf8'".format(DB_NAME))
     except mysql.connector.Error as err:
         logger.error('Failed to create database: {}'.format(DB_NAME))
         logger.debug(err.msg)

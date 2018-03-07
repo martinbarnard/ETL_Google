@@ -4,7 +4,6 @@
 # From the API ref docs:
 # https://cloud.google.com/bigquery/docs/reference/libraries#client-libraries-install-python
 
-import json
 import sys
 import os
 import logging as log
@@ -16,7 +15,6 @@ from clint.textui import puts, colored, indent
 
 
 sys.path.insert(0, os.path.abspath('..'))
-
 
 try:
     import sql
@@ -34,14 +32,13 @@ cfgparser = configparser.ConfigParser()
 def parse_cmdline():
     '''
     Will parse our commandline flags and set up our dictionary
+    :param:
+    :return: configfile, config
     '''
     cfgfile = 'private/config.ini'
 
     # This was sane defaults, but now I don't want it
     configs = {
-        'bigquery': {
-            'dump_file': 'dump/output.json',
-        },
         'cloudsql': {
             'db_name': 'noaa_agg',
             'username': 'root',
@@ -67,8 +64,9 @@ def parse_cmdline():
             puts('-p <db_pwd>: Cloud SQL password')
             puts('-l <logfile>: Location of logfile')
             puts('-j <jsonfile>: Location of dump file')
+            puts('-q <state>: Query by state')
 
-        sys.exit(1)
+        return None
 
     # Bit hacky, but whatever
     if args.contains('-c'):
@@ -94,10 +92,6 @@ def parse_cmdline():
         configs['logging']['logfile'] = gargs['-l'][0]
         puts(colored.green('setting logfile location'))
 
-    if args.contains('-j'):
-        configs['bigquery']['dump_file'] = gargs['-j'][0]
-        puts(colored.green('setting json dumpfile location'))
-
     log.info('config file is {}'.format(cfgfile))
     return cfgfile, configs
 
@@ -111,7 +105,11 @@ def get_configs(cfgparser):
 
     # Parse our arguments and populate our dictionary
     # Then, we will use that to grab our cfgfile and try to open that for reading
-    cfgfile, configs = parse_cmdline()
+    try:
+        cfgfile, configs = parse_cmdline()
+    except:
+        puts(colored.red('cannot parse cmdline'))
+        return None
 
     log.info('trying to open {}'.format(cfgfile))
 
@@ -121,7 +119,7 @@ def get_configs(cfgparser):
         log.error('error parsing {}'.format(cfgfile))
         log.error(e)
         puts(colored.red('Unable to parse config at ' + str(cfgfile)))
-        raise e
+        return None
 
     log.info('reading', cfgfile)
 
@@ -151,21 +149,22 @@ def main():
     Assumes our creds are stored somewhere in ENV variable, as mentioned in Google Docs!!!
     '''
     configs = get_configs(cfgparser)
+    if not configs:
+        puts(colored.red('Unable to load configs'))
+        sys.exit(1)
 
     # Set up our logging
-    # Note - loglevel 10 is DEBUG
     logcfg = configs['logging']
     log.basicConfig(
-        filename=logcfg['logfile'],
-        level=int(logcfg['loglevel']),
+        filename=os.path.abspath(logcfg['logfile']),
+        level=int(logcfg['loglevel'] or 10),
         format='%(asctime)s;%(levelname)s;%(message)s',
     )
-
-    log.info('Started')
+    puts('logging to {}'.format(logcfg['logfile']))
 
     connection = sql.mysql_connect(configs['cloudsql'])
-
     if not connection:
+        puts(colored.red('unable to connect to CloudSQL'))
         log.error('Unable to connect to CloudSQL')
         sys.exit(1)
 
@@ -177,6 +176,11 @@ def main():
         print('weak bastard')
         cursor = sql.mysql_connect(configs['cloudsql'])
         sql.drop_tables(cursor)
+    except Exception as e:
+        print('unhandled exception dropping old tables')
+        print(e)
+        log.error(e)
+        sys.exit(1)
 
     # Recreate them now
     log.info('recreating new tables')
@@ -184,31 +188,22 @@ def main():
 
     # TODO: Test for tables & create if not exists
     bgqry_params = configs['bigquery']
-
     # This is the output from our bigquery
-    rv = bgqry.get_data(bgqry_params, 'etl')
+    puts(colored.blue('starting our bigquery'))
+    rv = bgqry.get_data(bgqry_params, 'etl_ex')
+    puts(colored.green('query over. iterate'))
+    # we can here just do our insert
+    cursor = connection.cursor()
+    cursor.execute('START TRANSACTION')
+    iterval = 0
+    for row in rv:
+        if iterval % 100 == 0:
+            puts(colored.green('still inserting ({})'.format(iterval)))
 
-    # Print out our configs
-    # TODO: cmd-line args to pass filename
-    output_file = os.path.join(os.path.abspath('.'), bgqry_params['dump_file'])
-    try:
-        print('dumping json')
-        f = open(output_file, 'w')
-        f.write(json.dumps(rv))
-        f.close()
-    except Exception as e:
-        print('unable to dump')
-        log.error('unable to dump data')
-        log.debug(e)
-
-    # Note: To read the json:
-    # json_data = json.loads(open('output.json','r').read())
-
-    # Now we recreate our tables
-    # Should also point to json and let people look at it, but case-study time limits...
-    # Now we need to amend the path, since it's most likely relative to app call
-    sql.upload_data(connection, output_file)
-
+        sql.insert_row(cursor, row)
+        iterval += 1
+    cursor.execute('COMMIT')
+        
     log.info('Finished')
 
 

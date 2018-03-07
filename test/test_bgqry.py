@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import pytest
 import mock
 
 import ETL_Google.src.bgqry

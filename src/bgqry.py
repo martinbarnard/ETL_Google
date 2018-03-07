@@ -2,6 +2,7 @@ import logging
 
 # BigQuery codes
 from google.cloud import bigquery
+from clint.textui import puts, colored
 
 logger = logging.getLogger(__name__)
 SQL = {}
@@ -11,11 +12,12 @@ def get_data(configs, qry_name):
     '''
     Will do our connection and then run our query
     '''
-    logger.info('starting bigquery')
+    puts(colored.green('getting data'))
     rv = []
     if qry_name in SQL:
         qry = SQL[qry_name]
     else:
+        puts(colored.red('No query with that name'))
         logging.error('No query called {}'.format(qry_name))
         return None
 
@@ -23,73 +25,48 @@ def get_data(configs, qry_name):
         cl = bigquery.Client()
         logger.debug(qry)
         rows = cl.query(qry)
-
     except Exception as e:
+        raise e
         logger.error('Unable to query bigquery')
-        logger.debug(e)
         return None
+    except Exception as e:
+        puts(colored.red('error trying to connect'))
+        raise e
+
 
     # Iterate
+    iterator = 0
     for row in rows:
+        if iterator % 100 == 0:
+            puts(colored.green('iterating {}'.format(iterator)))
         rdate = "{}-{}-{}".format(row.year, row.mo, row.da)
         r = {k: v for k, v in row.items()}
         r['date'] = rdate
         rv.append(r)
+        iterator += 1
 
     return rv
 
 
 SQL = {
-    'etl': '''
-        SELECT
-            max,
-            (max-32)*5/9 max_celsius,
-            min,
-            (min-32)*5/9 min_celsius,
-            year,
-            mo,
-            da,
-            state,
-            stn,
-            name
-        FROM (
-            SELECT
-                max,
-                min,
-                year,
-                mo,
-                da,
-                state,
-                stn,
-                name,
-                ROW_NUMBER() OVER(PARTITION BY state ORDER BY max DESC) rn
-            FROM
-                `bigquery-public-data.noaa_gsod.gsod199*` a
-            JOIN
-                `bigquery-public-data.noaa_gsod.stations` b
-            ON
-                a.stn=b.usaf
-            AND a.wban=b.wban
-            HAVING
-                state IS NOT NULL
-                AND max<1000
-                AND country='US'
-            )
-        ''',
     'etl_ex': '''
-    SELECT DISTINCT
-    max, min, year, mo, da, state, stn
-    FROM (
-      SELECT
-        max, min, year, mo, da, state, stn,
-        ROW_NUMBER() OVER(PARTITION BY year ORDER BY year, mo, da DESC) rn
-      FROM
+    SELECT distinct
+      max,
+        (max-32)*5/9 max_celsius,
+      min,
+        (min-32)*5/9 min_celsius,
+      year,
+      mo,
+      da,
+      state
+     FROM (
         `bigquery-public-data.noaa_gsod.gsod199*` a
       JOIN
         `bigquery-public-data.noaa_gsod.stations` b
       ON
         a.stn = b.usaf
         AND a.wban = b.wban
+        )
       GROUP BY
         year,
         da,
@@ -97,14 +74,11 @@ SQL = {
         max,
         min,
         state,
-        stn,
         country
       HAVING
         state IS NOT NULL
         AND max < 1000
         AND country='US'
-      LIMIT
-        1000 )
     '''
 }
 
