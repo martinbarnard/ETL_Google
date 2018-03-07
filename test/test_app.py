@@ -37,9 +37,7 @@ def test_get_configs(mock_parser, mock_cmdparse, mock_args):
     mock_parser.options.return_value = mockery['test']
 
     v, w = app.get_configs(mock_parser)
-    print(v,w)
-    assert v == 'test'
-    assert w == 'test_a'
+    assert v == 'test_a'
 
 @mock.patch('ETL_Google.src.app.Args')
 @mock.patch('ETL_Google.src.app.parse_cmdline')
@@ -48,8 +46,11 @@ def test_err_reading_configs(mock_parser, mock_cmdparse, mock_args):
     '''
     Not so happy - Error reaading config
     '''
-    mock_cmdparse.return_value = 'config file', {'test_a': 'test_b'}
+
     mock_parser.read.side_effect = my_exception
-    app.get_configs(mock_parser)
+    mock_cmdparse.return_value = 'config file', {'test_a': 'test_b'}
+    rv = app.get_configs(mock_parser)
+    assert rv == None
+    
 
 

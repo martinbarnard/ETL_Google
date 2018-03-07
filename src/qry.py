@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 import sys
 import os
 
@@ -15,7 +16,7 @@ our_sql_cfg = dict(
     host = 'localhost'
 )
 
-our_sql = '''SELECT * FROM etl_agg where state='%s';'''
+our_sql = "SELECT * FROM etl_agg where state=%s"
 
 # argparsing made easy
 args = Args()
@@ -36,18 +37,13 @@ if args.contains('-state'):
 
 connection = sql.mysql_connect(our_sql_cfg)
 if connection and state:
-    cursor = connection.cursor(buffered=True)
-    puts(colored.green('executing "{}" : "{}"'.format(our_sql, state)))
+    print(our_sql,state)
+    cursor = connection.cursor()
+    cursor.execute(our_sql,(state,))
 
-    results = cursor.execute(our_sql,state)
-
-    if results is not None:
-        for row in results:
-            puts(colored.green(row))
-    else:
-        puts(colored.blue('no results found'))
+    for row in cursor:
+        print(row)
 else:
     puts(colored.red('Unable to connect to db'))
-
 
 

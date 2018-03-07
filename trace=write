@@ -1,0 +1,2303 @@
+execve("/home/martinb/Envs/GoogleAPI/bin/python", ["python", "src/qry.py", "-state", "AL"], [/* 110 vars */]) = 0
+brk(0)                                  = 0x28c5000
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1c2d1f9000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+open("/home/martinb/torch/t/distro/install/lib/tls/x86_64/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/martinb/torch/t/distro/install/lib/tls/x86_64", 0x7ffe8822aca0) = -1 ENOENT (No such file or directory)
+open("/home/martinb/torch/t/distro/install/lib/tls/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/martinb/torch/t/distro/install/lib/tls", 0x7ffe8822aca0) = -1 ENOENT (No such file or directory)
+open("/home/martinb/torch/t/distro/install/lib/x86_64/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/martinb/torch/t/distro/install/lib/x86_64", 0x7ffe8822aca0) = -1 ENOENT (No such file or directory)
+open("/home/martinb/torch/t/distro/install/lib/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/martinb/torch/t/distro/install/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+open("/usr/include/tls/x86_64/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/usr/include/tls/x86_64", 0x7ffe8822aca0) = -1 ENOENT (No such file or directory)
+open("/usr/include/tls/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/usr/include/tls", 0x7ffe8822aca0) = -1 ENOENT (No such file or directory)
+open("/usr/include/x86_64/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/usr/include/x86_64", 0x7ffe8822aca0) = -1 ENOENT (No such file or directory)
+open("/usr/include/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/usr/include", {st_mode=S_IFDIR|0755, st_size=24576, ...}) = 0
+open("/home/martinb/Downloads/cuda/tls/x86_64/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/martinb/Downloads/cuda/tls/x86_64", 0x7ffe8822aca0) = -1 ENOENT (No such file or directory)
+open("/home/martinb/Downloads/cuda/tls/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/martinb/Downloads/cuda/tls", 0x7ffe8822aca0) = -1 ENOENT (No such file or directory)
+open("/home/martinb/Downloads/cuda/x86_64/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/martinb/Downloads/cuda/x86_64", 0x7ffe8822aca0) = -1 ENOENT (No such file or directory)
+open("/home/martinb/Downloads/cuda/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/martinb/Downloads/cuda", 0x7ffe8822aca0) = -1 ENOENT (No such file or directory)
+open("/home/martinb/Downloads/cuda/lib64/tls/x86_64/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/martinb/Downloads/cuda/lib64/tls/x86_64", 0x7ffe8822aca0) = -1 ENOENT (No such file or directory)
+open("/home/martinb/Downloads/cuda/lib64/tls/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/martinb/Downloads/cuda/lib64/tls", 0x7ffe8822aca0) = -1 ENOENT (No such file or directory)
+open("/home/martinb/Downloads/cuda/lib64/x86_64/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/martinb/Downloads/cuda/lib64/x86_64", 0x7ffe8822aca0) = -1 ENOENT (No such file or directory)
+open("/home/martinb/Downloads/cuda/lib64/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+stat("/home/martinb/Downloads/cuda/lib64", 0x7ffe8822aca0) = -1 ENOENT (No such file or directory)
+open("home/martinb/Downloads/cuda/include/tls/x86_64/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("home/martinb/Downloads/cuda/include/tls/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("home/martinb/Downloads/cuda/include/x86_64/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("home/martinb/Downloads/cuda/include/libpthread.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=207124, ...}) = 0
+mmap(NULL, 207124, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f1c2d1c6000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libpthread.so.0", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0po\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=141574, ...}) = 0
+mmap(NULL, 2217264, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f1c2cdba000
+mprotect(0x7f1c2cdd3000, 2093056, PROT_NONE) = 0
+mmap(0x7f1c2cfd2000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x18000) = 0x7f1c2cfd2000
+mmap(0x7f1c2cfd4000, 13616, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f1c2cfd4000
+close(3)                                = 0
+open("/home/martinb/torch/t/distro/install/lib/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/usr/include/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("home/martinb/Downloads/cuda/include/tls/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("home/martinb/Downloads/cuda/include/tls/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("home/martinb/Downloads/cuda/include/x86_64/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("home/martinb/Downloads/cuda/include/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P \2\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=1857312, ...}) = 0
+mmap(NULL, 3965632, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f1c2c9f1000
+mprotect(0x7f1c2cbaf000, 2097152, PROT_NONE) = 0
+mmap(0x7f1c2cdaf000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1be000) = 0x7f1c2cdaf000
+mmap(0x7f1c2cdb5000, 17088, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f1c2cdb5000
+close(3)                                = 0
+open("/home/martinb/torch/t/distro/install/lib/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/usr/include/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("home/martinb/Downloads/cuda/include/tls/x86_64/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("home/martinb/Downloads/cuda/include/tls/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("home/martinb/Downloads/cuda/include/x86_64/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("home/martinb/Downloads/cuda/include/libdl.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libdl.so.2", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\320\16\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=14664, ...}) = 0
+mmap(NULL, 2109744, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f1c2c7ed000
+mprotect(0x7f1c2c7f0000, 2093056, PROT_NONE) = 0
+mmap(0x7f1c2c9ef000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f1c2c9ef000
+close(3)                                = 0
+open("/home/martinb/torch/t/distro/install/lib/libutil.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/usr/include/libutil.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("home/martinb/Downloads/cuda/include/tls/x86_64/libutil.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("home/martinb/Downloads/cuda/include/tls/libutil.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("home/martinb/Downloads/cuda/include/x86_64/libutil.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("home/martinb/Downloads/cuda/include/libutil.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libutil.so.1", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\20\17\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=10680, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1c2d1c5000
+mmap(NULL, 2105624, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f1c2c5ea000
+mprotect(0x7f1c2c5ec000, 2093056, PROT_NONE) = 0
+mmap(0x7f1c2c7eb000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1000) = 0x7f1c2c7eb000
+close(3)                                = 0
+open("/home/martinb/torch/t/distro/install/lib/libexpat.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/usr/include/libexpat.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("home/martinb/Downloads/cuda/include/tls/x86_64/libexpat.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("home/martinb/Downloads/cuda/include/tls/libexpat.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("home/martinb/Downloads/cuda/include/x86_64/libexpat.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("home/martinb/Downloads/cuda/include/libexpat.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libexpat.so.1", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0`;\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=170056, ...}) = 0
+mmap(NULL, 2265216, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f1c2c3c0000
+mprotect(0x7f1c2c3e7000, 2097152, PROT_NONE) = 0
+mmap(0x7f1c2c5e7000, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x27000) = 0x7f1c2c5e7000
+close(3)                                = 0
+open("/home/martinb/torch/t/distro/install/lib/libz.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/usr/include/libz.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("home/martinb/Downloads/cuda/include/tls/x86_64/libz.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("home/martinb/Downloads/cuda/include/tls/libz.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("home/martinb/Downloads/cuda/include/x86_64/libz.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("home/martinb/Downloads/cuda/include/libz.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libz.so.1", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\36\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=100728, ...}) = 0
+mmap(NULL, 2195784, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f1c2c1a7000
+mprotect(0x7f1c2c1bf000, 2093056, PROT_NONE) = 0
+mmap(0x7f1c2c3be000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x17000) = 0x7f1c2c3be000
+close(3)                                = 0
+open("/home/martinb/torch/t/distro/install/lib/libm.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/usr/include/libm.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("home/martinb/Downloads/cuda/include/tls/x86_64/libm.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("home/martinb/Downloads/cuda/include/tls/libm.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("home/martinb/Downloads/cuda/include/x86_64/libm.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("home/martinb/Downloads/cuda/include/libm.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\20V\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=1071552, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1c2d1c4000
+mmap(NULL, 3166568, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f1c2bea1000
+mprotect(0x7f1c2bfa6000, 2093056, PROT_NONE) = 0
+mmap(0x7f1c2c1a5000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x104000) = 0x7f1c2c1a5000
+close(3)                                = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1c2d1c3000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1c2d1c1000
+arch_prctl(ARCH_SET_FS, 0x7f1c2d1c1740) = 0
+mprotect(0x7f1c2cdaf000, 16384, PROT_READ) = 0
+mprotect(0x7f1c2c1a5000, 4096, PROT_READ) = 0
+mprotect(0x7f1c2c3be000, 4096, PROT_READ) = 0
+mprotect(0x7f1c2c5e7000, 8192, PROT_READ) = 0
+mprotect(0x7f1c2c7eb000, 4096, PROT_READ) = 0
+mprotect(0x7f1c2c9ef000, 4096, PROT_READ) = 0
+mprotect(0x7f1c2cfd2000, 4096, PROT_READ) = 0
+mprotect(0x8fe000, 4096, PROT_READ)     = 0
+mprotect(0x7f1c2d1fa000, 4096, PROT_READ) = 0
+munmap(0x7f1c2d1c6000, 207124)          = 0
+set_tid_address(0x7f1c2d1c1a10)         = 32165
+set_robust_list(0x7f1c2d1c1a20, 24)     = 0
+futex(0x7ffe8822b4e0, FUTEX_WAIT_BITSET_PRIVATE|FUTEX_CLOCK_REALTIME, 1, NULL, 7f1c2d1c1740) = -1 EAGAIN (Resource temporarily unavailable)
+rt_sigaction(SIGRTMIN, {0x7f1c2cdc09f0, [], SA_RESTORER|SA_SIGINFO, 0x7f1c2cdca330}, NULL, 8) = 0
+rt_sigaction(SIGRT_1, {0x7f1c2cdc0a80, [], SA_RESTORER|SA_RESTART|SA_SIGINFO, 0x7f1c2cdca330}, NULL, 8) = 0
+rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
+getrlimit(RLIMIT_STACK, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+brk(0)                                  = 0x28c5000
+brk(0x28e6000)                          = 0x28e6000
+open("/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=2924352, ...}) = 0
+mmap(NULL, 2924352, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f1c2bbd7000
+close(3)                                = 0
+open("/usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache", O_RDONLY) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=26258, ...}) = 0
+mmap(NULL, 26258, PROT_READ, MAP_SHARED, 3, 0) = 0x7f1c2d1f2000
+close(3)                                = 0
+futex(0x7f1c2cdb4a70, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+open("/dev/urandom", O_RDONLY|O_CLOEXEC) = 3
+fcntl(3, F_GETFD)                       = 0x1 (flags FD_CLOEXEC)
+read(3, "*\6\253h\303/\316\367\200\276\307\2249r<\254\250\177Y\10\333:\25\27", 24) = 24
+close(3)                                = 0
+ioctl(0, SNDCTL_TMR_TIMEBASE or SNDRV_TIMER_IOCTL_NEXT_DEVICE or TCGETS, {B38400 opost isig icanon echo ...}) = 0
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1c2d181000
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1c2d141000
+brk(0x2908000)                          = 0x2908000
+fstat(0, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 9), ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/bin/python", {st_mode=S_IFREG|0755, st_size=3714088, ...}) = 0
+readlink("/home/martinb/Envs/GoogleAPI/bin/python", "python3", 4096) = 7
+readlink("/home/martinb/Envs/GoogleAPI/bin/python3", 0x7ffe882181f0, 4096) = -1 EINVAL (Invalid argument)
+open("/home/martinb/Envs/GoogleAPI/bin/pyvenv.cfg", O_RDONLY) = -1 ENOENT (No such file or directory)
+open("/home/martinb/Envs/GoogleAPI/pyvenv.cfg", O_RDONLY) = -1 ENOENT (No such file or directory)
+stat("/home/martinb/Envs/GoogleAPI/bin/Modules/Setup", 0x7ffe88219180) = -1 ENOENT (No such file or directory)
+stat("/home/martinb/Envs/GoogleAPI/bin/lib/python3.4/os.py", 0x7ffe88219170) = -1 ENOENT (No such file or directory)
+stat("/home/martinb/Envs/GoogleAPI/bin/lib/python3.4/os.pyc", 0x7ffe88219170) = -1 ENOENT (No such file or directory)
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/os.py", {st_mode=S_IFREG|0644, st_size=33763, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/bin/pybuilddir.txt", 0x7ffe88219180) = -1 ENOENT (No such file or directory)
+stat("/home/martinb/Envs/GoogleAPI/bin/lib/python3.4/lib-dynload", 0x7ffe88219180) = -1 ENOENT (No such file or directory)
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1c2d101000
+brk(0x2929000)                          = 0x2929000
+open("/proc/meminfo", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1c2d1f1000
+read(3, "MemTotal:        8112492 kB\nMemF"..., 1024) = 1024
+close(3)                                = 0
+munmap(0x7f1c2d1f1000, 4096)            = 0
+brk(0x294d000)                          = 0x294d000
+sigaltstack({ss_sp=0x28f81f0, ss_flags=0, ss_size=8192}, NULL) = 0
+stat("/usr/local/lib/python2.7/site-packages", {st_mode=S_IFDIR|S_ISGID|0775, st_size=4096, ...}) = 0
+stat("/usr/local/lib/python2.7/site-packages", {st_mode=S_IFDIR|S_ISGID|0775, st_size=4096, ...}) = 0
+stat("/usr/local/lib/python2.7/site-packages", {st_mode=S_IFDIR|S_ISGID|0775, st_size=4096, ...}) = 0
+openat(AT_FDCWD, "/usr/local/lib/python2.7/site-packages", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 3
+getdents(3, /* 2 entries */, 32768)     = 48
+getdents(3, /* 0 entries */, 32768)     = 0
+close(3)                                = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+openat(AT_FDCWD, "/home/martinb/Envs/GoogleAPI/lib/python3.4/", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 3
+getdents(3, /* 57 entries */, 32768)    = 1944
+getdents(3, /* 0 entries */, 32768)     = 0
+close(3)                                = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/encodings/__init__.cpython-34m-x86_64-linux-gnu.so", 0x7ffe88229eb0) = -1 ENOENT (No such file or directory)
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/encodings/__init__.cpython-34m.so", 0x7ffe88229eb0) = -1 ENOENT (No such file or directory)
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/encodings/__init__.abi3.so", 0x7ffe88229eb0) = -1 ENOENT (No such file or directory)
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/encodings/__init__.so", 0x7ffe88229eb0) = -1 ENOENT (No such file or directory)
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/encodings/__init__.py", {st_mode=S_IFREG|0644, st_size=5067, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/encodings/__init__.py", {st_mode=S_IFREG|0644, st_size=5067, ...}) = 0
+open("/home/martinb/Envs/GoogleAPI/lib/python3.4/encodings/__pycache__/__init__.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=3858, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=3858, ...}) = 0
+read(3, "\356\f\r\n\302\245\35Z\313\23\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\5\0\0\0@\0\0"..., 3859) = 3858
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/usr/local/lib/python2.7/site-packages", {st_mode=S_IFDIR|S_ISGID|0775, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/codecs.py", {st_mode=S_IFREG|0644, st_size=35922, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/codecs.py", {st_mode=S_IFREG|0644, st_size=35922, ...}) = 0
+open("/home/martinb/Envs/GoogleAPI/lib/python3.4/__pycache__/codecs.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=35149, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=35149, ...}) = 0
+read(3, "\356\f\r\n\276\245\35ZR\214\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0009\0\0\0@\0\0"..., 35150) = 35149
+read(3, "", 1)                          = 0
+close(3)                                = 0
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1c2d0c1000
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/encodings", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/encodings", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/encodings", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+openat(AT_FDCWD, "/home/martinb/Envs/GoogleAPI/lib/python3.4/encodings", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 3
+getdents(3, /* 125 entries */, 32768)   = 4240
+getdents(3, /* 0 entries */, 32768)     = 0
+close(3)                                = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/encodings/aliases.py", {st_mode=S_IFREG|0644, st_size=15414, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/encodings/aliases.py", {st_mode=S_IFREG|0644, st_size=15414, ...}) = 0
+open("/home/martinb/Envs/GoogleAPI/lib/python3.4/encodings/__pycache__/aliases.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=7807, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=7807, ...}) = 0
+read(3, "\356\f\r\n\302\245\35Z6<\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\3\0\0\0@\0\0"..., 7808) = 7807
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/encodings", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/encodings/utf_8.py", {st_mode=S_IFREG|0644, st_size=1005, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/encodings/utf_8.py", {st_mode=S_IFREG|0644, st_size=1005, ...}) = 0
+open("/home/martinb/Envs/GoogleAPI/lib/python3.4/encodings/__pycache__/utf_8.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=1694, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=1694, ...}) = 0
+read(3, "\356\f\r\n\302\245\35Z\355\3\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\4\0\0\0@\0\0"..., 1695) = 1694
+read(3, "", 1)                          = 0
+close(3)                                = 0
+rt_sigaction(SIGPIPE, {SIG_IGN, [], SA_RESTORER, 0x7f1c2cdca330}, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGXFSZ, {SIG_IGN, [], SA_RESTORER, 0x7f1c2cdca330}, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGHUP, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGINT, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGQUIT, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGILL, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGTRAP, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGABRT, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGBUS, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGFPE, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGKILL, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGUSR1, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGSEGV, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGUSR2, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGPIPE, NULL, {SIG_IGN, [], SA_RESTORER, 0x7f1c2cdca330}, 8) = 0
+rt_sigaction(SIGALRM, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGTERM, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGSTKFLT, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGCHLD, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGCONT, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGSTOP, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGTSTP, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGTTIN, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGTTOU, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGURG, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGXCPU, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGXFSZ, NULL, {SIG_IGN, [], SA_RESTORER, 0x7f1c2cdca330}, 8) = 0
+rt_sigaction(SIGVTALRM, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGPROF, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGWINCH, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGIO, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGPWR, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGSYS, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_2, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_3, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_4, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_5, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_6, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_7, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_8, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_9, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_10, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_11, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_12, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_13, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_14, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_15, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_16, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_17, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_18, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_19, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_20, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_21, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_22, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_23, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_24, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_25, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_26, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_27, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_28, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_29, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_30, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_31, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGRT_32, NULL, {SIG_DFL, [], 0}, 8) = 0
+rt_sigaction(SIGINT, {0x46e121, [], SA_RESTORER, 0x7f1c2cdca330}, {SIG_DFL, [], 0}, 8) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/encodings", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/encodings/latin_1.py", {st_mode=S_IFREG|0644, st_size=1264, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/encodings/latin_1.py", {st_mode=S_IFREG|0644, st_size=1264, ...}) = 0
+open("/home/martinb/Envs/GoogleAPI/lib/python3.4/encodings/__pycache__/latin_1.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=2006, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=2006, ...}) = 0
+read(3, "\356\f\r\n\302\245\35Z\360\4\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\5\0\0\0@\0\0"..., 2007) = 2006
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/usr/local/lib/python2.7/site-packages", {st_mode=S_IFDIR|S_ISGID|0775, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/io.py", {st_mode=S_IFREG|0644, st_size=3395, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/io.py", {st_mode=S_IFREG|0644, st_size=3395, ...}) = 0
+open("/home/martinb/Envs/GoogleAPI/lib/python3.4/__pycache__/io.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=3466, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=3466, ...}) = 0
+read(3, "\356\f\r\n\276\245\35ZC\r\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\22\0\0\0@\0\0"..., 3467) = 3466
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/usr/local/lib/python2.7/site-packages", {st_mode=S_IFDIR|S_ISGID|0775, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/abc.py", {st_mode=S_IFREG|0644, st_size=8624, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/abc.py", {st_mode=S_IFREG|0644, st_size=8624, ...}) = 0
+open("/home/martinb/Envs/GoogleAPI/lib/python3.4/__pycache__/abc.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=7886, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=7886, ...}) = 0
+brk(0x296e000)                          = 0x296e000
+read(3, "\356\f\r\n\276\245\35Z\260!\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\5\0\0\0@\0\0"..., 7887) = 7886
+read(3, "", 1)                          = 0
+close(3)                                = 0
+brk(0x296c000)                          = 0x296c000
+stat("/usr/local/lib/python2.7/site-packages", {st_mode=S_IFDIR|S_ISGID|0775, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/_weakrefset.py", {st_mode=S_IFREG|0644, st_size=5705, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/_weakrefset.py", {st_mode=S_IFREG|0644, st_size=5705, ...}) = 0
+open("/home/martinb/Envs/GoogleAPI/lib/python3.4/__pycache__/_weakrefset.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=8474, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=8474, ...}) = 0
+read(3, "\356\f\r\n\276\245\35ZI\26\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\3\0\0\0@\0\0"..., 8475) = 8474
+read(3, "", 1)                          = 0
+close(3)                                = 0
+dup(0)                                  = 3
+close(3)                                = 0
+fstat(0, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 9), ...}) = 0
+fstat(0, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 9), ...}) = 0
+ioctl(0, SNDCTL_TMR_TIMEBASE or SNDRV_TIMER_IOCTL_NEXT_DEVICE or TCGETS, {B38400 opost isig icanon echo ...}) = 0
+fstat(0, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 9), ...}) = 0
+lseek(0, 0, SEEK_CUR)                   = -1 ESPIPE (Illegal seek)
+ioctl(0, SNDCTL_TMR_TIMEBASE or SNDRV_TIMER_IOCTL_NEXT_DEVICE or TCGETS, {B38400 opost isig icanon echo ...}) = 0
+ioctl(0, SNDCTL_TMR_TIMEBASE or SNDRV_TIMER_IOCTL_NEXT_DEVICE or TCGETS, {B38400 opost isig icanon echo ...}) = 0
+lseek(0, 0, SEEK_CUR)                   = -1 ESPIPE (Illegal seek)
+dup(1)                                  = 3
+close(3)                                = 0
+fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 9), ...}) = 0
+fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 9), ...}) = 0
+ioctl(1, SNDCTL_TMR_TIMEBASE or SNDRV_TIMER_IOCTL_NEXT_DEVICE or TCGETS, {B38400 opost isig icanon echo ...}) = 0
+fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 9), ...}) = 0
+lseek(1, 0, SEEK_CUR)                   = -1 ESPIPE (Illegal seek)
+ioctl(1, SNDCTL_TMR_TIMEBASE or SNDRV_TIMER_IOCTL_NEXT_DEVICE or TCGETS, {B38400 opost isig icanon echo ...}) = 0
+ioctl(1, SNDCTL_TMR_TIMEBASE or SNDRV_TIMER_IOCTL_NEXT_DEVICE or TCGETS, {B38400 opost isig icanon echo ...}) = 0
+lseek(1, 0, SEEK_CUR)                   = -1 ESPIPE (Illegal seek)
+dup(2)                                  = 3
+close(3)                                = 0
+fstat(2, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 9), ...}) = 0
+fstat(2, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 9), ...}) = 0
+ioctl(2, SNDCTL_TMR_TIMEBASE or SNDRV_TIMER_IOCTL_NEXT_DEVICE or TCGETS, {B38400 opost isig icanon echo ...}) = 0
+fstat(2, {st_mode=S_IFCHR|0620, st_rdev=makedev(136, 9), ...}) = 0
+lseek(2, 0, SEEK_CUR)                   = -1 ESPIPE (Illegal seek)
+ioctl(2, SNDCTL_TMR_TIMEBASE or SNDRV_TIMER_IOCTL_NEXT_DEVICE or TCGETS, {B38400 opost isig icanon echo ...}) = 0
+ioctl(2, SNDCTL_TMR_TIMEBASE or SNDRV_TIMER_IOCTL_NEXT_DEVICE or TCGETS, {B38400 opost isig icanon echo ...}) = 0
+lseek(2, 0, SEEK_CUR)                   = -1 ESPIPE (Illegal seek)
+stat("/usr/local/lib/python2.7/site-packages", {st_mode=S_IFDIR|S_ISGID|0775, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site.py", {st_mode=S_IFREG|0644, st_size=27543, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site.py", {st_mode=S_IFREG|0644, st_size=27543, ...}) = 0
+open("/home/martinb/Envs/GoogleAPI/lib/python3.4/__pycache__/site.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=22627, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=22627, ...}) = 0
+read(3, "\356\f\r\n\"\210\232Z\227k\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\24\0\0\0@\0\0"..., 22628) = 22627
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/usr/local/lib/python2.7/site-packages", {st_mode=S_IFDIR|S_ISGID|0775, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/os.py", {st_mode=S_IFREG|0644, st_size=33763, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/os.py", {st_mode=S_IFREG|0644, st_size=33763, ...}) = 0
+open("/home/martinb/Envs/GoogleAPI/lib/python3.4/__pycache__/os.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=29667, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=29667, ...}) = 0
+read(3, "\356\f\r\n\276\245\35Z\343\203\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0000\0\0\0@\0\0"..., 29668) = 29667
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/usr/local/lib/python2.7/site-packages", {st_mode=S_IFDIR|S_ISGID|0775, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/stat.py", {st_mode=S_IFREG|0644, st_size=4400, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/stat.py", {st_mode=S_IFREG|0644, st_size=4400, ...}) = 0
+open("/home/martinb/Envs/GoogleAPI/lib/python3.4/__pycache__/stat.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=3587, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=3587, ...}) = 0
+read(3, "\356\f\r\n\276\245\35Z0\21\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\r\0\0\0@\0\0"..., 3588) = 3587
+read(3, "", 1)                          = 0
+close(3)                                = 0
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1c2d081000
+stat("/usr/local/lib/python2.7/site-packages", {st_mode=S_IFDIR|S_ISGID|0775, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/posixpath.py", {st_mode=S_IFREG|0644, st_size=13448, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/posixpath.py", {st_mode=S_IFREG|0644, st_size=13448, ...}) = 0
+open("/home/martinb/Envs/GoogleAPI/lib/python3.4/__pycache__/posixpath.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=9818, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=9818, ...}) = 0
+brk(0x298d000)                          = 0x298d000
+read(3, "\356\f\r\n\276\245\35Z\2104\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0%\0\0\0@\0\0"..., 9819) = 9818
+read(3, "", 1)                          = 0
+close(3)                                = 0
+brk(0x298b000)                          = 0x298b000
+stat("/usr/local/lib/python2.7/site-packages", {st_mode=S_IFDIR|S_ISGID|0775, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/genericpath.py", {st_mode=S_IFREG|0644, st_size=3882, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/genericpath.py", {st_mode=S_IFREG|0644, st_size=3882, ...}) = 0
+open("/home/martinb/Envs/GoogleAPI/lib/python3.4/__pycache__/genericpath.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=3502, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=3502, ...}) = 0
+read(3, "\356\f\r\n\276\245\35Z*\17\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\v\0\0\0@\0\0"..., 3503) = 3502
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/usr/local/lib/python2.7/site-packages", {st_mode=S_IFDIR|S_ISGID|0775, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/_collections_abc.py", {st_mode=S_IFREG|0644, st_size=19898, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/_collections_abc.py", {st_mode=S_IFREG|0644, st_size=19898, ...}) = 0
+open("/home/martinb/Envs/GoogleAPI/lib/python3.4/__pycache__/_collections_abc.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=23958, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=23958, ...}) = 0
+read(3, "\356\f\r\n\276\245\35Z\272M\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\21\0\0\0@\0\0"..., 23959) = 23958
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/usr/local/lib/python2.7/site-packages", {st_mode=S_IFDIR|S_ISGID|0775, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/plat-x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/plat-x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/plat-x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+openat(AT_FDCWD, "/home/martinb/Envs/GoogleAPI/lib/python3.4/plat-x86_64-linux-gnu", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 3
+getdents(3, /* 8 entries */, 32768)     = 248
+getdents(3, /* 0 entries */, 32768)     = 0
+close(3)                                = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+openat(AT_FDCWD, "/home/martinb/Envs/GoogleAPI/lib/python3.4/lib-dynload", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 3
+getdents(3, /* 40 entries */, 32768)    = 2472
+getdents(3, /* 0 entries */, 32768)     = 0
+close(3)                                = 0
+open("/home/martinb/Envs/GoogleAPI/lib/python3.4/orig-prefix.txt", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=4, ...}) = 0
+ioctl(3, SNDCTL_TMR_TIMEBASE or SNDRV_TIMER_IOCTL_NEXT_DEVICE or TCGETS, 0x7ffe88229d60) = -1 ENOTTY (Inappropriate ioctl for device)
+fstat(3, {st_mode=S_IFREG|0644, st_size=4, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+ioctl(3, SNDCTL_TMR_TIMEBASE or SNDRV_TIMER_IOCTL_NEXT_DEVICE or TCGETS, 0x7ffe88229c20) = -1 ENOTTY (Inappropriate ioctl for device)
+stat("/usr/local/lib/python2.7/site-packages", {st_mode=S_IFDIR|S_ISGID|0775, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/_bootlocale.py", {st_mode=S_IFREG|0644, st_size=1301, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/_bootlocale.py", {st_mode=S_IFREG|0644, st_size=1301, ...}) = 0
+open("/home/martinb/Envs/GoogleAPI/lib/python3.4/__pycache__/_bootlocale.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=1056, ...}) = 0
+lseek(4, 0, SEEK_CUR)                   = 0
+fstat(4, {st_mode=S_IFREG|0644, st_size=1056, ...}) = 0
+read(4, "\356\f\r\n\276\245\35Z\25\5\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\v\0\0\0@\0\0"..., 1057) = 1056
+read(4, "", 1)                          = 0
+close(4)                                = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=4, ...}) = 0
+read(3, "/usr", 5)                      = 4
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/usr/lib64/python3.4", 0x7ffe88229ec0) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/python3.4/plat-x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/usr/lib/python3.4/lib-tk", 0x7ffe88229ec0) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/python3.4/plat-x86_64-linux-gnu/lib-tk", 0x7ffe88229ec0) = -1 ENOENT (No such file or directory)
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/no-global-site-packages.txt", {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/local/lib64/python3.4/site-packages", 0x7ffe88229e20) = -1 ENOENT (No such file or directory)
+stat("/home/martinb/Envs/GoogleAPI/local/lib/python3.4/site-packages", 0x7ffe88229e20) = -1 ENOENT (No such file or directory)
+stat("/home/martinb/Envs/GoogleAPI/local/lib/site-python", 0x7ffe88229e20) = -1 ENOENT (No such file or directory)
+stat("/home/martinb/Envs/GoogleAPI/local/python3.4/lib-dynload", 0x7ffe88229e20) = -1 ENOENT (No such file or directory)
+stat("/home/martinb/Envs/GoogleAPI/local/local/lib/python3.4/dist-packages", 0x7ffe88229e20) = -1 ENOENT (No such file or directory)
+stat("/home/martinb/Envs/GoogleAPI/local/lib/python3/dist-packages", 0x7ffe88229e20) = -1 ENOENT (No such file or directory)
+stat("/home/martinb/Envs/GoogleAPI/local/lib/dist-python", 0x7ffe88229e20) = -1 ENOENT (No such file or directory)
+stat("/home/martinb/Envs/GoogleAPI/lib64/python3.4/site-packages", 0x7ffe88229e20) = -1 ENOENT (No such file or directory)
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+openat(AT_FDCWD, "/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 3
+getdents(3, /* 127 entries */, 32768)   = 5264
+getdents(3, /* 0 entries */, 32768)     = 0
+close(3)                                = 0
+open("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/configparser-3.5.0-py3.4-nspkg.pth", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=554, ...}) = 0
+ioctl(3, SNDCTL_TMR_TIMEBASE or SNDRV_TIMER_IOCTL_NEXT_DEVICE or TCGETS, 0x7ffe88229980) = -1 ENOTTY (Inappropriate ioctl for device)
+fstat(3, {st_mode=S_IFREG|0644, st_size=554, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+ioctl(3, SNDCTL_TMR_TIMEBASE or SNDRV_TIMER_IOCTL_NEXT_DEVICE or TCGETS, 0x7ffe88229840) = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+read(3, "import sys, types, os;has_mfs = "..., 8192) = 554
+brk(0x29ac000)                          = 0x29ac000
+stat("/usr/local/lib/python2.7/site-packages", {st_mode=S_IFDIR|S_ISGID|0775, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+openat(AT_FDCWD, "/home/martinb/Envs/GoogleAPI/lib/python3.4", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 4
+getdents(4, /* 57 entries */, 32768)    = 1944
+getdents(4, /* 0 entries */, 32768)     = 0
+close(4)                                = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/types.py", {st_mode=S_IFREG|0644, st_size=5360, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/types.py", {st_mode=S_IFREG|0644, st_size=5360, ...}) = 0
+open("/home/martinb/Envs/GoogleAPI/lib/python3.4/__pycache__/types.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=5389, ...}) = 0
+lseek(4, 0, SEEK_CUR)                   = 0
+fstat(4, {st_mode=S_IFREG|0644, st_size=5389, ...}) = 0
+read(4, "\356\f\r\n\276\245\35Z\360\24\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\r\0\0\0@\0\0"..., 5390) = 5389
+read(4, "", 1)                          = 0
+close(4)                                = 0
+mmap(NULL, 200704, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1c2d050000
+read(3, "", 8192)                       = 0
+close(3)                                = 0
+open("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/google_api_core-1.0.0-py2.7-nspkg.pth", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=539, ...}) = 0
+ioctl(3, SNDCTL_TMR_TIMEBASE or SNDRV_TIMER_IOCTL_NEXT_DEVICE or TCGETS, 0x7ffe88229980) = -1 ENOTTY (Inappropriate ioctl for device)
+fstat(3, {st_mode=S_IFREG|0644, st_size=539, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+ioctl(3, SNDCTL_TMR_TIMEBASE or SNDRV_TIMER_IOCTL_NEXT_DEVICE or TCGETS, 0x7ffe88229840) = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+read(3, "import sys, types, os;has_mfs = "..., 8192) = 539
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1c2d010000
+munmap(0x7f1c2d010000, 262144)          = 0
+read(3, "", 8192)                       = 0
+close(3)                                = 0
+open("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/google_auth-1.4.1-py3.6-nspkg.pth", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=539, ...}) = 0
+ioctl(3, SNDCTL_TMR_TIMEBASE or SNDRV_TIMER_IOCTL_NEXT_DEVICE or TCGETS, 0x7ffe88229980) = -1 ENOTTY (Inappropriate ioctl for device)
+fstat(3, {st_mode=S_IFREG|0644, st_size=539, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+ioctl(3, SNDCTL_TMR_TIMEBASE or SNDRV_TIMER_IOCTL_NEXT_DEVICE or TCGETS, 0x7ffe88229840) = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+read(3, "import sys, types, os;has_mfs = "..., 8192) = 539
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1c2d010000
+munmap(0x7f1c2d010000, 262144)          = 0
+read(3, "", 8192)                       = 0
+close(3)                                = 0
+open("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/google_cloud_bigquery-0.31.0-py3.6-nspkg.pth", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=1134, ...}) = 0
+ioctl(3, SNDCTL_TMR_TIMEBASE or SNDRV_TIMER_IOCTL_NEXT_DEVICE or TCGETS, 0x7ffe88229980) = -1 ENOTTY (Inappropriate ioctl for device)
+fstat(3, {st_mode=S_IFREG|0644, st_size=1134, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+ioctl(3, SNDCTL_TMR_TIMEBASE or SNDRV_TIMER_IOCTL_NEXT_DEVICE or TCGETS, 0x7ffe88229840) = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+read(3, "import sys, types, os;pep420 = s"..., 8192) = 1134
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1c2d010000
+munmap(0x7f1c2d010000, 262144)          = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/google/__init__.py", 0x7ffe88229820) = -1 ENOENT (No such file or directory)
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1c2d010000
+munmap(0x7f1c2d010000, 262144)          = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/google/__init__.py", 0x7ffe88229820) = -1 ENOENT (No such file or directory)
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1c2d010000
+munmap(0x7f1c2d010000, 262144)          = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/google/cloud/__init__.py", 0x7ffe88229820) = -1 ENOENT (No such file or directory)
+read(3, "", 8192)                       = 0
+close(3)                                = 0
+open("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/google_cloud_core-0.28.1-py3.6-nspkg.pth", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=1134, ...}) = 0
+ioctl(3, SNDCTL_TMR_TIMEBASE or SNDRV_TIMER_IOCTL_NEXT_DEVICE or TCGETS, 0x7ffe88229980) = -1 ENOTTY (Inappropriate ioctl for device)
+fstat(3, {st_mode=S_IFREG|0644, st_size=1134, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+ioctl(3, SNDCTL_TMR_TIMEBASE or SNDRV_TIMER_IOCTL_NEXT_DEVICE or TCGETS, 0x7ffe88229840) = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+read(3, "import sys, types, os;pep420 = s"..., 8192) = 1134
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1c2d010000
+munmap(0x7f1c2d010000, 262144)          = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/google/__init__.py", 0x7ffe88229820) = -1 ENOENT (No such file or directory)
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1c2d010000
+munmap(0x7f1c2d010000, 262144)          = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/google/__init__.py", 0x7ffe88229820) = -1 ENOENT (No such file or directory)
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1c2d010000
+munmap(0x7f1c2d010000, 262144)          = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/google/cloud/__init__.py", 0x7ffe88229820) = -1 ENOENT (No such file or directory)
+read(3, "", 8192)                       = 0
+close(3)                                = 0
+open("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/google_resumable_media-0.3.1-py3.6-nspkg.pth", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=355, ...}) = 0
+ioctl(3, SNDCTL_TMR_TIMEBASE or SNDRV_TIMER_IOCTL_NEXT_DEVICE or TCGETS, 0x7ffe88229980) = -1 ENOTTY (Inappropriate ioctl for device)
+fstat(3, {st_mode=S_IFREG|0644, st_size=355, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+ioctl(3, SNDCTL_TMR_TIMEBASE or SNDRV_TIMER_IOCTL_NEXT_DEVICE or TCGETS, 0x7ffe88229840) = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+read(3, "import sys, types, os;pep420 = s"..., 8192) = 355
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1c2d010000
+munmap(0x7f1c2d010000, 262144)          = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/google/__init__.py", 0x7ffe88229820) = -1 ENOENT (No such file or directory)
+read(3, "", 8192)                       = 0
+close(3)                                = 0
+open("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/googleapis_common_protos-1.5.3-py3.4-nspkg.pth", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=1710, ...}) = 0
+ioctl(3, SNDCTL_TMR_TIMEBASE or SNDRV_TIMER_IOCTL_NEXT_DEVICE or TCGETS, 0x7ffe88229980) = -1 ENOTTY (Inappropriate ioctl for device)
+fstat(3, {st_mode=S_IFREG|0644, st_size=1710, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+ioctl(3, SNDCTL_TMR_TIMEBASE or SNDRV_TIMER_IOCTL_NEXT_DEVICE or TCGETS, 0x7ffe88229840) = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+read(3, "import sys, types, os;has_mfs = "..., 8192) = 1710
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1c2d010000
+munmap(0x7f1c2d010000, 262144)          = 0
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1c2d010000
+munmap(0x7f1c2d010000, 262144)          = 0
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1c2d010000
+munmap(0x7f1c2d010000, 262144)          = 0
+read(3, "", 8192)                       = 0
+close(3)                                = 0
+open("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/protobuf-3.5.1-py3.4-nspkg.pth", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=355, ...}) = 0
+ioctl(3, SNDCTL_TMR_TIMEBASE or SNDRV_TIMER_IOCTL_NEXT_DEVICE or TCGETS, 0x7ffe88229980) = -1 ENOTTY (Inappropriate ioctl for device)
+fstat(3, {st_mode=S_IFREG|0644, st_size=355, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+ioctl(3, SNDCTL_TMR_TIMEBASE or SNDRV_TIMER_IOCTL_NEXT_DEVICE or TCGETS, 0x7ffe88229840) = -1 ENOTTY (Inappropriate ioctl for device)
+lseek(3, 0, SEEK_CUR)                   = 0
+read(3, "import sys, types, os;pep420 = s"..., 8192) = 355
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1c2d010000
+munmap(0x7f1c2d010000, 262144)          = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/google/__init__.py", 0x7ffe88229820) = -1 ENOENT (No such file or directory)
+read(3, "", 8192)                       = 0
+close(3)                                = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/site-python", 0x7ffe88229e20) = -1 ENOENT (No such file or directory)
+stat("/home/martinb/Envs/GoogleAPI/python3.4/lib-dynload", 0x7ffe88229e20) = -1 ENOENT (No such file or directory)
+stat("/home/martinb/Envs/GoogleAPI/local/lib/python3.4/dist-packages", 0x7ffe88229e20) = -1 ENOENT (No such file or directory)
+stat("/home/martinb/Envs/GoogleAPI/lib/python3/dist-packages", 0x7ffe88229e20) = -1 ENOENT (No such file or directory)
+stat("/home/martinb/Envs/GoogleAPI/lib/dist-python", 0x7ffe88229e20) = -1 ENOENT (No such file or directory)
+stat("/usr/local/lib/python2.7/site-packages", {st_mode=S_IFDIR|S_ISGID|0775, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/plat-x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+stat("/usr/lib/python3.4", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+stat("/usr/lib/python3.4", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+stat("/usr/lib/python3.4", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+openat(AT_FDCWD, "/usr/lib/python3.4", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 3
+getdents(3, /* 200 entries */, 32768)   = 6640
+getdents(3, /* 0 entries */, 32768)     = 0
+close(3)                                = 0
+stat("/usr/lib/python3.4/sitecustomize.py", {st_mode=S_IFREG|0644, st_size=155, ...}) = 0
+stat("/usr/lib/python3.4/sitecustomize.py", {st_mode=S_IFREG|0644, st_size=155, ...}) = 0
+open("/usr/lib/python3.4/__pycache__/sitecustomize.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=217, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=217, ...}) = 0
+read(3, "\356\f\r\n\221\370GS\233\0\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\v\0\0\0@\0\0"..., 218) = 217
+read(3, "", 1)                          = 0
+close(3)                                = 0
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1c2d010000
+stat("/usr/local/lib/python2.7/site-packages", {st_mode=S_IFDIR|S_ISGID|0775, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/plat-x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+stat("/usr/lib/python3.4", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+stat("/usr/lib/python3.4/plat-x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/usr/lib/python3.4/plat-x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/usr/lib/python3.4/plat-x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+openat(AT_FDCWD, "/usr/lib/python3.4/plat-x86_64-linux-gnu", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 3
+getdents(3, /* 8 entries */, 32768)     = 248
+getdents(3, /* 0 entries */, 32768)     = 0
+close(3)                                = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+openat(AT_FDCWD, "/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 3
+getdents(3, /* 127 entries */, 32768)   = 5264
+getdents(3, /* 0 entries */, 32768)     = 0
+close(3)                                = 0
+readlink("src/qry.py", 0x7ffe8821a370, 4096) = -1 EINVAL (Invalid argument)
+getcwd("/home/martinb/src/git/jobthang/infectiousmedia/ETL_Google", 4096) = 58
+lstat("/home/martinb/src/git/jobthang/infectiousmedia/ETL_Google/src", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+lstat("/home/martinb/src/git/jobthang/infectiousmedia/ETL_Google/src/qry.py", {st_mode=S_IFREG|0644, st_size=1159, ...}) = 0
+stat("src/qry.py", {st_mode=S_IFREG|0644, st_size=1159, ...}) = 0
+open("src/qry.py", O_RDONLY)            = 3
+ioctl(3, FIOCLEX)                       = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=1159, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1c2d1f1000
+fstat(3, {st_mode=S_IFREG|0644, st_size=1159, ...}) = 0
+lseek(3, 0, SEEK_SET)                   = 0
+read(3, "import sys\nimport os\n\nfrom clint"..., 1137) = 1137
+read(3, "o connect to db'))\n\n\n\n", 4096) = 22
+close(3)                                = 0
+munmap(0x7f1c2d1f1000, 4096)            = 0
+stat("src/qry.py", {st_mode=S_IFREG|0644, st_size=1159, ...}) = 0
+open("src/qry.py", O_RDONLY)            = 3
+ioctl(3, FIOCLEX)                       = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=1159, ...}) = 0
+ioctl(3, SNDCTL_TMR_TIMEBASE or SNDRV_TIMER_IOCTL_NEXT_DEVICE or TCGETS, 0x7ffe8822b310) = -1 ENOTTY (Inappropriate ioctl for device)
+fstat(3, {st_mode=S_IFREG|0644, st_size=1159, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1c2d1f1000
+lseek(3, 0, SEEK_CUR)                   = 0
+read(3, "import sys\nimport os\n\nfrom clint"..., 4096) = 1159
+lseek(3, 1159, SEEK_SET)                = 1159
+read(3, "", 4096)                       = 0
+close(3)                                = 0
+munmap(0x7f1c2d1f1000, 4096)            = 0
+stat("/home/martinb/src/git/jobthang/infectiousmedia/ETL_Google/src", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/src/git/jobthang/infectiousmedia/ETL_Google/src", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/src/git/jobthang/infectiousmedia/ETL_Google/src", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+openat(AT_FDCWD, "/home/martinb/src/git/jobthang/infectiousmedia/ETL_Google/src", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 3
+getdents(3, /* 8 entries */, 32768)     = 240
+getdents(3, /* 0 entries */, 32768)     = 0
+close(3)                                = 0
+stat("/usr/local/lib/python2.7/site-packages", {st_mode=S_IFDIR|S_ISGID|0775, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/plat-x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+stat("/usr/lib/python3.4", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+stat("/usr/lib/python3.4/plat-x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint/__init__.cpython-34m-x86_64-linux-gnu.so", 0x7ffe88229630) = -1 ENOENT (No such file or directory)
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint/__init__.cpython-34m.so", 0x7ffe88229630) = -1 ENOENT (No such file or directory)
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint/__init__.abi3.so", 0x7ffe88229630) = -1 ENOENT (No such file or directory)
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint/__init__.so", 0x7ffe88229630) = -1 ENOENT (No such file or directory)
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint/__init__.py", {st_mode=S_IFREG|0644, st_size=618, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint/__init__.py", {st_mode=S_IFREG|0644, st_size=618, ...}) = 0
+open("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint/__pycache__/__init__.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=808, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=808, ...}) = 0
+read(3, "\356\f\r\n\215\355\235Zj\2\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\v\0\0\0@\0\0"..., 809) = 808
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/martinb/src/git/jobthang/infectiousmedia/ETL_Google/src", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/usr/local/lib/python2.7/site-packages", {st_mode=S_IFDIR|S_ISGID|0775, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/__future__.py", {st_mode=S_IFREG|0644, st_size=4584, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/__future__.py", {st_mode=S_IFREG|0644, st_size=4584, ...}) = 0
+open("/home/martinb/Envs/GoogleAPI/lib/python3.4/__pycache__/__future__.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=4180, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=4180, ...}) = 0
+read(3, "\356\f\r\n\276\245\35Z\350\21\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\10\0\0\0@\0\0"..., 4181) = 4180
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/martinb/src/git/jobthang/infectiousmedia/ETL_Google/src", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/usr/local/lib/python2.7/site-packages", {st_mode=S_IFDIR|S_ISGID|0775, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/collections/__init__.cpython-34m-x86_64-linux-gnu.so", 0x7ffe88228770) = -1 ENOENT (No such file or directory)
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/collections/__init__.cpython-34m.so", 0x7ffe88228770) = -1 ENOENT (No such file or directory)
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/collections/__init__.abi3.so", 0x7ffe88228770) = -1 ENOENT (No such file or directory)
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/collections/__init__.so", 0x7ffe88228770) = -1 ENOENT (No such file or directory)
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/collections/__init__.py", {st_mode=S_IFREG|0644, st_size=43029, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/collections/__init__.py", {st_mode=S_IFREG|0644, st_size=43029, ...}) = 0
+open("/home/martinb/Envs/GoogleAPI/lib/python3.4/collections/__pycache__/__init__.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=45433, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=45433, ...}) = 0
+read(3, "\356\f\r\n\302\245\35Z\25\250\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\f\0\0\0@\0\0"..., 45434) = 45433
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/martinb/src/git/jobthang/infectiousmedia/ETL_Google/src", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/usr/local/lib/python2.7/site-packages", {st_mode=S_IFDIR|S_ISGID|0775, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/operator.py", {st_mode=S_IFREG|0644, st_size=9195, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/operator.py", {st_mode=S_IFREG|0644, st_size=9195, ...}) = 0
+open("/home/martinb/Envs/GoogleAPI/lib/python3.4/__pycache__/operator.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=12787, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=12787, ...}) = 0
+read(3, "\356\f\r\n\276\245\35Z\353#\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0004\0\0\0@\0\0"..., 12788) = 12787
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/martinb/src/git/jobthang/infectiousmedia/ETL_Google/src", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/usr/local/lib/python2.7/site-packages", {st_mode=S_IFDIR|S_ISGID|0775, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/keyword.py", {st_mode=S_IFREG|0755, st_size=2209, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/keyword.py", {st_mode=S_IFREG|0755, st_size=2209, ...}) = 0
+open("/home/martinb/Envs/GoogleAPI/lib/python3.4/__pycache__/keyword.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=1955, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=1955, ...}) = 0
+read(3, "\356\f\r\n\360\245\35Z\241\10\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0!\0\0\0@\0\0"..., 1956) = 1955
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/martinb/src/git/jobthang/infectiousmedia/ETL_Google/src", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/usr/local/lib/python2.7/site-packages", {st_mode=S_IFDIR|S_ISGID|0775, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/heapq.py", {st_mode=S_IFREG|0644, st_size=17997, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/heapq.py", {st_mode=S_IFREG|0644, st_size=17997, ...}) = 0
+open("/home/martinb/Envs/GoogleAPI/lib/python3.4/__pycache__/heapq.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=13919, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=13919, ...}) = 0
+read(3, "\356\f\r\n\276\245\35ZMF\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\22\0\0\0@\0\0"..., 13920) = 13919
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/martinb/src/git/jobthang/infectiousmedia/ETL_Google/src", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/usr/local/lib/python2.7/site-packages", {st_mode=S_IFDIR|S_ISGID|0775, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/reprlib.py", {st_mode=S_IFREG|0644, st_size=5110, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/reprlib.py", {st_mode=S_IFREG|0644, st_size=5110, ...}) = 0
+open("/home/martinb/Envs/GoogleAPI/lib/python3.4/__pycache__/reprlib.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=5881, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=5881, ...}) = 0
+read(3, "\356\f\r\n\276\245\35Z\366\23\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\v\0\0\0@\0\0"..., 5882) = 5881
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+openat(AT_FDCWD, "/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 3
+getdents(3, /* 11 entries */, 32768)    = 336
+getdents(3, /* 0 entries */, 32768)     = 0
+close(3)                                = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint/arguments.py", {st_mode=S_IFREG|0644, st_size=8309, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint/arguments.py", {st_mode=S_IFREG|0644, st_size=8309, ...}) = 0
+open("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint/__pycache__/arguments.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=8799, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=8799, ...}) = 0
+read(3, "\356\f\r\n\215\355\235Zu \0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\f\0\0\0@\0\0"..., 8800) = 8799
+read(3, "", 1)                          = 0
+close(3)                                = 0
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1c2bb97000
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint/utils.py", {st_mode=S_IFREG|0644, st_size=1602, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint/utils.py", {st_mode=S_IFREG|0644, st_size=1602, ...}) = 0
+open("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint/__pycache__/utils.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=2119, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=2119, ...}) = 0
+read(3, "\356\f\r\n\215\355\235ZB\6\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\v\0\0\0@\0\0"..., 2120) = 2119
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/martinb/src/git/jobthang/infectiousmedia/ETL_Google/src", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/usr/local/lib/python2.7/site-packages", {st_mode=S_IFDIR|S_ISGID|0775, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/plat-x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+stat("/usr/lib/python3.4", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+stat("/usr/lib/python3.4/glob.py", {st_mode=S_IFREG|0644, st_size=3461, ...}) = 0
+stat("/usr/lib/python3.4/glob.py", {st_mode=S_IFREG|0644, st_size=3461, ...}) = 0
+open("/usr/lib/python3.4/__pycache__/glob.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=2865, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=2865, ...}) = 0
+read(3, "\356\f\r\n\276\245\35Z\205\r\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\2\0\0\0@\0\0"..., 2866) = 2865
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/martinb/src/git/jobthang/infectiousmedia/ETL_Google/src", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/usr/local/lib/python2.7/site-packages", {st_mode=S_IFDIR|S_ISGID|0775, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/re.py", {st_mode=S_IFREG|0644, st_size=15604, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/re.py", {st_mode=S_IFREG|0644, st_size=15604, ...}) = 0
+open("/home/martinb/Envs/GoogleAPI/lib/python3.4/__pycache__/re.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=14559, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=14559, ...}) = 0
+read(3, "\356\f\r\n\276\245\35Z\364<\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\"\0\0\0@\0\0"..., 14560) = 14559
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/martinb/src/git/jobthang/infectiousmedia/ETL_Google/src", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/usr/local/lib/python2.7/site-packages", {st_mode=S_IFDIR|S_ISGID|0775, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/sre_compile.py", {st_mode=S_IFREG|0644, st_size=19903, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/sre_compile.py", {st_mode=S_IFREG|0644, st_size=19903, ...}) = 0
+open("/home/martinb/Envs/GoogleAPI/lib/python3.4/__pycache__/sre_compile.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=11944, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=11944, ...}) = 0
+read(3, "\356\f\r\n\276\245\35Z\277M\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\21\0\0\0@\0\0"..., 11945) = 11944
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/martinb/src/git/jobthang/infectiousmedia/ETL_Google/src", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/usr/local/lib/python2.7/site-packages", {st_mode=S_IFDIR|S_ISGID|0775, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/sre_parse.py", {st_mode=S_IFREG|0644, st_size=30445, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/sre_parse.py", {st_mode=S_IFREG|0644, st_size=30445, ...}) = 0
+open("/home/martinb/Envs/GoogleAPI/lib/python3.4/__pycache__/sre_parse.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=19841, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=19841, ...}) = 0
+read(3, "\356\f\r\n\276\245\35Z\355v\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\4\0\0\0@\0\0"..., 19842) = 19841
+read(3, "", 1)                          = 0
+close(3)                                = 0
+brk(0x29cd000)                          = 0x29cd000
+brk(0x29cc000)                          = 0x29cc000
+stat("/home/martinb/src/git/jobthang/infectiousmedia/ETL_Google/src", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/usr/local/lib/python2.7/site-packages", {st_mode=S_IFDIR|S_ISGID|0775, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/sre_constants.py", {st_mode=S_IFREG|0644, st_size=7267, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/sre_constants.py", {st_mode=S_IFREG|0644, st_size=7267, ...}) = 0
+open("/home/martinb/Envs/GoogleAPI/lib/python3.4/__pycache__/sre_constants.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=5590, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=5590, ...}) = 0
+read(3, "\356\f\r\n\276\245\35Zc\34\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0 \0\0\0@\0\0"..., 5591) = 5590
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/martinb/src/git/jobthang/infectiousmedia/ETL_Google/src", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/usr/local/lib/python2.7/site-packages", {st_mode=S_IFDIR|S_ISGID|0775, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/copyreg.py", {st_mode=S_IFREG|0644, st_size=6833, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/copyreg.py", {st_mode=S_IFREG|0644, st_size=6833, ...}) = 0
+open("/home/martinb/Envs/GoogleAPI/lib/python3.4/__pycache__/copyreg.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=4616, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=4616, ...}) = 0
+read(3, "\356\f\r\n\276\245\35Z\261\32\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\f\0\0\0@\0\0"..., 4617) = 4616
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/martinb/src/git/jobthang/infectiousmedia/ETL_Google/src", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/usr/local/lib/python2.7/site-packages", {st_mode=S_IFDIR|S_ISGID|0775, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/fnmatch.py", {st_mode=S_IFREG|0644, st_size=3163, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/fnmatch.py", {st_mode=S_IFREG|0644, st_size=3163, ...}) = 0
+open("/home/martinb/Envs/GoogleAPI/lib/python3.4/__pycache__/fnmatch.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=3155, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=3155, ...}) = 0
+read(3, "\356\f\r\n\276\245\35Z[\f\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\5\0\0\0@\0\0"..., 3156) = 3155
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/martinb/src/git/jobthang/infectiousmedia/ETL_Google/src", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/usr/local/lib/python2.7/site-packages", {st_mode=S_IFDIR|S_ISGID|0775, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/functools.py", {st_mode=S_IFREG|0644, st_size=28507, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/functools.py", {st_mode=S_IFREG|0644, st_size=28507, ...}) = 0
+open("/home/martinb/Envs/GoogleAPI/lib/python3.4/__pycache__/functools.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=23617, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=23617, ...}) = 0
+read(3, "\356\f\r\n\276\245\35Z[o\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0&\0\0\0@\0\0"..., 23618) = 23617
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/martinb/src/git/jobthang/infectiousmedia/ETL_Google/src", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/usr/local/lib/python2.7/site-packages", {st_mode=S_IFDIR|S_ISGID|0775, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/weakref.py", {st_mode=S_IFREG|0644, st_size=18785, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/weakref.py", {st_mode=S_IFREG|0644, st_size=18785, ...}) = 0
+open("/home/martinb/Envs/GoogleAPI/lib/python3.4/__pycache__/weakref.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=19906, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=19906, ...}) = 0
+read(3, "\356\f\r\n\276\245\35ZaI\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\r\0\0\0@\0\0"..., 19907) = 19906
+read(3, "", 1)                          = 0
+close(3)                                = 0
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1c2bb57000
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint/textui/__init__.cpython-34m-x86_64-linux-gnu.so", 0x7ffe88228140) = -1 ENOENT (No such file or directory)
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint/textui/__init__.cpython-34m.so", 0x7ffe88228140) = -1 ENOENT (No such file or directory)
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint/textui/__init__.abi3.so", 0x7ffe88228140) = -1 ENOENT (No such file or directory)
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint/textui/__init__.so", 0x7ffe88228140) = -1 ENOENT (No such file or directory)
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint/textui/__init__.py", {st_mode=S_IFREG|0644, st_size=303, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint/textui/__init__.py", {st_mode=S_IFREG|0644, st_size=303, ...}) = 0
+open("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint/textui/__pycache__/__init__.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=506, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=506, ...}) = 0
+read(3, "\356\f\r\n\215\355\235Z/\1\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\2\0\0\0@\0\0"..., 507) = 506
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint/textui", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint/textui", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint/textui", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+openat(AT_FDCWD, "/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint/textui", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 3
+getdents(3, /* 11 entries */, 32768)    = 352
+getdents(3, /* 0 entries */, 32768)     = 0
+close(3)                                = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint/textui/colored.py", {st_mode=S_IFREG|0644, st_size=4260, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint/textui/colored.py", {st_mode=S_IFREG|0644, st_size=4260, ...}) = 0
+open("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint/textui/__pycache__/colored.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=5546, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=5546, ...}) = 0
+read(3, "\356\f\r\n\215\355\235Z\244\20\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\n\0\0\0@\0\0"..., 5547) = 5546
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint/packages/__init__.cpython-34m-x86_64-linux-gnu.so", 0x7ffe88225d90) = -1 ENOENT (No such file or directory)
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint/packages/__init__.cpython-34m.so", 0x7ffe88225d90) = -1 ENOENT (No such file or directory)
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint/packages/__init__.abi3.so", 0x7ffe88225d90) = -1 ENOENT (No such file or directory)
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint/packages/__init__.so", 0x7ffe88225d90) = -1 ENOENT (No such file or directory)
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint/packages/__init__.py", {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint/packages/__init__.py", {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+open("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint/packages/__pycache__/__init__.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=139, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=139, ...}) = 0
+read(3, "\356\f\r\n\215\355\235Z\0\0\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\1\0\0\0@\0\0"..., 140) = 139
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint/packages", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint/packages", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint/packages", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+openat(AT_FDCWD, "/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint/packages", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 3
+getdents(3, /* 7 entries */, 32768)     = 216
+getdents(3, /* 0 entries */, 32768)     = 0
+close(3)                                = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint/packages/colorama/__init__.cpython-34m-x86_64-linux-gnu.so", 0x7ffe88225760) = -1 ENOENT (No such file or directory)
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint/packages/colorama/__init__.cpython-34m.so", 0x7ffe88225760) = -1 ENOENT (No such file or directory)
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint/packages/colorama/__init__.abi3.so", 0x7ffe88225760) = -1 ENOENT (No such file or directory)
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint/packages/colorama/__init__.so", 0x7ffe88225760) = -1 ENOENT (No such file or directory)
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint/packages/colorama/__init__.py", {st_mode=S_IFREG|0644, st_size=138, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint/packages/colorama/__init__.py", {st_mode=S_IFREG|0644, st_size=138, ...}) = 0
+open("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint/packages/colorama/__pycache__/__init__.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=376, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=376, ...}) = 0
+read(3, "\356\f\r\n\215\355\235Z\212\0\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\2\0\0\0@\0\0"..., 377) = 376
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint/packages/colorama", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint/packages/colorama", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint/packages/colorama", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+openat(AT_FDCWD, "/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint/packages/colorama", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 3
+getdents(3, /* 9 entries */, 32768)     = 288
+getdents(3, /* 0 entries */, 32768)     = 0
+close(3)                                = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint/packages/colorama/initialise.py", {st_mode=S_IFREG|0644, st_size=1277, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint/packages/colorama/initialise.py", {st_mode=S_IFREG|0644, st_size=1277, ...}) = 0
+open("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint/packages/colorama/__pycache__/initialise.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=1461, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=1461, ...}) = 0
+read(3, "\356\f\r\n\215\355\235Z\375\4\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\6\0\0\0@\0\0"..., 1462) = 1461
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint/packages/colorama", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint/packages/colorama/ansitowin32.py", {st_mode=S_IFREG|0644, st_size=6479, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint/packages/colorama/ansitowin32.py", {st_mode=S_IFREG|0644, st_size=6479, ...}) = 0
+open("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint/packages/colorama/__pycache__/ansitowin32.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=6062, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=6062, ...}) = 0
+read(3, "\356\f\r\n\215\355\235ZO\31\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\4\0\0\0@\0\0"..., 6063) = 6062
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint/packages/colorama", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint/packages/colorama/ansi.py", {st_mode=S_IFREG|0644, st_size=1013, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint/packages/colorama/ansi.py", {st_mode=S_IFREG|0644, st_size=1013, ...}) = 0
+open("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint/packages/colorama/__pycache__/ansi.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=1771, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=1771, ...}) = 0
+read(3, "\356\f\r\n\215\355\235Z\365\3\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\4\0\0\0@\0\0"..., 1772) = 1771
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint/packages/colorama", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint/packages/colorama/winterm.py", {st_mode=S_IFREG|0644, st_size=3581, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint/packages/colorama/winterm.py", {st_mode=S_IFREG|0644, st_size=3581, ...}) = 0
+open("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint/packages/colorama/__pycache__/winterm.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=3383, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=3383, ...}) = 0
+read(3, "\356\f\r\n\215\355\235Z\375\r\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\4\0\0\0@\0\0"..., 3384) = 3383
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint/packages/colorama", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint/packages/colorama/win32.py", {st_mode=S_IFREG|0644, st_size=4691, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint/packages/colorama/win32.py", {st_mode=S_IFREG|0644, st_size=4691, ...}) = 0
+open("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint/packages/colorama/__pycache__/win32.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=3961, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=3961, ...}) = 0
+read(3, "\356\f\r\n\215\355\235ZS\22\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\16\0\0\0@\0\0"..., 3962) = 3961
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/martinb/src/git/jobthang/infectiousmedia/ETL_Google/src", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/usr/local/lib/python2.7/site-packages", {st_mode=S_IFDIR|S_ISGID|0775, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/plat-x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+stat("/usr/lib/python3.4", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+stat("/usr/lib/python3.4/ctypes/__init__.cpython-34m-x86_64-linux-gnu.so", 0x7ffe88220770) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/python3.4/ctypes/__init__.cpython-34m.so", 0x7ffe88220770) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/python3.4/ctypes/__init__.abi3.so", 0x7ffe88220770) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/python3.4/ctypes/__init__.so", 0x7ffe88220770) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/python3.4/ctypes/__init__.py", {st_mode=S_IFREG|0644, st_size=17020, ...}) = 0
+stat("/usr/lib/python3.4/ctypes/__init__.py", {st_mode=S_IFREG|0644, st_size=17020, ...}) = 0
+open("/usr/lib/python3.4/ctypes/__pycache__/__init__.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=17702, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=17702, ...}) = 0
+read(3, "\356\f\r\n\303\245\35Z|B\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\f\0\0\0@\0\0"..., 17703) = 17702
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/martinb/src/git/jobthang/infectiousmedia/ETL_Google/src", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/usr/local/lib/python2.7/site-packages", {st_mode=S_IFDIR|S_ISGID|0775, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/plat-x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/lib-dynload/_ctypes.cpython-34m-x86_64-linux-gnu.so", {st_mode=S_IFREG|0644, st_size=115608, ...}) = 0
+futex(0x7f1c2c9f00d0, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+open("/home/martinb/Envs/GoogleAPI/lib/python3.4/lib-dynload/_ctypes.cpython-34m-x86_64-linux-gnu.so", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\340m\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=115608, ...}) = 0
+mmap(NULL, 2210704, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f1c2b93b000
+mprotect(0x7f1c2b953000, 2093056, PROT_NONE) = 0
+mmap(0x7f1c2bb52000, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x17000) = 0x7f1c2bb52000
+close(3)                                = 0
+open("/home/martinb/torch/t/distro/install/lib/libffi.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/usr/include/libffi.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("home/martinb/Downloads/cuda/include/tls/x86_64/libffi.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("home/martinb/Downloads/cuda/include/tls/libffi.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("home/martinb/Downloads/cuda/include/x86_64/libffi.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("home/martinb/Downloads/cuda/include/libffi.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=207124, ...}) = 0
+mmap(NULL, 207124, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f1c2b908000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/usr/lib/x86_64-linux-gnu/libffi.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\220\26\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=30952, ...}) = 0
+mmap(NULL, 2127304, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f1c2b700000
+mprotect(0x7f1c2b707000, 2093056, PROT_NONE) = 0
+mmap(0x7f1c2b906000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6000) = 0x7f1c2b906000
+close(3)                                = 0
+mprotect(0x7f1c2b906000, 4096, PROT_READ) = 0
+mprotect(0x7f1c2bb52000, 4096, PROT_READ) = 0
+munmap(0x7f1c2b908000, 207124)          = 0
+stat("/home/martinb/src/git/jobthang/infectiousmedia/ETL_Google/src", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/usr/local/lib/python2.7/site-packages", {st_mode=S_IFDIR|S_ISGID|0775, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/struct.py", {st_mode=S_IFREG|0644, st_size=257, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/struct.py", {st_mode=S_IFREG|0644, st_size=257, ...}) = 0
+open("/home/martinb/Envs/GoogleAPI/lib/python3.4/__pycache__/struct.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=356, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=356, ...}) = 0
+read(3, "\356\f\r\n\276\245\35Z\1\1\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\10\0\0\0@\0\0"..., 357) = 356
+read(3, "", 1)                          = 0
+close(3)                                = 0
+brk(0x29ed000)                          = 0x29ed000
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1c2b6c0000
+stat("/usr/lib/python3.4/ctypes", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/usr/lib/python3.4/ctypes", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/usr/lib/python3.4/ctypes", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+openat(AT_FDCWD, "/usr/lib/python3.4/ctypes", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 3
+getdents(3, /* 7 entries */, 32768)     = 208
+getdents(3, /* 0 entries */, 32768)     = 0
+close(3)                                = 0
+stat("/usr/lib/python3.4/ctypes/_endian.py", {st_mode=S_IFREG|0644, st_size=1954, ...}) = 0
+stat("/usr/lib/python3.4/ctypes/_endian.py", {st_mode=S_IFREG|0644, st_size=1954, ...}) = 0
+open("/usr/lib/python3.4/ctypes/__pycache__/_endian.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=2023, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=2023, ...}) = 0
+read(3, "\356\f\r\n\303\245\35Z\242\7\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\6\0\0\0@\0\0"..., 2024) = 2023
+read(3, "", 1)                          = 0
+close(3)                                = 0
+open("/proc/self/status", O_RDONLY)     = 3
+fstat(3, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1c2d1f1000
+read(3, "Name:\tpython\nState:\tR (running)\n"..., 1024) = 968
+read(3, "", 1024)                       = 0
+close(3)                                = 0
+munmap(0x7f1c2d1f1000, 4096)            = 0
+statfs("/selinux", 0x7ffe88220800)      = -1 ENOENT (No such file or directory)
+open("/proc/mounts", O_RDONLY)          = 3
+fstat(3, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1c2d1f1000
+read(3, "sysfs /sys sysfs rw,nosuid,nodev"..., 1024) = 1024
+read(3, "ys/fs/cgroup/cpuacct cgroup rw,r"..., 1024) = 1024
+read(3, "ys/fs/binfmt_misc binfmt_misc rw"..., 1024) = 321
+read(3, "", 1024)                       = 0
+close(3)                                = 0
+munmap(0x7f1c2d1f1000, 4096)            = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE|PROT_EXEC, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1c2d1f1000
+stat("/usr/lib/python3.4/ctypes", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint/textui", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint/textui/progress.py", {st_mode=S_IFREG|0644, st_size=5289, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint/textui/progress.py", {st_mode=S_IFREG|0644, st_size=5289, ...}) = 0
+open("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint/textui/__pycache__/progress.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=4721, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=4721, ...}) = 0
+read(3, "\356\f\r\n\215\355\235Z\251\24\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\t\0\0\0@\0\0"..., 4722) = 4721
+read(3, "", 1)                          = 0
+close(3)                                = 0
+open("/etc/localtime", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=3661, ...}) = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=3661, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1c2d1f0000
+read(3, "TZif2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\7\0\0\0\7\0\0\0\0"..., 4096) = 3661
+lseek(3, -2338, SEEK_CUR)               = 1323
+read(3, "TZif2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\10\0\0\0\10\0\0\0\0"..., 4096) = 2338
+close(3)                                = 0
+munmap(0x7f1c2d1f0000, 4096)            = 0
+stat("/etc/localtime", {st_mode=S_IFREG|0644, st_size=3661, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint/textui", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint/textui/prompt.py", {st_mode=S_IFREG|0644, st_size=5291, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint/textui/prompt.py", {st_mode=S_IFREG|0644, st_size=5291, ...}) = 0
+open("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint/textui/__pycache__/prompt.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=3701, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=3701, ...}) = 0
+read(3, "\356\f\r\n\215\355\235Z\253\24\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\r\0\0\0@\0\0"..., 3702) = 3701
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint/textui", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint/textui/core.py", {st_mode=S_IFREG|0644, st_size=1917, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint/textui/core.py", {st_mode=S_IFREG|0644, st_size=1917, ...}) = 0
+open("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint/textui/__pycache__/core.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=2298, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=2298, ...}) = 0
+read(3, "\356\f\r\n\215\355\235Z}\7\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\t\0\0\0@\0\0"..., 2299) = 2298
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/martinb/src/git/jobthang/infectiousmedia/ETL_Google/src", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/usr/local/lib/python2.7/site-packages", {st_mode=S_IFDIR|S_ISGID|0775, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/plat-x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+stat("/usr/lib/python3.4", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+stat("/usr/lib/python3.4/contextlib.py", {st_mode=S_IFREG|0644, st_size=11648, ...}) = 0
+stat("/usr/lib/python3.4/contextlib.py", {st_mode=S_IFREG|0644, st_size=11648, ...}) = 0
+open("/usr/lib/python3.4/__pycache__/contextlib.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=10355, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=10355, ...}) = 0
+read(3, "\356\f\r\n\276\245\35Z\200-\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\6\0\0\0@\0\0"..., 10356) = 10355
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint/textui", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint/textui/formatters.py", {st_mode=S_IFREG|0644, st_size=2826, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint/textui/formatters.py", {st_mode=S_IFREG|0644, st_size=2826, ...}) = 0
+open("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint/textui/__pycache__/formatters.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=2389, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=2389, ...}) = 0
+read(3, "\356\f\r\n\215\355\235Z\n\v\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\3\0\0\0@\0\0"..., 2390) = 2389
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint/textui", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint/textui/cols.py", {st_mode=S_IFREG|0644, st_size=3084, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint/textui/cols.py", {st_mode=S_IFREG|0644, st_size=3084, ...}) = 0
+open("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint/textui/__pycache__/cols.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=3132, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=3132, ...}) = 0
+read(3, "\356\f\r\n\215\355\235Z\f\f\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\3\0\0\0@\0\0"..., 3133) = 3132
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint/textui", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint/textui/validators.py", {st_mode=S_IFREG|0644, st_size=2873, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint/textui/validators.py", {st_mode=S_IFREG|0644, st_size=2873, ...}) = 0
+open("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint/textui/__pycache__/validators.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=4072, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=4072, ...}) = 0
+read(3, "\356\f\r\n\215\355\235Z9\v\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\4\0\0\0@\0\0"..., 4073) = 4072
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint/pipes.py", {st_mode=S_IFREG|0644, st_size=509, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint/pipes.py", {st_mode=S_IFREG|0644, st_size=509, ...}) = 0
+open("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/clint/__pycache__/pipes.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=608, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=608, ...}) = 0
+read(3, "\356\f\r\n\215\355\235Z\375\1\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\2\0\0\0@\0\0"..., 609) = 608
+read(3, "", 1)                          = 0
+close(3)                                = 0
+getcwd("/home/martinb/src/git/jobthang/infectiousmedia/ETL_Google", 1026) = 58
+stat("/home/martinb/src/git/jobthang/infectiousmedia", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/src/git/jobthang/infectiousmedia", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/src/git/jobthang/infectiousmedia", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+openat(AT_FDCWD, "/home/martinb/src/git/jobthang/infectiousmedia", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 3
+brk(0x2a13000)                          = 0x2a13000
+getdents(3, /* 6 entries */, 32768)     = 192
+getdents(3, /* 0 entries */, 32768)     = 0
+brk(0x2a0b000)                          = 0x2a0b000
+close(3)                                = 0
+stat("/home/martinb/src/git/jobthang/infectiousmedia/ETL_Google/src", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/src/git/jobthang/infectiousmedia/ETL_Google/src/sql.py", {st_mode=S_IFREG|0644, st_size=4932, ...}) = 0
+stat("/home/martinb/src/git/jobthang/infectiousmedia/ETL_Google/src/sql.py", {st_mode=S_IFREG|0644, st_size=4932, ...}) = 0
+open("/home/martinb/src/git/jobthang/infectiousmedia/ETL_Google/src/__pycache__/sql.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=4801, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=4801, ...}) = 0
+read(3, "\356\f\r\n\262\360\237ZD\23\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\4\0\0\0@\0\0"..., 4802) = 4801
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/martinb/src/git/jobthang/infectiousmedia", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/src/git/jobthang/infectiousmedia/ETL_Google/src", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/usr/local/lib/python2.7/site-packages", {st_mode=S_IFDIR|S_ISGID|0775, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/plat-x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+stat("/usr/lib/python3.4", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+stat("/usr/lib/python3.4/logging/__init__.cpython-34m-x86_64-linux-gnu.so", 0x7ffe88228ef0) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/python3.4/logging/__init__.cpython-34m.so", 0x7ffe88228ef0) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/python3.4/logging/__init__.abi3.so", 0x7ffe88228ef0) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/python3.4/logging/__init__.so", 0x7ffe88228ef0) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/python3.4/logging/__init__.py", {st_mode=S_IFREG|0644, st_size=69101, ...}) = 0
+stat("/usr/lib/python3.4/logging/__init__.py", {st_mode=S_IFREG|0644, st_size=69101, ...}) = 0
+open("/usr/lib/python3.4/logging/__pycache__/__init__.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=61517, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=61517, ...}) = 0
+read(3, "\356\f\r\n\303\245\35Z\355\r\1\0\343\0\0\0\0\0\0\0\0\0\0\0\0(\0\0\0@\0\0"..., 61518) = 61517
+read(3, "", 1)                          = 0
+close(3)                                = 0
+brk(0x2a2c000)                          = 0x2a2c000
+stat("/home/martinb/src/git/jobthang/infectiousmedia", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/src/git/jobthang/infectiousmedia/ETL_Google/src", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/usr/local/lib/python2.7/site-packages", {st_mode=S_IFDIR|S_ISGID|0775, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/plat-x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+stat("/usr/lib/python3.4", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+stat("/usr/lib/python3.4/traceback.py", {st_mode=S_IFREG|0644, st_size=11167, ...}) = 0
+stat("/usr/lib/python3.4/traceback.py", {st_mode=S_IFREG|0644, st_size=11167, ...}) = 0
+open("/usr/lib/python3.4/__pycache__/traceback.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=11076, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=11076, ...}) = 0
+read(3, "\356\f\r\n\276\245\35Z\237+\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\16\0\0\0@\0\0"..., 11077) = 11076
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/martinb/src/git/jobthang/infectiousmedia", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/src/git/jobthang/infectiousmedia/ETL_Google/src", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/usr/local/lib/python2.7/site-packages", {st_mode=S_IFDIR|S_ISGID|0775, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/linecache.py", {st_mode=S_IFREG|0644, st_size=3862, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/linecache.py", {st_mode=S_IFREG|0644, st_size=3862, ...}) = 0
+open("/home/martinb/Envs/GoogleAPI/lib/python3.4/__pycache__/linecache.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=3031, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=3031, ...}) = 0
+read(3, "\356\f\r\n\276\245\35Z\26\17\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\3\0\0\0@\0\0"..., 3032) = 3031
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/martinb/src/git/jobthang/infectiousmedia", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/src/git/jobthang/infectiousmedia/ETL_Google/src", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/usr/local/lib/python2.7/site-packages", {st_mode=S_IFDIR|S_ISGID|0775, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/tokenize.py", {st_mode=S_IFREG|0644, st_size=24882, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/tokenize.py", {st_mode=S_IFREG|0644, st_size=24882, ...}) = 0
+open("/home/martinb/Envs/GoogleAPI/lib/python3.4/__pycache__/tokenize.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=19611, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=19611, ...}) = 0
+read(3, "\356\f\r\n\276\245\35Z2a\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\36\0\0\0@\0\0"..., 19612) = 19611
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/martinb/src/git/jobthang/infectiousmedia", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/src/git/jobthang/infectiousmedia/ETL_Google/src", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/usr/local/lib/python2.7/site-packages", {st_mode=S_IFDIR|S_ISGID|0775, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/token.py", {st_mode=S_IFREG|0644, st_size=3034, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/token.py", {st_mode=S_IFREG|0644, st_size=3034, ...}) = 0
+open("/home/martinb/Envs/GoogleAPI/lib/python3.4/__pycache__/token.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=3624, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=3624, ...}) = 0
+read(3, "\356\f\r\n\276\245\35Z\332\v\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\4\0\0\0@\0\0"..., 3625) = 3624
+read(3, "", 1)                          = 0
+close(3)                                = 0
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1c2b680000
+stat("/home/martinb/src/git/jobthang/infectiousmedia", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/src/git/jobthang/infectiousmedia/ETL_Google/src", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/usr/local/lib/python2.7/site-packages", {st_mode=S_IFDIR|S_ISGID|0775, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/warnings.py", {st_mode=S_IFREG|0644, st_size=14303, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/warnings.py", {st_mode=S_IFREG|0644, st_size=14303, ...}) = 0
+open("/home/martinb/Envs/GoogleAPI/lib/python3.4/__pycache__/warnings.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=12273, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=12273, ...}) = 0
+read(3, "\356\f\r\n\276\245\35Z\3377\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\16\0\0\0@\0\0"..., 12274) = 12273
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/martinb/src/git/jobthang/infectiousmedia", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/src/git/jobthang/infectiousmedia/ETL_Google/src", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/usr/local/lib/python2.7/site-packages", {st_mode=S_IFDIR|S_ISGID|0775, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/plat-x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+stat("/usr/lib/python3.4", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+stat("/usr/lib/python3.4/string.py", {st_mode=S_IFREG|0644, st_size=10444, ...}) = 0
+stat("/usr/lib/python3.4/string.py", {st_mode=S_IFREG|0644, st_size=10444, ...}) = 0
+open("/usr/lib/python3.4/__pycache__/string.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=7855, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=7855, ...}) = 0
+read(3, "\356\f\r\n\276\245\35Z\314(\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\5\0\0\0@\0\0"..., 7856) = 7855
+read(3, "", 1)                          = 0
+close(3)                                = 0
+brk(0x2a5c000)                          = 0x2a5c000
+brk(0x2a2c000)                          = 0x2a2c000
+brk(0x2a5c000)                          = 0x2a5c000
+brk(0x2a2c000)                          = 0x2a2c000
+brk(0x2a5c000)                          = 0x2a5c000
+brk(0x2a2c000)                          = 0x2a2c000
+brk(0x2a5c000)                          = 0x2a5c000
+brk(0x2a2c000)                          = 0x2a2c000
+stat("/home/martinb/src/git/jobthang/infectiousmedia", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/src/git/jobthang/infectiousmedia/ETL_Google/src", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/usr/local/lib/python2.7/site-packages", {st_mode=S_IFDIR|S_ISGID|0775, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/plat-x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+stat("/usr/lib/python3.4", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+stat("/usr/lib/python3.4/threading.py", {st_mode=S_IFREG|0644, st_size=48997, ...}) = 0
+stat("/usr/lib/python3.4/threading.py", {st_mode=S_IFREG|0644, st_size=48997, ...}) = 0
+open("/usr/lib/python3.4/__pycache__/threading.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=39035, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=39035, ...}) = 0
+read(3, "\356\f\r\n\276\245\35Ze\277\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0#\0\0\0@\0\0"..., 39036) = 39035
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/martinb/src/git/jobthang/infectiousmedia", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/src/git/jobthang/infectiousmedia/ETL_Google/src", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/usr/local/lib/python2.7/site-packages", {st_mode=S_IFDIR|S_ISGID|0775, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/plat-x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+stat("/usr/lib/python3.4", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+stat("/usr/lib/python3.4/json/__init__.cpython-34m-x86_64-linux-gnu.so", 0x7ffe88228ef0) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/python3.4/json/__init__.cpython-34m.so", 0x7ffe88228ef0) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/python3.4/json/__init__.abi3.so", 0x7ffe88228ef0) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/python3.4/json/__init__.so", 0x7ffe88228ef0) = -1 ENOENT (No such file or directory)
+stat("/usr/lib/python3.4/json/__init__.py", {st_mode=S_IFREG|0644, st_size=13246, ...}) = 0
+stat("/usr/lib/python3.4/json/__init__.py", {st_mode=S_IFREG|0644, st_size=13246, ...}) = 0
+open("/usr/lib/python3.4/json/__pycache__/__init__.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=12228, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=12228, ...}) = 0
+read(3, "\356\f\r\n\303\245\35Z\2763\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\17\0\0\0@\0\0"..., 12229) = 12228
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/usr/lib/python3.4/json", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/usr/lib/python3.4/json", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/usr/lib/python3.4/json", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+openat(AT_FDCWD, "/usr/lib/python3.4/json", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 3
+getdents(3, /* 8 entries */, 32768)     = 240
+getdents(3, /* 0 entries */, 32768)     = 0
+close(3)                                = 0
+stat("/usr/lib/python3.4/json/decoder.py", {st_mode=S_IFREG|0644, st_size=12763, ...}) = 0
+stat("/usr/lib/python3.4/json/decoder.py", {st_mode=S_IFREG|0644, st_size=12763, ...}) = 0
+open("/usr/lib/python3.4/json/__pycache__/decoder.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=10531, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=10531, ...}) = 0
+read(3, "\356\f\r\n\303\245\35Z\3331\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\r\0\0\0@\0\0"..., 10532) = 10531
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/usr/lib/python3.4/json", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/usr/lib/python3.4/json/scanner.py", {st_mode=S_IFREG|0644, st_size=2416, ...}) = 0
+stat("/usr/lib/python3.4/json/scanner.py", {st_mode=S_IFREG|0644, st_size=2416, ...}) = 0
+open("/usr/lib/python3.4/json/__pycache__/scanner.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=2197, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=2197, ...}) = 0
+read(3, "\356\f\r\n\303\245\35Zp\t\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\f\0\0\0@\0\0"..., 2198) = 2197
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/martinb/src/git/jobthang/infectiousmedia", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/src/git/jobthang/infectiousmedia/ETL_Google/src", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/usr/local/lib/python2.7/site-packages", {st_mode=S_IFDIR|S_ISGID|0775, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/plat-x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/lib-dynload/_json.cpython-34m-x86_64-linux-gnu.so", {st_mode=S_IFREG|0644, st_size=41928, ...}) = 0
+open("/home/martinb/Envs/GoogleAPI/lib/python3.4/lib-dynload/_json.cpython-34m-x86_64-linux-gnu.so", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0`!\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=41928, ...}) = 0
+mmap(NULL, 2137320, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f1c2b476000
+mprotect(0x7f1c2b47f000, 2093056, PROT_NONE) = 0
+mmap(0x7f1c2b67e000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x8000) = 0x7f1c2b67e000
+close(3)                                = 0
+mprotect(0x7f1c2b67e000, 4096, PROT_READ) = 0
+stat("/usr/lib/python3.4/json", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/usr/lib/python3.4/json/encoder.py", {st_mode=S_IFREG|0644, st_size=15788, ...}) = 0
+stat("/usr/lib/python3.4/json/encoder.py", {st_mode=S_IFREG|0644, st_size=15788, ...}) = 0
+open("/usr/lib/python3.4/json/__pycache__/encoder.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=11925, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=11925, ...}) = 0
+read(3, "\356\f\r\n\303\245\35Z\254=\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\33\0\0\0@\0\0"..., 11926) = 11925
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/martinb/src/git/jobthang/infectiousmedia", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/src/git/jobthang/infectiousmedia/ETL_Google/src", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/usr/local/lib/python2.7/site-packages", {st_mode=S_IFDIR|S_ISGID|0775, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/plat-x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+stat("/usr/lib/python3.4", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+stat("/usr/lib/python3.4/plat-x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/mysql/__init__.cpython-34m-x86_64-linux-gnu.so", 0x7ffe88228770) = -1 ENOENT (No such file or directory)
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/mysql/__init__.cpython-34m.so", 0x7ffe88228770) = -1 ENOENT (No such file or directory)
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/mysql/__init__.abi3.so", 0x7ffe88228770) = -1 ENOENT (No such file or directory)
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/mysql/__init__.so", 0x7ffe88228770) = -1 ENOENT (No such file or directory)
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/mysql/__init__.py", {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/mysql/__init__.py", {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+open("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/mysql/__pycache__/__init__.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=175, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=175, ...}) = 0
+read(3, "\356\f\r\n\333\315\232Z\0\0\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\1\0\0\0@\0\0"..., 176) = 175
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/mysql", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/mysql", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/mysql", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+openat(AT_FDCWD, "/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/mysql", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 3
+getdents(3, /* 5 entries */, 32768)     = 144
+getdents(3, /* 0 entries */, 32768)     = 0
+close(3)                                = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/mysql/connector/__init__.cpython-34m-x86_64-linux-gnu.so", 0x7ffe88228ef0) = -1 ENOENT (No such file or directory)
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/mysql/connector/__init__.cpython-34m.so", 0x7ffe88228ef0) = -1 ENOENT (No such file or directory)
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/mysql/connector/__init__.abi3.so", 0x7ffe88228ef0) = -1 ENOENT (No such file or directory)
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/mysql/connector/__init__.so", 0x7ffe88228ef0) = -1 ENOENT (No such file or directory)
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/mysql/connector/__init__.py", {st_mode=S_IFREG|0644, st_size=7231, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/mysql/connector/__init__.py", {st_mode=S_IFREG|0644, st_size=7231, ...}) = 0
+open("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/mysql/connector/__pycache__/__init__.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=5222, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=5222, ...}) = 0
+read(3, "\356\f\r\n\333\315\232Z?\34\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0-\0\0\0@\0\0"..., 5223) = 5222
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/martinb/src/git/jobthang/infectiousmedia", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/src/git/jobthang/infectiousmedia/ETL_Google/src", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/usr/local/lib/python2.7/site-packages", {st_mode=S_IFDIR|S_ISGID|0775, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/plat-x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+stat("/usr/lib/python3.4", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+stat("/usr/lib/python3.4/plat-x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1c2b436000
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/mysql/connector", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/mysql/connector", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/mysql/connector", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+openat(AT_FDCWD, "/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/mysql/connector", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 3
+getdents(3, /* 27 entries */, 32768)    = 904
+getdents(3, /* 0 entries */, 32768)     = 0
+close(3)                                = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/mysql/connector/version.py", {st_mode=S_IFREG|0644, st_size=1560, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/mysql/connector/version.py", {st_mode=S_IFREG|0644, st_size=1560, ...}) = 0
+open("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/mysql/connector/__pycache__/version.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=609, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=609, ...}) = 0
+read(3, "\356\f\r\n\333\315\232Z\30\6\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\5\0\0\0@\0\0"..., 610) = 609
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/mysql/connector", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/mysql/connector/connection.py", {st_mode=S_IFREG|0644, st_size=39138, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/mysql/connector/connection.py", {st_mode=S_IFREG|0644, st_size=39138, ...}) = 0
+open("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/mysql/connector/__pycache__/connection.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=34825, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=34825, ...}) = 0
+read(3, "\356\f\r\n\333\315\232Z\342\230\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\4\0\0\0@\0\0"..., 34826) = 34825
+read(3, "", 1)                          = 0
+close(3)                                = 0
+brk(0x2a53000)                          = 0x2a53000
+brk(0x2a42000)                          = 0x2a42000
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/mysql/connector", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/mysql/connector/authentication.py", {st_mode=S_IFREG|0644, st_size=6479, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/mysql/connector/authentication.py", {st_mode=S_IFREG|0644, st_size=6479, ...}) = 0
+open("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/mysql/connector/__pycache__/authentication.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=5815, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=5815, ...}) = 0
+read(3, "\356\f\r\n\333\315\232ZO\31\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\4\0\0\0@\0\0"..., 5816) = 5815
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/martinb/src/git/jobthang/infectiousmedia", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/src/git/jobthang/infectiousmedia/ETL_Google/src", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/usr/local/lib/python2.7/site-packages", {st_mode=S_IFDIR|S_ISGID|0775, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/hashlib.py", {st_mode=S_IFREG|0644, st_size=7979, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/hashlib.py", {st_mode=S_IFREG|0644, st_size=7979, ...}) = 0
+open("/home/martinb/Envs/GoogleAPI/lib/python3.4/__pycache__/hashlib.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=6378, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=6378, ...}) = 0
+read(3, "\356\f\r\n\276\245\35Z+\37\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\34\0\0\0@\0\0"..., 6379) = 6378
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/martinb/src/git/jobthang/infectiousmedia", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/src/git/jobthang/infectiousmedia/ETL_Google/src", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/usr/local/lib/python2.7/site-packages", {st_mode=S_IFDIR|S_ISGID|0775, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/plat-x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/lib-dynload/_hashlib.cpython-34m-x86_64-linux-gnu.so", {st_mode=S_IFREG|0644, st_size=25344, ...}) = 0
+open("/home/martinb/Envs/GoogleAPI/lib/python3.4/lib-dynload/_hashlib.cpython-34m-x86_64-linux-gnu.so", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\37\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=25344, ...}) = 0
+mmap(NULL, 2121168, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f1c2b230000
+mprotect(0x7f1c2b235000, 2093056, PROT_NONE) = 0
+mmap(0x7f1c2b434000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x4000) = 0x7f1c2b434000
+close(3)                                = 0
+open("/home/martinb/torch/t/distro/install/lib/libcrypto.so.1.0.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/usr/include/libcrypto.so.1.0.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("home/martinb/Downloads/cuda/include/tls/x86_64/libcrypto.so.1.0.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("home/martinb/Downloads/cuda/include/tls/libcrypto.so.1.0.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("home/martinb/Downloads/cuda/include/x86_64/libcrypto.so.1.0.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("home/martinb/Downloads/cuda/include/libcrypto.so.1.0.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=207124, ...}) = 0
+mmap(NULL, 207124, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f1c2b908000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libcrypto.so.1.0.0", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0@\356\5\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=1934624, ...}) = 0
+mmap(NULL, 4044952, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f1c2ae54000
+mprotect(0x7f1c2b007000, 2093056, PROT_NONE) = 0
+mmap(0x7f1c2b206000, 155648, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1b2000) = 0x7f1c2b206000
+mmap(0x7f1c2b22c000, 14488, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f1c2b22c000
+close(3)                                = 0
+mprotect(0x7f1c2b206000, 110592, PROT_READ) = 0
+mprotect(0x7f1c2b434000, 4096, PROT_READ) = 0
+munmap(0x7f1c2b908000, 207124)          = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/mysql/connector", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/mysql/connector/errors.py", {st_mode=S_IFREG|0644, st_size=10253, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/mysql/connector/errors.py", {st_mode=S_IFREG|0644, st_size=10253, ...}) = 0
+open("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/mysql/connector/__pycache__/errors.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=7947, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=7947, ...}) = 0
+read(3, "\356\f\r\n\333\315\232Z\r(\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\4\0\0\0@\0\0"..., 7948) = 7947
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/mysql/connector", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/mysql/connector/utils.py", {st_mode=S_IFREG|0644, st_size=9161, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/mysql/connector/utils.py", {st_mode=S_IFREG|0644, st_size=9161, ...}) = 0
+open("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/mysql/connector/__pycache__/utils.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=8373, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=8373, ...}) = 0
+read(3, "\356\f\r\n\333\315\232Z\311#\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\4\0\0\0@\0\0"..., 8374) = 8373
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/mysql/connector", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/mysql/connector/catch23.py", {st_mode=S_IFREG|0644, st_size=3574, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/mysql/connector/catch23.py", {st_mode=S_IFREG|0644, st_size=3574, ...}) = 0
+open("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/mysql/connector/__pycache__/catch23.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=2587, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=2587, ...}) = 0
+read(3, "\356\f\r\n\333\315\232Z\366\r\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\5\0\0\0@\0\0"..., 2588) = 2587
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/martinb/src/git/jobthang/infectiousmedia", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/src/git/jobthang/infectiousmedia/ETL_Google/src", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/usr/local/lib/python2.7/site-packages", {st_mode=S_IFDIR|S_ISGID|0775, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/plat-x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+stat("/usr/lib/python3.4", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+stat("/usr/lib/python3.4/decimal.py", {st_mode=S_IFREG|0644, st_size=228637, ...}) = 0
+stat("/usr/lib/python3.4/decimal.py", {st_mode=S_IFREG|0644, st_size=228637, ...}) = 0
+open("/usr/lib/python3.4/__pycache__/decimal.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=172460, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=172460, ...}) = 0
+mmap(NULL, 176128, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1c2d1c6000
+read(3, "\356\f\r\n\276\245\35Z\35}\3\0\343\0\0\0\0\0\0\0\0\0\0\0\0+\0\0\0@\0\0"..., 172461) = 172460
+read(3, "", 1)                          = 0
+close(3)                                = 0
+mmap(NULL, 176128, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1c2b910000
+mmap(NULL, 397312, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1c2adf3000
+munmap(0x7f1c2d050000, 200704)          = 0
+brk(0x2a63000)                          = 0x2a63000
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1c2adb3000
+munmap(0x7f1c2d1c6000, 176128)          = 0
+munmap(0x7f1c2b910000, 176128)          = 0
+stat("/home/martinb/src/git/jobthang/infectiousmedia", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/src/git/jobthang/infectiousmedia/ETL_Google/src", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/usr/local/lib/python2.7/site-packages", {st_mode=S_IFDIR|S_ISGID|0775, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/plat-x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+stat("/usr/lib/python3.4", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+stat("/usr/lib/python3.4/numbers.py", {st_mode=S_IFREG|0644, st_size=10243, ...}) = 0
+stat("/usr/lib/python3.4/numbers.py", {st_mode=S_IFREG|0644, st_size=10243, ...}) = 0
+open("/usr/lib/python3.4/__pycache__/numbers.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=12652, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=12652, ...}) = 0
+read(3, "\356\f\r\n\276\245\35Z\3(\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\5\0\0\0@\0\0"..., 12653) = 12652
+read(3, "", 1)                          = 0
+close(3)                                = 0
+brk(0x2a84000)                          = 0x2a84000
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1c2ad73000
+munmap(0x7f1c2ad73000, 262144)          = 0
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1c2ad73000
+stat("/home/martinb/src/git/jobthang/infectiousmedia", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/src/git/jobthang/infectiousmedia/ETL_Google/src", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/usr/local/lib/python2.7/site-packages", {st_mode=S_IFDIR|S_ISGID|0775, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/locale.py", {st_mode=S_IFREG|0644, st_size=74534, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/locale.py", {st_mode=S_IFREG|0644, st_size=74534, ...}) = 0
+open("/home/martinb/Envs/GoogleAPI/lib/python3.4/__pycache__/locale.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=37274, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=37274, ...}) = 0
+read(3, "\356\f\r\n\276\245\35Z&#\1\0\343\0\0\0\0\0\0\0\0\0\0\0\0\33\0\0\0@\0\0"..., 37275) = 37274
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/martinb/src/git/jobthang/infectiousmedia", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/src/git/jobthang/infectiousmedia/ETL_Google/src", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/usr/local/lib/python2.7/site-packages", {st_mode=S_IFDIR|S_ISGID|0775, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/plat-x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+stat("/usr/lib/python3.4", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+stat("/usr/lib/python3.4/plat-x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/mysql/connector", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/mysql/connector/custom_types.py", {st_mode=S_IFREG|0644, st_size=1665, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/mysql/connector/custom_types.py", {st_mode=S_IFREG|0644, st_size=1665, ...}) = 0
+open("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/mysql/connector/__pycache__/custom_types.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=1245, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=1245, ...}) = 0
+read(3, "\356\f\r\n\333\315\232Z\201\6\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\4\0\0\0@\0\0"..., 1246) = 1245
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/mysql/connector", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/mysql/connector/locales/__init__.cpython-34m-x86_64-linux-gnu.so", 0x7ffe88224dc0) = -1 ENOENT (No such file or directory)
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/mysql/connector/locales/__init__.cpython-34m.so", 0x7ffe88224dc0) = -1 ENOENT (No such file or directory)
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/mysql/connector/locales/__init__.abi3.so", 0x7ffe88224dc0) = -1 ENOENT (No such file or directory)
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/mysql/connector/locales/__init__.so", 0x7ffe88224dc0) = -1 ENOENT (No such file or directory)
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/mysql/connector/locales/__init__.py", {st_mode=S_IFREG|0644, st_size=2430, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/mysql/connector/locales/__init__.py", {st_mode=S_IFREG|0644, st_size=2430, ...}) = 0
+open("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/mysql/connector/locales/__pycache__/__init__.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=1438, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=1438, ...}) = 0
+read(3, "\356\f\r\n\333\315\232Z~\t\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\3\0\0\0@\0\0"..., 1439) = 1438
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/mysql/connector", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/mysql/connector/errorcode.py", {st_mode=S_IFREG|0644, st_size=39164, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/mysql/connector/errorcode.py", {st_mode=S_IFREG|0644, st_size=39164, ...}) = 0
+open("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/mysql/connector/__pycache__/errorcode.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=45959, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=45959, ...}) = 0
+brk(0x2aab000)                          = 0x2aab000
+read(3, "\356\f\r\n\333\315\232Z\374\230\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\3\0\0\0@\0\0"..., 45960) = 45959
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/mysql/connector", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/mysql/connector/constants.py", {st_mode=S_IFREG|0644, st_size=23741, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/mysql/connector/constants.py", {st_mode=S_IFREG|0644, st_size=23741, ...}) = 0
+open("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/mysql/connector/__pycache__/constants.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=22907, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=22907, ...}) = 0
+read(3, "\356\f\r\n\333\315\232Z\275\\\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\v\0\0\0@\0\0"..., 22908) = 22907
+read(3, "", 1)                          = 0
+close(3)                                = 0
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1c2ad33000
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/mysql/connector", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/mysql/connector/charsets.py", {st_mode=S_IFREG|0644, st_size=12326, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/mysql/connector/charsets.py", {st_mode=S_IFREG|0644, st_size=12326, ...}) = 0
+open("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/mysql/connector/__pycache__/charsets.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=8673, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=8673, ...}) = 0
+read(3, "\356\f\r\n\333\315\232Z&0\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\375\0\0\0@\0\0"..., 8674) = 8673
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/mysql/connector", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/mysql/connector/conversion.py", {st_mode=S_IFREG|0644, st_size=19712, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/mysql/connector/conversion.py", {st_mode=S_IFREG|0644, st_size=19712, ...}) = 0
+open("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/mysql/connector/__pycache__/conversion.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=17948, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=17948, ...}) = 0
+read(3, "\356\f\r\n\333\315\232Z\0M\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\4\0\0\0@\0\0"..., 17949) = 17948
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/martinb/src/git/jobthang/infectiousmedia", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/src/git/jobthang/infectiousmedia/ETL_Google/src", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/usr/local/lib/python2.7/site-packages", {st_mode=S_IFDIR|S_ISGID|0775, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/plat-x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+stat("/usr/lib/python3.4", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+stat("/usr/lib/python3.4/datetime.py", {st_mode=S_IFREG|0644, st_size=75376, ...}) = 0
+stat("/usr/lib/python3.4/datetime.py", {st_mode=S_IFREG|0644, st_size=75376, ...}) = 0
+open("/usr/lib/python3.4/__pycache__/datetime.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=55608, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=55608, ...}) = 0
+read(3, "\356\f\r\n\276\245\35Zp&\1\0\343\0\0\0\0\0\0\0\0\0\0\0\0\r\0\0\0@\0\0"..., 55609) = 55608
+read(3, "", 1)                          = 0
+close(3)                                = 0
+brk(0x2ad0000)                          = 0x2ad0000
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1c2acf3000
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/mysql/connector", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/mysql/connector/cursor.py", {st_mode=S_IFREG|0644, st_size=45110, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/mysql/connector/cursor.py", {st_mode=S_IFREG|0644, st_size=45110, ...}) = 0
+open("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/mysql/connector/__pycache__/cursor.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=43227, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=43227, ...}) = 0
+read(3, "\356\f\r\n\333\315\232Z6\260\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\5\0\0\0@\0\0"..., 43228) = 43227
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/mysql/connector", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/mysql/connector/abstracts.py", {st_mode=S_IFREG|0644, st_size=39773, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/mysql/connector/abstracts.py", {st_mode=S_IFREG|0644, st_size=39773, ...}) = 0
+open("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/mysql/connector/__pycache__/abstracts.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=37997, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=37997, ...}) = 0
+read(3, "\356\f\r\n\333\315\232Z]\233\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\5\0\0\0@\0\0"..., 37998) = 37997
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/mysql/connector", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/mysql/connector/optionfiles.py", {st_mode=S_IFREG|0644, st_size=13879, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/mysql/connector/optionfiles.py", {st_mode=S_IFREG|0644, st_size=13879, ...}) = 0
+open("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/mysql/connector/__pycache__/optionfiles.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=9703, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=9703, ...}) = 0
+read(3, "\356\f\r\n\333\315\232Z76\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\4\0\0\0@\0\0"..., 9704) = 9703
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/martinb/src/git/jobthang/infectiousmedia", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/src/git/jobthang/infectiousmedia/ETL_Google/src", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/usr/local/lib/python2.7/site-packages", {st_mode=S_IFDIR|S_ISGID|0775, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/plat-x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+stat("/usr/lib/python3.4", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+stat("/usr/lib/python3.4/configparser.py", {st_mode=S_IFREG|0644, st_size=49437, ...}) = 0
+stat("/usr/lib/python3.4/configparser.py", {st_mode=S_IFREG|0644, st_size=49437, ...}) = 0
+open("/usr/lib/python3.4/__pycache__/configparser.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=44611, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=44611, ...}) = 0
+read(3, "\356\f\r\n\276\245\35Z\35\301\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\16\0\0\0@\0\0"..., 44612) = 44611
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/collections", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/collections", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/collections", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+openat(AT_FDCWD, "/home/martinb/Envs/GoogleAPI/lib/python3.4/collections", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 3
+getdents(3, /* 6 entries */, 32768)     = 176
+getdents(3, /* 0 entries */, 32768)     = 0
+close(3)                                = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/collections/abc.py", {st_mode=S_IFREG|0644, st_size=68, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/collections/abc.py", {st_mode=S_IFREG|0644, st_size=68, ...}) = 0
+open("/home/martinb/Envs/GoogleAPI/lib/python3.4/collections/__pycache__/abc.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=189, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=189, ...}) = 0
+read(3, "\356\f\r\n\302\245\35ZD\0\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\2\0\0\0@\0\0"..., 190) = 189
+read(3, "", 1)                          = 0
+close(3)                                = 0
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1c2acb3000
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/mysql/connector", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/mysql/connector/network.py", {st_mode=S_IFREG|0644, st_size=19202, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/mysql/connector/network.py", {st_mode=S_IFREG|0644, st_size=19202, ...}) = 0
+open("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/mysql/connector/__pycache__/network.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=13485, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=13485, ...}) = 0
+read(3, "\356\f\r\n\333\315\232Z\2K\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\n\0\0\0@\0\0"..., 13486) = 13485
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/martinb/src/git/jobthang/infectiousmedia", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/src/git/jobthang/infectiousmedia/ETL_Google/src", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/usr/local/lib/python2.7/site-packages", {st_mode=S_IFDIR|S_ISGID|0775, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/plat-x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+stat("/usr/lib/python3.4", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+stat("/usr/lib/python3.4/socket.py", {st_mode=S_IFREG|0644, st_size=19013, ...}) = 0
+stat("/usr/lib/python3.4/socket.py", {st_mode=S_IFREG|0644, st_size=19013, ...}) = 0
+open("/usr/lib/python3.4/__pycache__/socket.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=18214, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=18214, ...}) = 0
+read(3, "\356\f\r\n\276\245\35ZEJ\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\16\0\0\0@\0\0"..., 18215) = 18214
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/martinb/src/git/jobthang/infectiousmedia", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/src/git/jobthang/infectiousmedia/ETL_Google/src", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/usr/local/lib/python2.7/site-packages", {st_mode=S_IFDIR|S_ISGID|0775, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/plat-x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+stat("/usr/lib/python3.4", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+stat("/usr/lib/python3.4/enum.py", {st_mode=S_IFREG|0644, st_size=20454, ...}) = 0
+stat("/usr/lib/python3.4/enum.py", {st_mode=S_IFREG|0644, st_size=20454, ...}) = 0
+open("/usr/lib/python3.4/__pycache__/enum.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=15385, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=15385, ...}) = 0
+read(3, "\356\f\r\n\276\245\35Z\346O\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\5\0\0\0@\0\0"..., 15386) = 15385
+read(3, "", 1)                          = 0
+close(3)                                = 0
+brk(0x2af3000)                          = 0x2af3000
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1c2ac73000
+stat("/home/martinb/src/git/jobthang/infectiousmedia", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/src/git/jobthang/infectiousmedia/ETL_Google/src", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/usr/local/lib/python2.7/site-packages", {st_mode=S_IFDIR|S_ISGID|0775, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/plat-x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+stat("/usr/lib/python3.4", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+stat("/usr/lib/python3.4/ssl.py", {st_mode=S_IFREG|0644, st_size=35177, ...}) = 0
+stat("/usr/lib/python3.4/ssl.py", {st_mode=S_IFREG|0644, st_size=35177, ...}) = 0
+open("/usr/lib/python3.4/__pycache__/ssl.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=28257, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=28257, ...}) = 0
+read(3, "\356\f\r\n\276\245\35Zi\211\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0+\0\0\0@\0\0"..., 28258) = 28257
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/martinb/src/git/jobthang/infectiousmedia", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/src/git/jobthang/infectiousmedia/ETL_Google/src", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/usr/local/lib/python2.7/site-packages", {st_mode=S_IFDIR|S_ISGID|0775, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/plat-x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+stat("/usr/lib/python3.4", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+stat("/usr/lib/python3.4/textwrap.py", {st_mode=S_IFREG|0644, st_size=19104, ...}) = 0
+stat("/usr/lib/python3.4/textwrap.py", {st_mode=S_IFREG|0644, st_size=19104, ...}) = 0
+open("/usr/lib/python3.4/__pycache__/textwrap.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=13649, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=13649, ...}) = 0
+read(3, "\356\f\r\n\276\245\35Z\240J\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\6\0\0\0@\0\0"..., 13650) = 13649
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/martinb/src/git/jobthang/infectiousmedia", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/src/git/jobthang/infectiousmedia/ETL_Google/src", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/usr/local/lib/python2.7/site-packages", {st_mode=S_IFDIR|S_ISGID|0775, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/plat-x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/lib-dynload/_ssl.cpython-34m-x86_64-linux-gnu.so", {st_mode=S_IFREG|0644, st_size=94752, ...}) = 0
+open("/home/martinb/Envs/GoogleAPI/lib/python3.4/lib-dynload/_ssl.cpython-34m-x86_64-linux-gnu.so", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0 ~\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=94752, ...}) = 0
+mmap(NULL, 2190184, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f1c2aa5c000
+mprotect(0x7f1c2aa6f000, 2093056, PROT_NONE) = 0
+mmap(0x7f1c2ac6e000, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x12000) = 0x7f1c2ac6e000
+close(3)                                = 0
+open("/home/martinb/torch/t/distro/install/lib/libssl.so.1.0.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/usr/include/libssl.so.1.0.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("home/martinb/Downloads/cuda/include/tls/x86_64/libssl.so.1.0.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("home/martinb/Downloads/cuda/include/tls/libssl.so.1.0.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("home/martinb/Downloads/cuda/include/x86_64/libssl.so.1.0.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("home/martinb/Downloads/cuda/include/libssl.so.1.0.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=207124, ...}) = 0
+mmap(NULL, 207124, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f1c2b908000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libssl.so.1.0.0", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\240.\1\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=387272, ...}) = 0
+mmap(NULL, 2482576, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f1c2a7fd000
+mprotect(0x7f1c2a852000, 2097152, PROT_NONE) = 0
+mmap(0x7f1c2aa52000, 40960, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x55000) = 0x7f1c2aa52000
+close(3)                                = 0
+mprotect(0x7f1c2aa52000, 12288, PROT_READ) = 0
+mprotect(0x7f1c2ac6e000, 4096, PROT_READ) = 0
+munmap(0x7f1c2b908000, 207124)          = 0
+brk(0x2b18000)                          = 0x2b18000
+stat("/home/martinb/src/git/jobthang/infectiousmedia", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/src/git/jobthang/infectiousmedia/ETL_Google/src", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/usr/local/lib/python2.7/site-packages", {st_mode=S_IFDIR|S_ISGID|0775, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/base64.py", {st_mode=S_IFREG|0755, st_size=20165, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/base64.py", {st_mode=S_IFREG|0755, st_size=20165, ...}) = 0
+open("/home/martinb/Envs/GoogleAPI/lib/python3.4/__pycache__/base64.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=18304, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=18304, ...}) = 0
+read(3, "\356\f\r\n\363\245\35Z\305N\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\22\0\0\0@\0\0"..., 18305) = 18304
+read(3, "", 1)                          = 0
+close(3)                                = 0
+mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1c2a7bd000
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/mysql/connector", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/mysql/connector/protocol.py", {st_mode=S_IFREG|0644, st_size=27655, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/mysql/connector/protocol.py", {st_mode=S_IFREG|0644, st_size=27655, ...}) = 0
+open("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/mysql/connector/__pycache__/protocol.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=19833, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=19833, ...}) = 0
+read(3, "\356\f\r\n\333\315\232Z\7l\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\4\0\0\0@\0\0"..., 19834) = 19833
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/mysql/connector", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/mysql/connector/dbapi.py", {st_mode=S_IFREG|0644, st_size=2330, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/mysql/connector/dbapi.py", {st_mode=S_IFREG|0644, st_size=2330, ...}) = 0
+open("/home/martinb/Envs/GoogleAPI/lib/python3.4/site-packages/mysql/connector/__pycache__/dbapi.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=1895, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=1895, ...}) = 0
+read(3, "\356\f\r\n\333\315\232Z\32\t\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\4\0\0\0@\0\0"..., 1896) = 1895
+read(3, "", 1)                          = 0
+close(3)                                = 0
+getcwd("/home/martinb/src/git/jobthang/infectiousmedia/ETL_Google", 1026) = 58
+ioctl(1, SNDCTL_TMR_TIMEBASE or SNDRV_TIMER_IOCTL_NEXT_DEVICE or TCGETS, {B38400 opost isig icanon echo ...}) = 0
+write(1, "\33[34m\33[22minfectious@localhost:3"..., 46) = 46
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/encodings", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/encodings/idna.py", {st_mode=S_IFREG|0644, st_size=9170, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/encodings/idna.py", {st_mode=S_IFREG|0644, st_size=9170, ...}) = 0
+open("/home/martinb/Envs/GoogleAPI/lib/python3.4/encodings/__pycache__/idna.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=6519, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=6519, ...}) = 0
+read(3, "\356\f\r\n\302\245\35Z\322#\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\5\0\0\0@\0\0"..., 6520) = 6519
+read(3, "", 1)                          = 0
+close(3)                                = 0
+stat("/home/martinb/src/git/jobthang/infectiousmedia", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/src/git/jobthang/infectiousmedia", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/src/git/jobthang/infectiousmedia/ETL_Google/src", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/usr/local/lib/python2.7/site-packages", {st_mode=S_IFDIR|S_ISGID|0775, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/plat-x86_64-linux-gnu", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/home/martinb/Envs/GoogleAPI/lib/python3.4/lib-dynload", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+stat("/usr/lib/python3.4", {st_mode=S_IFDIR|0755, st_size=20480, ...}) = 0
+stat("/usr/lib/python3.4/stringprep.py", {st_mode=S_IFREG|0644, st_size=12917, ...}) = 0
+stat("/usr/lib/python3.4/stringprep.py", {st_mode=S_IFREG|0644, st_size=12917, ...}) = 0
+open("/usr/lib/python3.4/__pycache__/stringprep.cpython-34.pyc", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=13621, ...}) = 0
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=13621, ...}) = 0
+read(3, "\356\f\r\n\276\245\35Zu2\0\0\343\0\0\0\0\0\0\0\0\0\0\0\0\f\0\0\0@\0\0"..., 13622) = 13621
+read(3, "", 1)                          = 0
+close(3)                                = 0
+brk(0x2b39000)                          = 0x2b39000
+brk(0x2b69000)                          = 0x2b69000
+socket(PF_LOCAL, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 3
+connect(3, {sa_family=AF_LOCAL, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+close(3)                                = 0
+socket(PF_LOCAL, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 3
+connect(3, {sa_family=AF_LOCAL, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+close(3)                                = 0
+open("/etc/nsswitch.conf", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=518, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1c2d1f0000
+read(3, "# /etc/nsswitch.conf\n#\n# Example"..., 4096) = 518
+read(3, "", 4096)                       = 0
+close(3)                                = 0
+munmap(0x7f1c2d1f0000, 4096)            = 0
+open("/etc/host.conf", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=92, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1c2d1f0000
+read(3, "# The \"order\" line is only used "..., 4096) = 92
+read(3, "", 4096)                       = 0
+close(3)                                = 0
+munmap(0x7f1c2d1f0000, 4096)            = 0
+futex(0x7f1c2cdb83d0, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+open("/etc/resolv.conf", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=185, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1c2d1f0000
+read(3, "# Dynamic resolv.conf(5) file fo"..., 4096) = 185
+read(3, "", 4096)                       = 0
+close(3)                                = 0
+munmap(0x7f1c2d1f0000, 4096)            = 0
+open("/home/martinb/torch/t/distro/install/lib/libnss_files.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/usr/include/libnss_files.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("home/martinb/Downloads/cuda/include/tls/x86_64/libnss_files.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("home/martinb/Downloads/cuda/include/tls/libnss_files.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("home/martinb/Downloads/cuda/include/x86_64/libnss_files.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("home/martinb/Downloads/cuda/include/libnss_files.so.2", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=207124, ...}) = 0
+mmap(NULL, 207124, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f1c2b908000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+open("/lib/x86_64-linux-gnu/libnss_files.so.2", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\240\"\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=43616, ...}) = 0
+mmap(NULL, 2139944, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f1c2a5b2000
+mprotect(0x7f1c2a5bc000, 2093056, PROT_NONE) = 0
+mmap(0x7f1c2a7bb000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x9000) = 0x7f1c2a7bb000
+close(3)                                = 0
+mprotect(0x7f1c2a7bb000, 4096, PROT_READ) = 0
+munmap(0x7f1c2b908000, 207124)          = 0
+open("/etc/hosts", O_RDONLY|O_CLOEXEC)  = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=374681, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1c2d1f0000
+read(3, "127.0.0.1\tlocalhost\n127.0.1.1\tno"..., 4096) = 4096
+read(3, "For example\n# this will prevent "..., 4096) = 4096
+read(3, "om\n127.0.0.1 www.kids-in-sandbox"..., 4096) = 4096
+read(3, "breaks some sites\n#127.0.0.1 ads"..., 4096) = 4096
+read(3, "vulnerap.com\n127.0.0.1 cf.addthi"..., 4096) = 4096
+read(3, ".sextracker.com\n127.0.0.1 counte"..., 4096) = 4096
+read(3, "iture.com\n127.0.0.1 e-2dj6wgkigp"..., 4096) = 4096
+read(3, "gs.com\n127.0.0.1 http300.edge.ru"..., 4096) = 4096
+read(3, "m\n127.0.0.1 metrics.lhj.com\n127."..., 4096) = 4096
+read(3, "om\n127.0.0.1 s10.sitemeter.com\n1"..., 4096) = 4096
+read(3, "ter.tass-online.ru\n127.0.0.1 sta"..., 4096) = 4096
+read(3, "s.com\n127.0.0.1 topstats.net\n127"..., 4096) = 4096
+read(3, "perstats.com\n127.0.0.1 www.123st"..., 4096) = 4096
+read(3, "radedoubler.com\n127.0.0.1 www.tr"..., 4096) = 4096
+read(3, ".info\t# twitter worm\n127.0.0.1 g"..., 4096) = 4096
+read(3, "0.1 phorm.com\n127.0.0.1 phorm.co"..., 4096) = 4096
+read(3, "127.0.0.1 w.oix.net\n127.0.0.1 wo"..., 4096) = 4096
+read(3, "127.0.0.1 zfotos.fromru.su\n127.0"..., 4096) = 4096
+read(3, "\n127.0.0.1 m3.jp.2mdn.net\n127.0."..., 4096) = 4096
+read(3, " rd.intl.doubleclick.net\n127.0.0"..., 4096) = 4096
+read(3, "dia.com\n127.0.0.1 universetoday."..., 4096) = 4096
+read(3, ".2o7.net\n127.0.0.1 192.168.112.2"..., 4096) = 4096
+read(3, "net\n127.0.0.1 eaeacom.112.2o7.ne"..., 4096) = 4096
+read(3, ".0.1 hpglobal.112.2o7.net\n127.0."..., 4096) = 4096
+read(3, "0.1 overturecomvista.112.2o7.net"..., 4096) = 4096
+read(3, "mobili.oewabox.at\n127.0.0.1 immo"..., 4096) = 4096
+read(3, "127.0.0.1 3.adbrite.com\n127.0.0."..., 4096) = 4096
+read(3, "gital.checkm8.com\n127.0.0.1 ad22"..., 4096) = 4096
+read(3, "7.0.0.1 ad.adperium.com\n127.0.0."..., 4096) = 4096
+read(3, ".0.1 adhitzads.com\n127.0.0.1 ad."..., 4096) = 4096
+read(3, "om.com\n127.0.0.1 admeld.com\n127."..., 4096) = 4096
+read(3, "rd.com\n127.0.0.1 ads1.ami-admin."..., 4096) = 4096
+read(3, ".com\n127.0.0.1 adsadmin.vaildail"..., 4096) = 4096
+read(3, "jonline.com\n127.0.0.1 ads.clamav"..., 4096) = 4096
+read(3, "rver1.adtech.com.tr\n127.0.0.1 ad"..., 4096) = 4096
+read(3, "e.com\n127.0.0.1 adserver.gorilla"..., 4096) = 4096
+read(3, ".net\n127.0.0.1 adserver.twitpic."..., 4096) = 4096
+read(3, "rdware.com\n127.0.0.1 ad.showbizz"..., 4096) = 4096
+read(3, "7.0.0.1 ads.mysimon.com\n127.0.0."..., 4096) = 4096
+read(3, "s.com\n127.0.0.1 ads.revenue.net\n"..., 4096) = 4096
+read(3, " ads.tripod.com\n127.0.0.1 ads.tr"..., 4096) = 4096
+read(3, "adgates.com\n127.0.0.1 adv.adtota"..., 4096) = 4096
+read(3, "hus.com\n127.0.0.1 aka-cdn-ns.adt"..., 4096) = 4096
+read(3, "l-media.net\n127.0.0.1 a.tribalfu"..., 4096) = 4096
+read(3, " banners.valuead.com\n127.0.0.1 b"..., 4096) = 4096
+read(3, "om\n127.0.0.1 c1.popads.net\n127.0"..., 4096) = 4096
+read(3, "127.0.0.1 cdn.zeusclicks.com\n127"..., 4096) = 4096
+read(3, "127.0.0.1 cnad.economicoutlook.n"..., 4096) = 4096
+read(3, "om\n127.0.0.1 d10.zedo.com\n127.0."..., 4096) = 4096
+read(3, " earnmygift.com\n127.0.0.1 earnpo"..., 4096) = 4096
+read(3, "p.valueclick.com\n127.0.0.1 f.qst"..., 4096) = 4096
+read(3, "cirm.tennessean.com\n127.0.0.1 gc"..., 4096) = 4096
+read(3, "hbeautyncs.com\n127.0.0.1 health-"..., 4096) = 4096
+read(3, "lex.com\n127.0.0.1 img.directtrac"..., 4096) = 4096
+read(3, "js1.bloggerads.net\n127.0.0.1 js7"..., 4096) = 4096
+read(3, "pilgames.com\n127.0.0.1 l.ohmyad."..., 4096) = 4096
+read(3, ".0.1 mediapst-images.adbureau.ne"..., 4096) = 4096
+read(3, "ookdigital.checkm8.com\n127.0.0.1"..., 4096) = 4096
+read(3, ".1 oix7.net\n127.0.0.1 oix8.net\n1"..., 4096) = 4096
+read(3, "alink.com\n127.0.0.1 ph-ad09.foca"..., 4096) = 4096
+read(3, "m\n127.0.0.1 protection.GApolice."..., 4096) = 4096
+read(3, ".0.0.1 red04.as-us.falkag.net\n12"..., 4096) = 4096
+read(3, "1.2mdn.net\n127.0.0.1 s1.buysella"..., 4096) = 4096
+read(3, " service003.adtech.us\n127.0.0.1 "..., 4096) = 4096
+read(3, "m\n127.0.0.1 srv.sayyac.com\n127.0"..., 4096) = 4096
+read(3, "liverail.com\n127.0.0.1 t8t7frium"..., 4096) = 4096
+read(3, "e-premiumblvd.com\n127.0.0.1 trav"..., 4096) = 4096
+read(3, "rver.yahoo.com\n127.0.0.1 vipfast"..., 4096) = 4096
+read(3, "m\n127.0.0.1 wegetpaid.net\n127.0."..., 4096) = 4096
+read(3, "27.0.0.1 www.adcash.com\n127.0.0."..., 4096) = 4096
+read(3, "0.0.1 www.bonzi.com\n127.0.0.1 ww"..., 4096) = 4096
+read(3, "7.0.0.1 www.entertainment-reward"..., 4096) = 4096
+read(3, "ealth-beauty-savingblvd.com\n127."..., 4096) = 4096
+read(3, "adsl.co.za\n127.0.0.1 www.myaffil"..., 4096) = 4096
+read(3, "1 www.shoptosaveenergy.com\n127.0"..., 4096) = 4096
+read(3, "ree-savings.com\n127.0.0.1 www.wp"..., 4096) = 4096
+read(3, ".0.0.1 ahbn3.hitbox.com\n127.0.0."..., 4096) = 4096
+read(3, "omhouse.hitbox.com\n127.0.0.1 ehg"..., 4096) = 4096
+read(3, " w107.hitbox.com\n127.0.0.1 w108."..., 4096) = 4096
+read(3, "ntral.aircanada.com\n127.0.0.1 oa"..., 4096) = 4096
+read(3, "scentral.thechronicleherald.ca\n1"..., 4096) = 4096
+read(3, " media78.fastclick.net\n127.0.0.1"..., 4096) = 4096
+read(3, "\n127.0.0.1 9ivwbox.de\n127.0.0.1 "..., 4096) = 4096
+read(3, "box.de\n127.0.0.1 www.6ivwbox.de\n"..., 4096) = 4096
+read(3, "yvwbox.de\n127.0.0.1 www.jivwbox."..., 4096) = 4096
+read(3, "logspot.com\n127.0.0.1 buy-cheap-"..., 4096) = 4096
+read(3, "m\n127.0.0.1 creampie.afdss.info\n"..., 4096) = 4096
+read(3, "de\n127.0.0.1 jg.hack-inter.net\n1"..., 4096) = 4096
+read(3, "tho-tri-cyclen.1.p2l.info\n127.0."..., 4096) = 4096
+read(3, "ntyhose.com\n127.0.0.1 university"..., 4096) = 4096
+read(3, "-home.com\n127.0.0.1 www.poker4sp"..., 4096) = 4096
+read(3, "si, Lance Russhing, Marshall Dre"..., 4096) = 1945
+read(3, "", 4096)                       = 0
+close(3)                                = 0
+munmap(0x7f1c2d1f0000, 4096)            = 0
+open("/etc/gai.conf", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=2584, ...}) = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=2584, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f1c2d1f0000
+read(3, "# Configuration for getaddrinfo("..., 4096) = 2584
+read(3, "", 4096)                       = 0
+close(3)                                = 0
+munmap(0x7f1c2d1f0000, 4096)            = 0
+futex(0x7f1c2cdb63c0, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+socket(PF_NETLINK, SOCK_RAW, 0)         = 3
+bind(3, {sa_family=AF_NETLINK, pid=0, groups=00000000}, 12) = 0
+getsockname(3, {sa_family=AF_NETLINK, pid=32165, groups=00000000}, [12]) = 0
+sendto(3, "\24\0\0\0\26\0\1\3\354%\240Z\0\0\0\0\0\0\0\0", 20, 0, {sa_family=AF_NETLINK, pid=0, groups=00000000}, 12) = 20
+recvmsg(3, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"L\0\0\0\24\0\2\0\354%\240Z\245}\0\0\2\10\200\376\1\0\0\0\10\0\1\0\177\0\0\1"..., 4096}], msg_controllen=0, msg_flags=0}, 0) = 412
+recvmsg(3, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"H\0\0\0\24\0\2\0\354%\240Z\245}\0\0\n\200\200\376\1\0\0\0\24\0\1\0\0\0\0\0"..., 4096}], msg_controllen=0, msg_flags=0}, 0) = 504
+recvmsg(3, {msg_name(12)={sa_family=AF_NETLINK, pid=0, groups=00000000}, msg_iov(1)=[{"\24\0\0\0\3\0\2\0\354%\240Z\245}\0\0\0\0\0\0", 4096}], msg_controllen=0, msg_flags=0}, 0) = 20
+close(3)                                = 0
+socket(PF_INET, SOCK_DGRAM, IPPROTO_IP) = 3
+connect(3, {sa_family=AF_INET, sin_port=htons(3333), sin_addr=inet_addr("127.0.0.1")}, 16) = 0
+getsockname(3, {sa_family=AF_INET, sin_port=htons(44807), sin_addr=inet_addr("127.0.0.1")}, [16]) = 0
+close(3)                                = 0
+socket(PF_INET6, SOCK_DGRAM, IPPROTO_IP) = 3
+connect(3, {sa_family=AF_INET6, sin6_port=htons(3333), inet_pton(AF_INET6, "::1", &sin6_addr), sin6_flowinfo=0, sin6_scope_id=0}, 28) = 0
+getsockname(3, {sa_family=AF_INET6, sin6_port=htons(34781), inet_pton(AF_INET6, "::1", &sin6_addr), sin6_flowinfo=0, sin6_scope_id=0}, [28]) = 0
+close(3)                                = 0
+socket(PF_INET, SOCK_STREAM|SOCK_CLOEXEC, IPPROTO_TCP) = 3
+ioctl(3, FIONBIO, [0])                  = 0
+connect(3, {sa_family=AF_INET, sin_port=htons(3333), sin_addr=inet_addr("127.0.0.1")}, 16) = 0
+recvfrom(3, "Q\0\0\0", 4, 0, NULL, NULL) = 4
+recvfrom(3, "\n5.7.14-google\0\255\205\0\0FLF)wYa\r\0\377\367!\2"..., 81, 0, NULL, NULL) = 81
+sendto(3, "_\0\0\1\215\242\v\0\0\0\0@!\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 99, 0, NULL, 0) = 99
+recvfrom(3, "\7\0\0\2", 4, 0, NULL, NULL) = 4
+recvfrom(3, "\0\0\0\2\0\0\0", 7, 0, NULL, NULL) = 7
+sendto(3, "+\0\0\0\3SET NAMES 'utf8' COLLATE 'u"..., 47, 0, NULL, 0) = 47
+recvfrom(3, "\7\0\0\1", 4, 0, NULL, NULL) = 4
+recvfrom(3, "\0\0\0\2\0\0\0", 7, 0, NULL, NULL) = 7
+sendto(3, "\37\0\0\0\3SET @@session.autocommit = "..., 35, 0, NULL, 0) = 35
+recvfrom(3, "\7\0\0\1", 4, 0, NULL, NULL) = 4
+recvfrom(3, "\0\0\0\0\0\0\0", 7, 0, NULL, NULL) = 7
+sendto(3, "\1\0\0\0\16", 5, 0, NULL, 0) = 5
+recvfrom(3, "\7\0\0\1", 4, 0, NULL, NULL) = 4
+recvfrom(3, "\0\0\0\0\0\0\0", 7, 0, NULL, NULL) = 7
+sendto(3, "\1\0\0\0\16", 5, 0, NULL, 0) = 5
+recvfrom(3, "\7\0\0\1", 4, 0, NULL, NULL) = 4
+recvfrom(3, "\0\0\0\0\0\0\0", 7, 0, NULL, NULL) = 7
+ioctl(1, SNDCTL_TMR_TIMEBASE or SNDRV_TIMER_IOCTL_NEXT_DEVICE or TCGETS, {B38400 opost isig icanon echo ...}) = 0
+write(1, "\33[32m\33[22mexecuting \"SELECT * FR"..., 79) = 79
+sendto(3, "(\0\0\0\3SELECT * FROM etl_agg where"..., 44, 0, NULL, 0) = 44
+recvfrom(3, "\1\0\0\1", 4, 0, NULL, NULL) = 4
+recvfrom(3, "\6", 1, 0, NULL, NULL)     = 1
+recvfrom(3, "B\0\0\2", 4, 0, NULL, NULL) = 4
+recvfrom(3, "\3def\10noaa_agg\7etl_agg\7etl_agg\vma"..., 66, 0, NULL, NULL) = 66
+recvfrom(3, "B\0\0\3", 4, 0, NULL, NULL) = 4
+recvfrom(3, "\3def\10noaa_agg\7etl_agg\7etl_agg\vmi"..., 66, 0, NULL, NULL) = 66
+recvfrom(3, "4\0\0\4", 4, 0, NULL, NULL) = 4
+recvfrom(3, "\3def\10noaa_agg\7etl_agg\7etl_agg\4da"..., 52, 0, NULL, NULL) = 52
+recvfrom(3, "6\0\0\5", 4, 0, NULL, NULL) = 4
+recvfrom(3, "\3def\10noaa_agg\7etl_agg\7etl_agg\5st"..., 54, 0, NULL, NULL) = 54
+recvfrom(3, "2\0\0\6", 4, 0, NULL, NULL) = 4
+recvfrom(3, "\3def\10noaa_agg\7etl_agg\7etl_agg\3st"..., 50, 0, NULL, NULL) = 50
+recvfrom(3, "<\0\0\7", 4, 0, NULL, NULL) = 4
+recvfrom(3, "\3def\10noaa_agg\7etl_agg\7etl_agg\10st"..., 60, 0, NULL, NULL) = 60
+recvfrom(3, "\5\0\0\10", 4, 0, NULL, NULL) = 4
+recvfrom(3, "\376\0\0!\0", 5, 0, NULL, NULL) = 5
+recvfrom(3, "\5\0\0\t", 4, 0, NULL, NULL) = 4
+recvfrom(3, "\376\0\0!\0", 5, 0, NULL, NULL) = 5
+ioctl(1, SNDCTL_TMR_TIMEBASE or SNDRV_TIMER_IOCTL_NEXT_DEVICE or TCGETS, {B38400 opost isig icanon echo ...}) = 0
+write(1, "\33[34m\33[22mno results found\33[39m\33"..., 37) = 37
+rt_sigaction(SIGINT, {SIG_DFL, [], SA_RESTORER, 0x7f1c2cdca330}, {0x46e121, [], SA_RESTORER, 0x7f1c2cdca330}, 8) = 0
+getsockname(3, {sa_family=AF_INET, sin_port=htons(39054), sin_addr=inet_addr("127.0.0.1")}, [16]) = 0
+getpeername(3, {sa_family=AF_INET, sin_port=htons(3333), sin_addr=inet_addr("127.0.0.1")}, [16]) = 0
+close(3)                                = 0
+exit_group(0)                           = ?
++++ exited with 0 +++
