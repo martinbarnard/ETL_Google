@@ -1,7 +1,6 @@
 # As stolen from the travis site... 
 language: python
 python:
-  - "3.5"
   - "3.6"
 
 # command to install dependencies
