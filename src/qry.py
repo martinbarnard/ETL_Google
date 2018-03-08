@@ -16,7 +16,7 @@ our_sql_cfg = dict(
     host = 'localhost'
 )
 
-our_sql = "SELECT * FROM etl_agg where state=%s"
+our_sql = "SELECT max_celsius max_c, min_celsius min_c, date, state FROM etl_agg where state=%s"
 
 # argparsing made easy
 args = Args()
@@ -34,6 +34,9 @@ if args.contains('-h'):
 
 if args.contains('-state'):
     state = gargs['-state'][0].upper()
+else:
+    puts(colored.blue('nothing to do'))
+    sys.exit(0)
 
 connection = sql.mysql_connect(our_sql_cfg)
 if connection and state:
