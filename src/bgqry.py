@@ -46,10 +46,7 @@ def get_data(configs, qry_name, do_insert = False, connection=None):
     # Iterate
     iterator = 0
     for row in rows:
-        rdate = "{}-{}-{}".format(row.year, row.mo, row.da)
         r = {k: v for k, v in row.items()}
-        r['date'] = rdate
-
         # we need to insert our row anyhow
         if do_insert:
             sql.insert_row(cursor, r)
@@ -70,35 +67,30 @@ def get_data(configs, qry_name, do_insert = False, connection=None):
 
 SQL = {
     'etl_ex': '''
-    SELECT distinct
-      max,
-        (max-32)*5/9 max_celsius,
-      min,
-        (min-32)*5/9 min_celsius,
-      year,
-      mo,
-      da,
-      state
-     FROM (
+    SELECT
+        max((max-32)*5/9) max,
+        min((min-32)*5/9) min,
+        DATE(CAST(year as int64),CAST(mo as int64),CAST(da as int64)) date,
+        state
+    FROM  (
         `bigquery-public-data.noaa_gsod.gsod199*` a
-      JOIN
+    JOIN
         `bigquery-public-data.noaa_gsod.stations` b
-      ON
+    ON
         a.stn = b.usaf
-        AND a.wban = b.wban
-        )
-      GROUP BY
+        and a.wban = b.wban
+    )
+    GROUP BY
         year,
         da,
         mo,
-        max,
-        min,
         state,
         country
-      HAVING
-        state IS NOT NULL
-        AND max < 1000
-        AND country='US'
+    HAVING
+    state is not null
+    and max < 1000
+    and country = 'US'
+    ORDER BY DATE
     '''
 }
 

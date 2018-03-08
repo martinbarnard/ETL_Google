@@ -20,9 +20,7 @@ TABLES['etl_agg'] = '''
             max_celsius DOUBLE,
             min_celsius DOUBLE,
             date DATE,
-            state VARCHAR(10),
-            stn VARCHAR(255),
-            stn_name VARCHAR(255)
+            state VARCHAR(10)
         ) ENGINE=InnoDB ;
     '''
 def insert_row(cursor, row):
@@ -39,9 +37,9 @@ def insert_row(cursor, row):
         (%s, %s, %s, %s)
     '''
     our_list = (
-        row['max_celsius'],
-        row['min_celsius'],
-        datetime.strptime(row['date'], '%Y-%M-%d'),
+        row['max'],
+        row['min'],
+        row['date'],
         row['state'],
     )
     cursor.execute(sql, our_list)
@@ -58,9 +56,9 @@ def upload_data(connection, json_data):
 
     sql = '''
     INSERT INTO etl_agg
-        (max_celsius, min_celsius, date, state, stn, stn_name)
+        (max_celsius, min_celsius, date, state)
     VALUES
-        (%s, %s, %s, %s, %s, %s)
+        (%s, %s, %s, %s)
     '''
     cursor = connection.cursor()
     jd = json.loads(open(json_data, 'r').read())
@@ -72,12 +70,10 @@ def upload_data(connection, json_data):
             cursor.execute(starttran)
             for data in jd:
                 our_list = (
-                    data['max_celsius'],
-                    data['min_celsius'],
-                    datetime.strptime(data['date'], '%Y-%M-%d'),
+                    data['max'],
+                    data['min'],
+                    data['date'],
                     data['state'],
-                    data['stn'],
-                    data['name']
                 )
                 cursor.execute(sql, our_list)
             cursor.execute(commit)

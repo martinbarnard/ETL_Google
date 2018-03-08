@@ -16,6 +16,7 @@ from clint.textui import puts, colored, indent
 
 sys.path.insert(0, os.path.abspath('..'))
 
+# TODO: refactor with setuptools
 try:
     import sql
     import bgqry
@@ -23,11 +24,8 @@ except ImportError as e:
     from ETL_Google.src import sql
     from ETL_Google.src import bgqry
 
-cfg_filename = 'private/config.ini'
-
 # Our config parser object
 cfgparser = configparser.ConfigParser()
-
 
 def parse_cmdline():
     '''
@@ -116,8 +114,7 @@ def get_configs(cfgparser):
     try:
         cfgparser.read(cfgfile)
     except Exception as e:
-        log.error('error parsing {}'.format(cfgfile))
-        log.error(e)
+        log.exception(e)
         puts(colored.red('Unable to parse config at ' + str(cfgfile)))
         return None
 
@@ -170,17 +167,9 @@ def main():
 
     # This assumes we are using the right db!!!
     log.info('dropping old tables')
-    try:
-        sql.drop_tables(connection)
-    except ReferenceError as e:
-        print('weak bastard')
-        cursor = sql.mysql_connect(configs['cloudsql'])
-        sql.drop_tables(cursor)
-    except Exception as e:
-        print('unhandled exception dropping old tables')
-        print(e)
-        log.error(e)
-        sys.exit(1)
+    puts(colored.blue('dropping old table'))
+    sql.drop_tables(connection)
+    cursor = sql.mysql_connect(configs['cloudsql'])
 
     # Recreate them now
     log.info('recreating new tables')
