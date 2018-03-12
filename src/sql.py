@@ -4,7 +4,6 @@ import sys
 import os
 import mysql.connector
 from mysql.connector import errorcode
-from datetime import datetime
 from clint.textui import puts, colored
 
 sys.path.insert(0, os.path.abspath('..'))
@@ -95,8 +94,8 @@ def mysql_connect(cfg=None):
 
     try:
         logger.info('Connecting to MySQL db')
-        puts(colored.blue('{}@{}:{}'.format(cfg['username'],cfg['host'],cfg['proxy_port'])))
-        port = int(cfg['proxy_port'])
+        puts(colored.blue('{}@{}:{}'.format(cfg['username'],cfg['host'],cfg['port'])))
+        port = int(cfg['port'])
         connection = mysql.connector.connect(
             host=cfg['host'],
             user=cfg['username'],

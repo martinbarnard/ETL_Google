@@ -17,7 +17,6 @@ def get_options():
     cfgfile = 'private/config.ini'
     cfgparser.read(cfgfile)
     our_sql_cfg = dict()
-    options = cfgparser.options('cloudsql')
     our_sql_cfg['dbname'] = cfgparser.get('cloudsql','db_name')
     our_sql_cfg['username'] = cfgparser.get('cloudsql', 'username')
     our_sql_cfg['password'] = cfgparser.get('cloudsql', 'password')

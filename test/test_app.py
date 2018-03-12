@@ -13,9 +13,7 @@ def my_exception():
     raise Exception('testing')
 
 @mock.patch('ETL_Google.src.app.Args')
-@mock.patch('ETL_Google.src.app.parse_cmdline')
-@mock.patch('ETL_Google.src.app.cfgparser')
-def test_get_configs(mock_parser, mock_cmdparse, mock_args):
+def test_get_configs(mock_args):
     '''
     Testing if our configs are available - happy path
     This is a bit hacky, but I've never used the mock decorator

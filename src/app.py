@@ -36,18 +36,7 @@ def parse_cmdline():
     cfgfile = 'private/config.ini'
 
     # This was sane defaults, but now I don't want it
-    configs = {
-        'cloudsql': {
-            'db_name': 'noaa_agg',
-            'username': 'root',
-            'password': '',
-            'proxy_port': '3306',
-        },
-        'logging': {
-            'logfile': 'log/ELT.log',
-            'loglevel': '10',
-        },
-    }
+    configs = { }
 
     args = Args()
     gargs = args.grouped
@@ -71,8 +60,8 @@ def parse_cmdline():
         cfgfile = gargs['-c'][0]
 
     if args.contains('-x'):
-        configs['cloudsql']['proxy_port'] = gargs['-x'][0]
-        puts(colored.green('setting proxy port'))
+        configs['cloudsql']['port'] = gargs['-x'][0]
+        puts(colored.green('setting port port'))
 
     if args.contains('-d'):
         configs['cloudsql']['db_name'] = gargs['-d'][0]
@@ -169,7 +158,6 @@ def main():
     log.info('dropping old tables')
     puts(colored.blue('dropping old table'))
     sql.drop_tables(connection)
-    cursor = sql.mysql_connect(configs['cloudsql'])
 
     # Recreate them now
     log.info('recreating new tables')
