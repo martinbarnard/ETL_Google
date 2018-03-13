@@ -20,9 +20,11 @@ sys.path.insert(0, os.path.abspath('..'))
 try:
     import sql
     import bgqry
+    import qry
 except ImportError as e:
     from ETL_Google.src import sql
     from ETL_Google.src import bgqry
+    from ETL_Google.src import qry
 
 # Our config parser object
 cfgparser = configparser.ConfigParser()
@@ -51,7 +53,8 @@ def parse_cmdline():
             puts('-p <db_pwd>: Cloud SQL password')
             puts('-l <logfile>: Location of logfile')
             puts('-j <jsonfile>: Location of dump file')
-            puts('-q <state>: Query by state')
+            puts('-state <state>: Query by state')
+            puts('-date <state>: Query by date')
 
         return None
 
@@ -79,9 +82,14 @@ def parse_cmdline():
         configs['logging']['logfile'] = gargs['-l'][0]
         puts(colored.green('setting logfile location'))
 
-    if args.contains('-q'):
-        configs['query']['state'] = gargs['-q'][0]
-        puts(colored.green('querying for {}'.format(configs['query']['state'])))
+    if args.contains('-state'):
+        configs['query'] = {}
+        configs['query']['states'] = gargs['-state'][0]
+        puts(colored.green('querying for {}'.format(configs['query']['states'])))
+    elif args.contains('-date'):
+        configs['query'] = {}
+        configs['query']['dates'] = gargs['-date'][0]
+        puts(colored.green('querying by date: {}'.format(configs['query']['dates'])))
 
     log.info('config file is {}'.format(cfgfile))
     return cfgfile, configs
@@ -98,9 +106,9 @@ def get_configs(cfgparser):
     # Then, we will use that to grab our cfgfile and try to open that for reading
     try:
         cfgfile, configs = parse_cmdline()
-    except:
+    except Exception as e:
         puts(colored.red('cannot parse cmdline'))
-        return None
+        raise e
 
     try:
         cfgparser.read(cfgfile)
@@ -142,9 +150,15 @@ def main():
         sys.exit(1)
 
     if 'query' in configs:
-        # We are running a query - everything else doesn't matter
-        # import our query
-        pass
+        qryobj = qry.queryObj(configs['cloudsql'])
+        if 'states' in configs['query']:
+            res = qryobj.do_qry('states', configs['query']['states'])
+        else:
+            res = qryobj.do_qry('dates', configs['query']['dates'])
+        if res:
+            qryobj.print_results()
+        sys.exit(0)
+
 
 
     # Set up our logging

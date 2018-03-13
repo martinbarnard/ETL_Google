@@ -1,1 +1,1 @@
-__all__ = ['app', 'sql', 'bgqry']
+__all__ = ['app', 'sql', 'bgqry','qry']
