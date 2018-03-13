@@ -26,8 +26,15 @@ class queryObj(object):
         }
         self.cfg = cfg
         self.results = []
-        puts(colored.green('using config', self.cfg))
         self.connection = sql.mysql_connect(cfg)
+
+    def print_results(self):
+        '''
+        Print out the results
+        '''
+        if len(self.results) > 0:
+            for row in self.results:
+                puts("Date: {}\tmin: {:.2f}\t max: {:.2f}\tState: {}".format(row[2], row[0], row[1], row[3]))
 
     def do_qry(self, qry='states', qv = None):
         '''
@@ -42,7 +49,6 @@ class queryObj(object):
 
                 # our return values
                 for row in cursor:
-                    print(row)
                     self.results.append(row)
                 if len(self.results)>0:
                     return True
@@ -98,21 +104,18 @@ def main():
         puts(colored.yellow('Calling with state "{}"'.format(state)))
         result = dbobj.do_qry('states', state)
         if result:
-            for row in dbobj.results:
-                puts("min: {: .2f}\t max: {: .2f}\tDate: {}".format(row[0], row[1], row[2]))
+            dbobj.print_results()
 
     elif args.contains('-date'):
         dt = gargs['-date'][0]
         result = dbobj.do_qry('dates', dt)
         if result:
-            for row in dbobj.results:
-                puts("min: {: .2f}\t max: {: .2f}\tDate: {}".format(row[0], row[1], row[2]))
+            dbobj.print_results()
     elif args.contains('-get'):
         dt = gargs['-get'][0]
         result = dbobj.do_qry('get_state')
         if result:
-            for row in dbobj.results:
-                puts(row)
+            dbobj.print_results()
     else:
         print_help(args[0])
 

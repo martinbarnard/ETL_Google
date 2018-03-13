@@ -141,12 +141,11 @@ def main():
         puts(colored.red('Unable to load configs'))
         sys.exit(1)
 
-    if query in configs:
+    if 'query' in configs:
         # We are running a query - everything else doesn't matter
         # import our query
-    else:
-        # we are doing other shit
-        log.info('trying to open {}'.format(cfgfile))
+        pass
+
 
     # Set up our logging
     logcfg = configs['logging']
