@@ -28,6 +28,15 @@ except ImportError as e:
 
 # Our config parser object
 cfgparser = configparser.ConfigParser()
+def print_help():
+    puts(colored.green('Usage {} <FLAGS>'.format(sys.argv[0])))
+    with indent(4):
+        puts('-h: This help')
+        puts('-c <cfg>: location of config file')
+        puts('-l <logfile>: Location of logfile')
+        puts('-d Dump & recreate dataset')
+        puts('-state <state>: Query by state')
+        puts('-date <state>: Query by date')
 
 def parse_cmdline():
     '''
@@ -43,55 +52,29 @@ def parse_cmdline():
     args = Args()
     gargs = args.grouped
     if args.contains('-h'):
-        puts(colored.green('Usage {} <FLAGS>'.format(sys.argv[0])))
-        with indent(4):
-            puts('-h: This help')
-            puts('-c <cfg>: location of config file')
-            puts('-x <port>: Cloud SQL proxy port')
-            puts('-d <db_name>: name of Cloud SQL database')
-            puts('-u <db_uname>: name of Cloud SQL user')
-            puts('-p <db_pwd>: Cloud SQL password')
-            puts('-l <logfile>: Location of logfile')
-            puts('-j <jsonfile>: Location of dump file')
-            puts('-state <state>: Query by state')
-            puts('-date <state>: Query by date')
-
-        return None
+        print_help()
+        sys.exit(0)
 
     # Bit hacky, but whatever
     if args.contains('-c'):
         cfgfile = gargs['-c'][0]
 
-    if args.contains('-x'):
-        configs['cloudsql']['port'] = gargs['-x'][0]
-        puts(colored.green('setting port port'))
-
-    if args.contains('-d'):
-        configs['cloudsql']['db_name'] = gargs['-d'][0]
-        puts(colored.green('setting db name'))
-
-    if args.contains('-u'):
-        configs['cloudsql']['username'] = gargs['-u'][0]
-        puts(colored.green('setting db username'))
-
-    if args.contains('-p'):
-        configs['cloudsql']['password'] = gargs['-p'][0]
-        puts(colored.green('setting db password'))
-
     if args.contains('-l'):
         configs['logging']['logfile'] = gargs['-l'][0]
         puts(colored.green('setting logfile location'))
 
-    if args.contains('-state'):
-        configs['query'] = {}
-        configs['query']['states'] = gargs['-state'][0]
-        puts(colored.green('querying for {}'.format(configs['query']['states'])))
-    elif args.contains('-date'):
-        configs['query'] = {}
-        configs['query']['dates'] = gargs['-date'][0]
-        puts(colored.green('querying by date: {}'.format(configs['query']['dates'])))
+    if args.contains('-d'):
+        configs['status'] = ['recreate']
+        return cfgfile, configs
 
-    log.info('config file is {}'.format(cfgfile))
+    if args.contains('-state'):
+        configs['status'] = ['query_state', gargs['-state'][0]]
+        return cfgfile, configs
+
+    if args.contains('-date'):
+        configs['status'] = ['query_date', gargs['-date'][0]]
+        return cfgfile, configs
+
     return cfgfile, configs
 
 
@@ -139,6 +122,11 @@ def _conf_sec_map(cfg, section, rv={}):
         rv[option] = cfg.get(section, option)
     return rv
 
+def recreate_data():
+    '''
+    Drop old tables, pull in new stuff & insert as ETL operation
+    '''
+    return True
 
 def main():
     '''
@@ -149,18 +137,6 @@ def main():
         puts(colored.red('Unable to load configs'))
         sys.exit(1)
 
-    if 'query' in configs:
-        qryobj = qry.queryObj(configs['cloudsql'])
-        if 'states' in configs['query']:
-            res = qryobj.do_qry('states', configs['query']['states'])
-        else:
-            res = qryobj.do_qry('dates', configs['query']['dates'])
-        if res:
-            qryobj.print_results()
-        sys.exit(0)
-
-
-
     # Set up our logging
     logcfg = configs['logging']
     log.basicConfig(
@@ -170,28 +146,55 @@ def main():
     )
     puts('logging to {}'.format(logcfg['logfile']))
 
-    # Here we need to test config to see if we are dropping db
+    if 'status' in configs:
+        st = configs['status']
+        qryobj = qry.queryObj(configs['cloudsql'])
 
-    connection = sql.mysql_connect(configs['cloudsql'])
-    if not connection:
-        puts(colored.red('unable to connect to CloudSQL'))
-        log.error('Unable to connect to CloudSQL')
-        sys.exit(1)
+        if st[0] == 'recreate':
+            # Drop our database & pull in shiny
+            # Our google query object
+            GQ = bgqry.etl()
+            mydb = sql.cloudsql(configs['cloudsql'])
 
-    # This assumes we are using the right db!!!
-    log.info('dropping old tables')
-    puts(colored.blue('dropping old table'))
-    sql.drop_tables(connection)
+            mydb.connect()
+            GQ.connect()
 
-    # Recreate them now
-    log.info('recreating new tables')
-    sql.create_tables(connection, configs['cloudsql']['db_name'])
+            res = GQ.query()
+            if res:
+                cnt = 0
+                rowset = []
+                for row in GQ.results:
+                    r = {k:v for k,v in row.items()}
+                    rowset.append(r)
+                    cnt += 1
+                    if cnt % 1000 == 0:
+                        mydb.insert_rows(rowset)
+                        rowset = []
+                        puts(colored.yellow('{} rows inserted...'.format(cnt)))
 
-    # This is the output from our bigquery
-    puts(colored.blue('starting our bigquery'))
-    rv = bgqry.get_data('etl_ex', do_insert=True, connection = connection)
-    puts(colored.green('query over. Insertion status: {}'.format(rv)))
-        
+                puts(colored.yellow('completed with {} rows inserted'.format(cnt)))
+            sys.exit(0)
+        # A bit duplicate, but clean
+        elif st[0] == 'query_state':
+            # state query
+            res = qryobj.do_qry('states',st[1] )
+            if res:
+                qryobj.print_results()
+        elif st[0] == 'query_date':
+            # date query
+            res = qryobj.do_qry('dates',st[1] )
+            if res:
+                qryobj.print_results()
+        else:
+            # unknown - bail
+            puts(colored.red('No idea what you want'))
+            sys.exit(1)
+    else:
+        # unknown - bail
+        print_help()
+
+        sys.exit(0)
+
     log.info('Finished')
 
 

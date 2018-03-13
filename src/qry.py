@@ -2,23 +2,19 @@
 import sys
 import os
 import configparser
+import mysql.connector
 from clint.arguments import Args
 from clint.textui import puts, colored
 
 # standalone command-line tool to query the db.
 sys.path.insert(0, os.path.abspath('..'))
 
-try:
-    import sql
-except ImportError as e:
-    from ETL_Google.src import sql
-
-
 class queryObj(object):
     '''
     A query object. Takes a value or set of values and does query stuff with them
     '''
     def __init__(self, cfg):
+        dbname = 'noaa_agg'
         self.queries = {
             'get_states':  "SELECT DISTINCT state from etl_agg ORDER BY STATE",
             'dates' : "SELECT min_celsius min_c, max_celsius max_c, date, state from etl_agg where date=%s",
@@ -26,7 +22,13 @@ class queryObj(object):
         }
         self.cfg = cfg
         self.results = []
-        self.connection = sql.mysql_connect(cfg)
+        self.connection = mysql.connector.connect(
+            host=cfg['host'],
+            user=cfg['username'],
+            password=cfg['password'],
+            port=cfg['port'],
+            database=dbname
+        )
 
     def print_results(self):
         '''

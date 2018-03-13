@@ -1,180 +1,119 @@
 import logging
-import json
 import sys
 import os
 import mysql.connector
-from mysql.connector import errorcode
-from clint.textui import puts, colored
 
 sys.path.insert(0, os.path.abspath('..'))
 
-# MySQL code
-# Used for connecting to Google cloud SQL (i.e. google hosted MySQL instance)
-
-TABLES = {}
 logger = logging.getLogger(__name__)
 
-TABLES['etl_agg'] = '''
-        CREATE TABLE etl_agg (
-            max_celsius DOUBLE,
-            min_celsius DOUBLE,
-            date DATE,
-            state VARCHAR(10)
-        ) ENGINE=InnoDB ;
-    '''
-def insert_row(cursor, row):
-    '''
-    Assumes we're in a transaction. 
-    :param: connection object, 
-            row dictionary
-    :return: 
-    '''
-    sql = '''
-    INSERT INTO etl_agg
-        (max_celsius, min_celsius, date, state )
-    VALUES
-        (%s, %s, %s, %s)
-    '''
-    our_list = (
-        row['max'],
-        row['min'],
-        row['date'],
-        row['state'],
-    )
-    cursor.execute(sql, our_list)
+class cloudsql():
+    def __init__(self, config = None):
+        '''
+        Need to ensure that config and DBNAME are correctly set
+        '''
+        self.sql = {
+            'commit' : 'COMMIT',
+            'start' : 'START TRANSACTION',
+            'insert_row' : '''
+                INSERT INTO etl_agg
+                    (max_celsius, min_celsius, date, state )
+                VALUES
+                    (%s, %s, %s, %s)
+            ''',
+            'create_db' : "CREATE DATABASE IF NOT EXISTS {} DEFAULT CHARACTER SET 'utf8'",
+            'rollback' : "ROLLBACK",
+            'create' : '''CREATE TABLE etl_agg (
+                    max_celsius DOUBLE,
+                    min_celsius DOUBLE,
+                    date DATE,
+                    state VARCHAR(10)
+                ) ENGINE=InnoDB ;''',
+            'drop' : '''DROP TABLE IF EXISTS etl_agg'''
+        }
+        self.cursor = None
+        self.config = config
+        self.transaction = False
+        self.db = config['db_name']
 
 
-def upload_data(connection, json_data):
-    '''
-    Will take the json_data and upload it to the table
-    json_data being path to json file for now
-    '''
-    starttran = 'START TRANSACTION'
-    commit = 'COMMIT'
-    rollback = 'ROLLBACK'
-
-    sql = '''
-    INSERT INTO etl_agg
-        (max_celsius, min_celsius, date, state)
-    VALUES
-        (%s, %s, %s, %s)
-    '''
-    cursor = connection.cursor()
-    jd = json.loads(open(json_data, 'r').read())
-
-    if cursor:
-        logger.info('starting sql insertion')
-        print('we are inserting our data')
-        try:
-            cursor.execute(starttran)
-            for data in jd:
-                our_list = (
-                    data['max'],
-                    data['min'],
-                    data['date'],
-                    data['state'],
-                )
-                cursor.execute(sql, our_list)
-            cursor.execute(commit)
-        except Exception as e:
-            cursor.execute(rollback)
-            raise(e)
-    return None
+    def drop_table(self):
+        '''
+        Assumes we don't care about our data & will just drop the tables
+        '''
+        cursor = self.connection.cursor()
+        cursor.execute(self.sql['drop'])
+        return True
 
 
-def mysql_connect(cfg=None):
-    '''
-    Take the mysql connection info and attempt to return a cursor object
-    Assumes that configs is set
-    '''
-    dbname = 'noaa_agg'
-
-    if cfg is None:
-        return None
-
-    try:
-        logger.info('Connecting to MySQL db')
-        puts(colored.blue('{}@{}:{}'.format(cfg['username'],cfg['host'],cfg['port'])))
-        port = int(cfg['port'])
-        connection = mysql.connector.connect(
-            host=cfg['host'],
-            user=cfg['username'],
-            password=cfg['password'],
-            port=port,
-            database=dbname
-        )
-    except Exception as e:
-        logger.error(e)
-        return None
-
-
-    return connection
-
-
-def create_db(connection, DB_NAME):
-    '''
-    MySQL
-    '''
-    cursor = connection.cursor()
-    try:
+    def create_db(self):
+        '''
+        MySQL
+        '''
+        DB_NAME = self.db
         logger.info('Attempting to create database: {}'.format(DB_NAME))
-        cursor.execute(
-            "CREATE DATABASE IF NOT EXISTS {} DEFAULT CHARACTER SET 'utf8'".format(DB_NAME))
-    except mysql.connector.Error as err:
-        logger.error('Failed to create database: {}'.format(DB_NAME))
-        logger.debug(err.msg)
-        return False
-    return True
+        cursor = self.connection.cursor()
+        cursor.execute( self.sql['create_db'].format(DB_NAME))
+        return True
 
 
-def drop_tables(connection):
-    '''
-    Assumes we don't care about our data & will just drop the tables
-    '''
-    cursor = connection.cursor()
-    for t in TABLES:
-        st = '''DROP TABLE IF EXISTS {}'''.format(t)
-        try:
-            cursor.execute(st)
-        except ReferenceError as e:
-            logger.debug(e)
-            raise(e)
+    def connect(self):
+        '''
+        Take the mysql connection info and attempt to return a cursor object
+        Assumes that configs is set
+        '''
+        dbname = 'noaa_agg'
 
-    return True
+        cfg = self.config
 
-
-def create_tables(connection, DB_NAME):
-    '''
-    MYSQL. TODO: move out to MySQL only module
-    Create our table - single table at the moment
-    '''
-    cursor = connection.cursor()
-    logger.info('connecting to {}'.format(DB_NAME))
-    try:
-        cursor.database = DB_NAME
-    except mysql.connector.Error as err:
-        logger.error('Unable to connect to database {}'.format(DB_NAME))
-        if err.errno == errorcode.ER_BAD_DB_ERROR:
-            logger.debug(err.msg)
-            create_db(cursor, DB_NAME)
-            cursor.database = DB_NAME
-        else:
-            logger.error(err.msg)
+        if cfg is None:
             return False
 
-    for k, v in TABLES.items():
         try:
-            logger.info('Creating table {}'.format(k))
-            cursor.execute(v)
-        except mysql.connector.Error as err:
-            if err.errno == errorcode.ER_TABLE_EXISTS_ERROR:
-                logger.info('table {} exists'.format(k))
-            else:
-                logger.error(err.msg)
-        else:
-            logger.info('{} created'.format(k))
-    return True
+            self.port = int(cfg['port'])
+            self.connection = mysql.connector.connect(
+                host=cfg['host'],
+                user=cfg['username'],
+                password=cfg['password'],
+                port=self.port,
+                database=dbname
+            )
+        except Exception as e:
+            logger.error(e)
+            return False
 
+        return True
+
+
+    def insert_rows(self,rows):
+        '''
+        :param: connection object, 
+                row list
+        :return: 
+        '''
+        cursor = self.connection.cursor()
+        cursor.execute(self.sql['start'])
+        for row in rows:
+            our_list = (
+                row['max'],
+                row['min'],
+                row['date'],
+                row['state'],
+            )
+            cursor.execute(self.sql['insert_row'], our_list)
+        cursor.execute(self.sql['commit'])
+        return True
+
+
+    def create_table(self):
+        '''
+        '''
+        logger.info('connecting to {}'.format(self.db))
+        cursor = self.connection.cursor()
+        cursor.database = self.db
+        cursor.execut(self.sql['create'])
+        return True
+    
 
 if __name__ == '__main__':
     print("Should be used as a module")
