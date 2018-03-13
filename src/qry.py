@@ -5,14 +5,56 @@ import configparser
 from clint.arguments import Args
 from clint.textui import puts, colored
 
+# standalone command-line tool to query the db.
+sys.path.insert(0, os.path.abspath('..'))
+
 try:
     import sql
 except ImportError as e:
     from ETL_Google.src import sql
 
-sys.path.insert(0, os.path.abspath('..'))
 
-def get_options():
+class queryObj(object):
+    '''
+    A query object. Takes a value or set of values and does query stuff with them
+    '''
+    def __init__(self, cfg):
+        self.queries = {
+            'get_states':  "SELECT DISTINCT state from etl_agg ORDER BY STATE",
+            'dates' : "SELECT min_celsius min_c, max_celsius max_c, date, state from etl_agg where date=%s",
+            'states' : "SELECT min_celsius min_c, max_celsius max_c, date, state FROM etl_agg where state=%s",
+        }
+        self.cfg = cfg
+        self.results = []
+        puts(colored.green('using config', self.cfg))
+        self.connection = sql.mysql_connect(cfg)
+
+    def do_qry(self, qry='states', qv = None):
+        '''
+        Run the selected query & put results into a dcit
+        '''
+        if qry in self.queries:
+            query = self.queries[qry]
+            if self.connection is not None:
+                cnx = self.connection
+                cursor = cnx.cursor()
+                cursor.execute(query,(qv,))
+
+                # our return values
+                for row in cursor:
+                    print(row)
+                    self.results.append(row)
+                if len(self.results)>0:
+                    return True
+                else:
+                    return False
+            else:
+                puts(colored.red('No connection!'))
+                return False
+
+
+    
+def get_config():
     cfgparser = configparser.ConfigParser()
     cfgfile = 'private/config.ini'
     cfgparser.read(cfgfile)
@@ -20,55 +62,61 @@ def get_options():
     our_sql_cfg['dbname'] = cfgparser.get('cloudsql','db_name')
     our_sql_cfg['username'] = cfgparser.get('cloudsql', 'username')
     our_sql_cfg['password'] = cfgparser.get('cloudsql', 'password')
-    our_sql_cfg['proxy_port'] = cfgparser.get('cloudsql','port')
+    our_sql_cfg['port'] = cfgparser.get('cloudsql','port')
     our_sql_cfg['host'] = cfgparser.get('cloudsql','host')
     return our_sql_cfg
         
 
-our_sql = "SELECT min_celsius min_c, max_celsius max_c, date, state FROM etl_agg where state=%s"
-get_states = "SELECT DISTINCT state from etl_agg ORDER BY STATE"
-get_dates = "SELECT min_celsius min_c, max_celsius max_c, date, state from etl_agg where date=%s"
 
-# argparsing made easy
-args = Args()
-gargs = args.grouped
-our_sql_cfg = get_options()
-connection = sql.mysql_connect(our_sql_cfg)
-cursor = connection.cursor()
-
-try:
-    import sql
-except ImportError as e:
-    from ETL_Google.src import sql
-
-
-if args.contains('-h'):
+def print_help(nm='qry'):
+    '''
+    '''
     puts(colored.green('Help is on the way'))
-    puts(colored.green('Usage: {} -state <STATE> / -date <DATE>\n'.format(args[0])))
+    puts(colored.green('Usage: {} -state <STATE> / -date <DATE>\n'.format(nm)))
+    puts(colored.green('To list states -get'))
     puts('where -state [STATE] is the state 2-letter code (e.g. AL)')
     puts('where -date is a date in [YYYY-MM-DD] format (e.g. 1995-03-21)')
+
+def main():
+    '''
+    Main application for queryinmt
+    '''
+    # argparsing made easy
+    args = Args()
+    gargs = args.grouped
+    cfg = get_config()
+
+    if args.contains('-h'):
+        print_help(args[0])
+        sys.exit(0)
+
+    # Get our db object
+    dbobj = queryObj(cfg)
+
+    if args.contains('-state'):
+        state = gargs['-state'][0].upper()
+        puts(colored.yellow('Calling with state "{}"'.format(state)))
+        result = dbobj.do_qry('states', state)
+        if result:
+            for row in dbobj.results:
+                puts("min: {: .2f}\t max: {: .2f}\tDate: {}".format(row[0], row[1], row[2]))
+
+    elif args.contains('-date'):
+        dt = gargs['-date'][0]
+        result = dbobj.do_qry('dates', dt)
+        if result:
+            for row in dbobj.results:
+                puts("min: {: .2f}\t max: {: .2f}\tDate: {}".format(row[0], row[1], row[2]))
+    elif args.contains('-get'):
+        dt = gargs['-get'][0]
+        result = dbobj.do_qry('get_state')
+        if result:
+            for row in dbobj.results:
+                puts(row)
+    else:
+        print_help(args[0])
+
     sys.exit(0)
 
-if args.contains('-state'):
-    state = gargs['-state'][0].upper()
-    puts(colored.yellow('Calling with state "{}"'.format(state)))
-    cursor.execute(our_sql,(state,))
-    for row in cursor:
-        puts("min: {: .2f}\t max: {: .2f}\tDate: {}".format(row[0], row[1], row[2]))
-    sys.exit(0)
-
-elif args.contains('-date'):
-    dt = gargs['-date'][0]
-    puts(colored.yellow('going for a date: {}'.format(dt)))
-    cursor.execute(get_dates,(dt,))
-    for row in cursor:
-        puts("min: {: .2f}\t max: {: .2f}\tState: {}".format(row[0], row[1], row[3]))
-    sys.exit(0)
-
-else:
-    cursor.execute(get_states)
-    for row in cursor:
-        puts(row[0])
-
-
-
+if __name__=='__main__':
+    main()

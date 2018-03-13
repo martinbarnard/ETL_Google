@@ -14,7 +14,7 @@ logger = logging.getLogger(__name__)
 SQL = {}
 
 
-def get_data(configs, qry_name, do_insert = False, connection=None):
+def get_data(qry_name, do_insert = False, connection=None):
     '''
     Will do our connection and then run our query
     '''
@@ -24,20 +24,18 @@ def get_data(configs, qry_name, do_insert = False, connection=None):
     else:
         puts(colored.red('No query with that name'))
         logging.error('No query called {}'.format(qry_name))
-        return None
+        return False
 
     try:
         cl = bigquery.Client()
         logger.debug(qry)
         rows = cl.query(qry)
     except Exception as e:
-        raise e
         logger.error('Unable to query bigquery')
-        return None
+        raise e
     except Exception as e:
         puts(colored.red('error trying to connect'))
         raise e
-
 
     if do_insert:
         # create our cursor

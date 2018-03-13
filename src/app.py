@@ -79,6 +79,10 @@ def parse_cmdline():
         configs['logging']['logfile'] = gargs['-l'][0]
         puts(colored.green('setting logfile location'))
 
+    if args.contains('-q'):
+        configs['query']['state'] = gargs['-q'][0]
+        puts(colored.green('querying for {}'.format(configs['query']['state'])))
+
     log.info('config file is {}'.format(cfgfile))
     return cfgfile, configs
 
@@ -97,8 +101,6 @@ def get_configs(cfgparser):
     except:
         puts(colored.red('cannot parse cmdline'))
         return None
-
-    log.info('trying to open {}'.format(cfgfile))
 
     try:
         cfgparser.read(cfgfile)
@@ -139,6 +141,13 @@ def main():
         puts(colored.red('Unable to load configs'))
         sys.exit(1)
 
+    if query in configs:
+        # We are running a query - everything else doesn't matter
+        # import our query
+    else:
+        # we are doing other shit
+        log.info('trying to open {}'.format(cfgfile))
+
     # Set up our logging
     logcfg = configs['logging']
     log.basicConfig(
@@ -147,6 +156,8 @@ def main():
         format='%(asctime)s;%(levelname)s;%(message)s',
     )
     puts('logging to {}'.format(logcfg['logfile']))
+
+    # Here we need to test config to see if we are dropping db
 
     connection = sql.mysql_connect(configs['cloudsql'])
     if not connection:
@@ -165,7 +176,7 @@ def main():
 
     # This is the output from our bigquery
     puts(colored.blue('starting our bigquery'))
-    rv = bgqry.get_data(configs, 'etl_ex', do_insert=True, connection = connection)
+    rv = bgqry.get_data('etl_ex', do_insert=True, connection = connection)
     puts(colored.green('query over. Insertion status: {}'.format(rv)))
         
     log.info('Finished')
