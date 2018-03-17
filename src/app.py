@@ -1,9 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-# From the API ref docs:
-# https://cloud.google.com/bigquery/docs/reference/libraries#client-libraries-install-python
-
 import sys
 import os
 import logging as log
@@ -12,7 +9,6 @@ import configparser
 # Clint parser
 from clint.arguments import Args
 from clint.textui import puts, colored, indent
-
 
 sys.path.insert(0, os.path.abspath('..'))
 
@@ -84,7 +80,6 @@ def get_configs(cfgparser):
     :param:  config parser object
     :return: dict of config items
     '''
-
     # Parse our arguments and populate our dictionary
     # Then, we will use that to grab our cfgfile and try to open that for reading
     try:
@@ -115,7 +110,7 @@ def get_configs(cfgparser):
 
 def _conf_sec_map(cfg, section, rv={}):
     '''
-    Just pulls all the config items from a section as described in the tutorial
+    Just pulls all the config items from a section
     '''
     options = cfg.options(section)
     for option in options:
@@ -198,6 +193,3 @@ def main():
     log.info('Finished')
 
 
-if __name__ == '__main__' and __package__ is None:
-    __package__ = 'ETL_Google'
-    main()

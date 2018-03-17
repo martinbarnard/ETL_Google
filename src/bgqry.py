@@ -46,10 +46,7 @@ class etl():
         '''
         Connect to our Google Client 
         '''
-        try:
-            self.GClient = bigquery.Client()
-        except:
-            return False
+        self.GClient = bigquery.Client()
         return True
 
 
@@ -82,6 +79,3 @@ class etl():
         return self.rowset
 
 
-if __name__ == '__main__':
-    logger.error('module called as application')
-    print("Should be used as a module")
