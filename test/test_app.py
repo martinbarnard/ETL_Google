@@ -1,13 +1,11 @@
 # Test app
 
 import mock
-import sys
-import os
 import pytest
 import src.app as A
 
 def my_exception(stuff):
-    raise Exception('testing')
+    raise Exception('testing - {}'.format(str(stuff)))
 
 @mock.patch('src.app.Args')
 def test_parse_cmdline(mock_args):
@@ -30,6 +28,8 @@ def test_err_reading_configs(mock_parser, mock_cmdparse, mock_args):
     mock_parser.read.side_effect = my_exception
     mock_cmdparse.return_value = 'config file', {'test_a': 'test_b'}
     with pytest.raises(Exception):
-        rv = app.get_configs(mock_parser)
+        A.get_configs(mock_parser)
+
+
     
 

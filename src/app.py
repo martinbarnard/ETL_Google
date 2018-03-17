@@ -93,7 +93,7 @@ def get_configs(cfgparser):
     except Exception as e:
         log.exception(e)
         puts(colored.red('Unable to parse config at ' + str(cfgfile)))
-        return None
+        raise e
 
     log.info('reading', cfgfile)
 

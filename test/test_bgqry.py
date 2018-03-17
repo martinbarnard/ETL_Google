@@ -27,7 +27,7 @@ def test_connect_exception(mock_google):
     etl = G.etl()
 
     with pytest.raises(Exception) as e_info:
-        rv = etl.connect()
+        etl.connect()
         assert e_info == 'testing bigquery'
 
 

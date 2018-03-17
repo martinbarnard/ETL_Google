@@ -1,9 +1,5 @@
-import sys
-import os
 import mock
-import ETL_Google.src.sql
 
-sys.path.insert(0, os.path.abspath('..'))
 
 def my_exception():
     raise Exception('testing')
