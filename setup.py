@@ -12,6 +12,6 @@ setup(
     packages=[''],
     entry_points='''
       [console_scripts]
-      etl=src.app:main
+      etl=ETL_Google.src.app:main
     '''
 )
