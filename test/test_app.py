@@ -2,12 +2,12 @@
 
 import mock
 import pytest
-import src.app as A
+import ETL_Google.src.app as A
 
 def my_exception(stuff):
     raise Exception('testing - {}'.format(str(stuff)))
 
-@mock.patch('src.app.Args')
+@mock.patch('ETL_Google.src.app.Args')
 def test_parse_cmdline(mock_args):
     '''
     Test that our command-line parser works
@@ -18,9 +18,9 @@ def test_parse_cmdline(mock_args):
         r,v = A.parse_cmdline()
 
 
-@mock.patch('src.app.Args')
-@mock.patch('src.app.parse_cmdline')
-@mock.patch('src.app.cfgparser')
+@mock.patch('ETL_Google.src.app.Args')
+@mock.patch('ETL_Google.src.app.parse_cmdline')
+@mock.patch('ETL_Google.src.app.cfgparser')
 def test_err_reading_configs(mock_parser, mock_cmdparse, mock_args):
     '''
     Not so happy - Error reaading config
