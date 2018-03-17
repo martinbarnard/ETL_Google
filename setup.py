@@ -9,8 +9,7 @@ setup(name='ELT_Google',
     license='Public Domain',
     packages=[''],
     entry_points='''
-    [console_scripts]
-    etl=src.app:main
+        [console_scripts]
+        etl=src.app:main
     '''
-
-)
+    )
