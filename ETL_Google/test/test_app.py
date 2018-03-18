@@ -4,8 +4,10 @@ import mock
 import pytest
 import ETL_Google.src.app as A
 
+
 def my_exception(stuff):
     raise Exception('testing - {}'.format(str(stuff)))
+
 
 @mock.patch('ETL_Google.src.app.Args')
 def test_parse_cmdline(mock_args):
@@ -15,7 +17,7 @@ def test_parse_cmdline(mock_args):
     mock_args.grouped.return_value = {'-h': 'help I test'}
     mock_args.contains.return_value = True
     with pytest.raises(SystemExit):
-        r,v = A.parse_cmdline()
+        r, v = A.parse_cmdline()
 
 
 @mock.patch('ETL_Google.src.app.Args')
@@ -29,7 +31,3 @@ def test_err_reading_configs(mock_parser, mock_cmdparse, mock_args):
     mock_cmdparse.return_value = 'config file', {'test_a': 'test_b'}
     with pytest.raises(Exception):
         A.get_configs(mock_parser)
-
-
-    
-
