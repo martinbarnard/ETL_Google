@@ -9,6 +9,7 @@ from clint.textui import puts, colored
 # standalone command-line tool to query the db.
 sys.path.insert(0, os.path.abspath('..'))
 
+
 class queryObj(object):
     '''
     A query object. Takes a value or set of values and does query stuff with them
@@ -16,9 +17,9 @@ class queryObj(object):
     def __init__(self, cfg):
         dbname = 'noaa_agg'
         self.queries = {
-            'get_states':  "SELECT DISTINCT state from etl_agg ORDER BY STATE",
-            'dates' : "SELECT min_celsius min_c, max_celsius max_c, date, state from etl_agg where date=%s",
-            'states' : "SELECT min_celsius min_c, max_celsius max_c, date, state FROM etl_agg where state=%s",
+            'get_states': "SELECT DISTINCT state from etl_agg ORDER BY STATE",
+            'dates': "SELECT min_celsius min_c, max_celsius max_c, date, state from etl_agg where date=%s",
+            'states': "SELECT min_celsius min_c, max_celsius max_c, date, state FROM etl_agg where state=%s",
         }
         self.cfg = cfg
         self.results = []
@@ -38,7 +39,7 @@ class queryObj(object):
             for row in self.results:
                 puts("Date: {}\tmin: {:.2f}\t max: {:.2f}\tState: {}".format(row[2], row[0], row[1], row[3]))
 
-    def do_qry(self, qry='states', qv = None):
+    def do_qry(self, qry='states', qv=None):
         '''
         Run the selected query & put results into a dcit
         '''
@@ -47,12 +48,11 @@ class queryObj(object):
             if self.connection is not None:
                 cnx = self.connection
                 cursor = cnx.cursor()
-                cursor.execute(query,(qv,))
-
+                cursor.execute(query, (qv, ))
                 # our return values
                 for row in cursor:
                     self.results.append(row)
-                if len(self.results)>0:
+                if len(self.results) > 0:
                     return True
                 else:
                     return False
@@ -61,19 +61,17 @@ class queryObj(object):
                 return False
 
 
-    
 def get_config():
     cfgparser = configparser.ConfigParser()
     cfgfile = 'private/config.ini'
     cfgparser.read(cfgfile)
     our_sql_cfg = dict()
-    our_sql_cfg['dbname'] = cfgparser.get('cloudsql','db_name')
+    our_sql_cfg['dbname'] = cfgparser.get('cloudsql', 'db_name')
     our_sql_cfg['username'] = cfgparser.get('cloudsql', 'username')
     our_sql_cfg['password'] = cfgparser.get('cloudsql', 'password')
-    our_sql_cfg['port'] = cfgparser.get('cloudsql','port')
-    our_sql_cfg['host'] = cfgparser.get('cloudsql','host')
+    our_sql_cfg['port'] = cfgparser.get('cloudsql', 'port')
+    our_sql_cfg['host'] = cfgparser.get('cloudsql', 'host')
     return our_sql_cfg
-        
 
 
 def print_help(nm='qry'):
@@ -84,6 +82,7 @@ def print_help(nm='qry'):
     puts(colored.green('To list states -get'))
     puts('where -state [STATE] is the state 2-letter code (e.g. AL)')
     puts('where -date is a date in [YYYY-MM-DD] format (e.g. 1995-03-21)')
+
 
 def main():
     '''
@@ -123,5 +122,6 @@ def main():
 
     sys.exit(0)
 
-if __name__=='__main__':
+
+if __name__ == '__main__':
     main()

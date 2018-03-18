@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+
+
 # -*- coding: utf-8 -*-
 
 import sys
@@ -24,6 +26,8 @@ except ImportError as e:
 
 # Our config parser object
 cfgparser = configparser.ConfigParser()
+
+
 def print_help():
     puts(colored.green('Usage {} <FLAGS>'.format(sys.argv[0])))
     with indent(4):
@@ -34,6 +38,7 @@ def print_help():
         puts('-state <state>: Query by state')
         puts('-date <state>: Query by date')
 
+
 def parse_cmdline():
     '''
     Will parse our commandline flags and set up our dictionary
@@ -43,7 +48,7 @@ def parse_cmdline():
     cfgfile = 'private/config.ini'
 
     # This was sane defaults, but now I don't want it
-    configs = { }
+    configs = {}
 
     args = Args()
     gargs = args.grouped
@@ -117,11 +122,13 @@ def _conf_sec_map(cfg, section, rv={}):
         rv[option] = cfg.get(section, option)
     return rv
 
+
 def recreate_data():
     '''
     Drop old tables, pull in new stuff & insert as ETL operation
     '''
     return True
+
 
 def main():
     '''
@@ -159,7 +166,7 @@ def main():
                 cnt = 0
                 rowset = []
                 for row in GQ.results:
-                    r = {k:v for k,v in row.items()}
+                    r = {k: v for k, v in row.items()}
                     rowset.append(r)
                     cnt += 1
                     if cnt % 1000 == 0:
@@ -172,12 +179,12 @@ def main():
         # A bit duplicate, but clean
         elif st[0] == 'query_state':
             # state query
-            res = qryobj.do_qry('states',st[1] )
+            res = qryobj.do_qry('states', st[1])
             if res:
                 qryobj.print_results()
         elif st[0] == 'query_date':
             # date query
-            res = qryobj.do_qry('dates',st[1] )
+            res = qryobj.do_qry('dates', st[1])
             if res:
                 qryobj.print_results()
         else:
@@ -191,5 +198,3 @@ def main():
         sys.exit(0)
 
     log.info('Finished')
-
-

@@ -9,6 +9,7 @@ sys.path.insert(0, os.path.abspath('..'))
 
 logger = logging.getLogger(__name__)
 
+
 class etl():
     def __init__(self, qry=None):
         self.SQL = {
@@ -41,16 +42,14 @@ class etl():
         self.results = None
         self.rowset = []
 
-
     def connect(self):
         '''
-        Connect to our Google Client 
+        Connect to our Google Client
         '''
         self.GClient = bigquery.Client()
         return True
 
-
-    def query(self, qry = None):
+    def query(self, qry=None):
         '''
         Will hit the query
         '''
@@ -65,7 +64,6 @@ class etl():
         else:
             return False
 
-
     def create_rows(self):
         '''
         This would only work if self.results != None
@@ -77,5 +75,3 @@ class etl():
                 self.rowset.append(r)
 
         return self.rowset
-
-
