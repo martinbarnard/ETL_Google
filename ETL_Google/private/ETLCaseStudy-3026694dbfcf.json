@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "etlcasestudy",
+  "private_key_id": "3026694dbfcf43ca05199d9935562dec34e0e7ad",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCvH+KMyWrsfvWj\nDVSZUusQVPIO720oSYC8+qbbUacx3ssua2Grq0WYkyu6LXFQg4MthS7BDHZ5kUaf\nzwiysCOAJoUNqEjaPEzwjoByQaSNthkxPotrO2lbPJxQVMpwsdnfcXgvJsPIJ/8G\nZKcmtZgubKmZW4vDeY61yRatSS25KCGqJzuO3F+LcgwMl7I1ikZbpyOJPPsWMgyt\nXJyLIYv99WS2ApqF5tcQnCgdt1b9dGyqoiT9a3V/gWQJwEoLzFInMom0r3Zy/BDN\neIj5+X4caBzhookTEv9bEUd7GnoLxvbD0ANTR/XTrbN2AIcIt6wMU2ZBdsIjRJnH\n4G31BVDZAgMBAAECggEAMj/u7MDaynN/nkKz9K7DPlNxhXGUG8xDgXZWrHXYiMnJ\n+U7cnrqtZKNOF8T0T8r8t/IQQVqHIEjcP/zTHRrHhP0IjqusA9rrpNbu6loFkpge\n0G+G58ULbR+OJsq9r+qIfsH7X2Q7J1K6raXyBHx051VMsPGAwB1AIs9Jj32A/jCY\ndgu5xEZb/7IU8Unz/pLRqkI39Mq1Tr78S3p1TsRmkTtQtlnEsRYNqMdlenR2/MIV\nQ6c30inbTO9Dob6IWNACqr/dYXIMklIbpPKTcP6eEeQ98aLjJS+qaixPzyVPEZEA\nEnSo0+QgvVELGZJax0QwcHe7IiGCnI4q5kVmuYG2xQKBgQDtGibZ6kjxxix4ZX16\n/J6aW39YIZw+4j7+6hHqs42XsGKkOaXEQhn0nGVbQ8rEaysnWMMhy/wAZAT27ZsE\n4XMBTTG1sHjX3/TsM7BwbFenQwGmAYK+s+LZxP2T9nGiqvNfSwr6KExQQg4wFwSH\n0sHdiMKbmgqN2NBvnbFNYzOR9wKBgQC9FSNUXqtbgCtH1azeeCvGLZk7amxV+UWM\n59xY7g7BmR2Ygf328GGBa4AvwTB4XNNPc6ctbifRQmKs8Wyr1T8k853Nc1jpTo6O\nUlXjRrgcIm6RCsb6yy+Noro/cbHIS9jrYOi2cgSw6pbx1d0vXdWS/Lj4XqL885N4\nJmU9lL1/rwKBgBx0S/9Q74ocZ0/XljSBRqNtoZ25AuBFFJxRCO9qtu5iW6Qryun/\nqM/DSSKnwxjJZ7dkHp7atRZy6mmb4EO4rq2UTwfn8sitdt414dHMHsTS9MqwWbl7\nKxlJW8k7BS4pZ+WiwuF8npPvKXa5/HA0adGlTP2Rgfy97V3HxfRsmE7HAoGAM65o\nZrItkif5LHxJ8NDV3iguft/61pD4oqfpQWFoJSBtx3aYbPuNGyu/8M2UKwHsPAY3\nhqJaPccwY2blth3mUXpJApPplHOFYX89vI5i2kXLBNf2RSxuRf9ZeuffmQiqNMPb\nN6r4f0bPlTBIcZ7rNm7fO/vZ/tuwziFogKl8Fj8CgYABW53j7P1HYfbCu2odd8DH\no4/D0EN1iVth9FYOeFkK/8DDy5jTSbHHBnFv7mTh4W9muH0abwPW/I3KL6va215v\n65bev4eNzEZfL+v3KLUYoCvHhEMr6aAGEvNs8YhR6IwbVa3qwA+ImyhrRtOT1DDr\nMHFZVeqXUtRVcPVDuTOOUA==\n-----END PRIVATE KEY-----\n",
+  "client_email": "mbarnard@etlcasestudy.iam.gserviceaccount.com",
+  "client_id": "116828731472669482119",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/mbarnard%40etlcasestudy.iam.gserviceaccount.com"
+}

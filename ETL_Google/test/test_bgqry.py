@@ -3,12 +3,12 @@
 
 import mock
 import pytest
-import src.bgqry as G
+import ETL_Google.src.bgqry as G
 
 def my_exception():
     raise Exception('testing bigquery')
 
-@mock.patch('src.bgqry.bigquery')
+@mock.patch('ETL_Google.src.bgqry.bigquery')
 def test_connect_pass(mock_google):
     '''
     '''
@@ -18,7 +18,7 @@ def test_connect_pass(mock_google):
     assert rv == True
 
 
-@mock.patch('src.bgqry.bigquery')
+@mock.patch('ETL_Google.src.bgqry.bigquery')
 def test_connect_exception(mock_google):
     '''
     Test error getting data
@@ -31,7 +31,7 @@ def test_connect_exception(mock_google):
         assert e_info == 'testing bigquery'
 
 
-@mock.patch('src.bgqry.bigquery')
+@mock.patch('ETL_Google.src.bgqry.bigquery')
 def test_query_hit(mock_google):
     '''
     '''
