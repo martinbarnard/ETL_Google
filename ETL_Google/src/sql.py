@@ -48,6 +48,7 @@ class cloudsql():
     def create_db(self):
         '''
         MySQL
+        This should be wrapped in a try-catch block anyhow
         '''
         DB_NAME = self.db
         logger.info('Attempting to create database: {}'.format(DB_NAME))
@@ -76,6 +77,7 @@ class cloudsql():
                 port=self.port,
                 database=dbname
             )
+
         except Exception as e:
             logger.error(e)
             return False
@@ -86,7 +88,7 @@ class cloudsql():
         '''
         :param: connection object,
                 row list
-        :return:
+        :return: True / False
         '''
         cursor = self.connection.cursor()
         cursor.execute(self.sql['start'])
