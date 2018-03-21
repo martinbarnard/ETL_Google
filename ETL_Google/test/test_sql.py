@@ -9,6 +9,7 @@ config = {
     'port': 1209,
 }
 
+
 def my_exception():
     raise Exception('testing')
 
@@ -35,9 +36,9 @@ def test_insert_row_happy_path(mock_connection):
     '''
     test_rows = [
         {
-            'max':'a max value',
-            'min':'a min value',
-            'date':'a date',
+            'max': 'a max value',
+            'min': 'a min value',
+            'date': 'a date',
             'state': 'a state',
         }
     ]
